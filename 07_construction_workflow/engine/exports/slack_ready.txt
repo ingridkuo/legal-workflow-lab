@@ -1,0 +1,12 @@
+FICTIONAL DEMO — Subcontract weekly report
+Period: 2026-11-09 to 2026-11-11 (UTC; Monday to as-of date)
+Volume: 2 submitted; 1 executed this week; 8 open / 10 total.
+Queue by stage: Business Approval: 2; Counterparty Signed: 1; Hold: 1; Intake: 1; Legal Review: 2; Ready for Signature: 1
+Queue by owner: company_signatory_001: 1; exec_001: 1; legal_001: 1; pm_001: 1; requester_006: 1; requester_010: 1; senior_legal_001: 1; sub_signatory_003: 1
+Overdue needed-by (active only): SC-002, SC-004, SC-007
+Open aging (calendar days since intake): SC-001: 2d; SC-002: 7d; SC-003: 10d; SC-004: 14d; SC-005: 5d; SC-006: 9d; SC-007: 8d; SC-010: 0d
+Historical execution turnaround: 12.12 days mean (n=1; UTC elapsed time).
+Historical review turnaround: 2.62 days mean (n=4; completed reviews only).
+Guarantee alerts (includes active executed contracts): SC-003 (Due within 30 days, 2026-11-25); SC-006 (Missing); SC-008 (Due within 30 days, 2026-12-05)
+Local export only. No Slack message sent. Signatures are demonstration records only.
+No saved-time or productivity outcome has been measured.

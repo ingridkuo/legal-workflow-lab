@@ -23,6 +23,7 @@ Open the printed local URL and select **Run checks**. This validates preserved r
 | Legal AI and implementation | [Guided model review](01_ai_review/replay.html), then [method](01_ai_review/AI_Contract_Review_Method.pdf) and [migration](05_solution_delivery/index.html) |
 | Commercial contracts and legal operations | [Historical cases](04_case_studies/Selected_Case_Studies.pdf), [tracker](02_legal_ops/Contract_Operations_Tracker.xlsx) and [workflow](02_legal_ops/Legal_Operations_Workflow.pdf) |
 | Training and adoption | [Training case](03_training/Training_and_Customer_Success.pdf) and [knowledge handoff](06_knowledge_operations/index.html) |
+| Construction contracts and workflow implementation | [Subcontract workflow](07_construction_workflow/README.md), [tracker](07_construction_workflow/Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx) and [owner-side issues](07_construction_workflow/Ingrid_Kao_Owner_Side_Construction_Issues.pdf) |
 
 ## Files
 
@@ -96,6 +97,7 @@ Then open `http://127.0.0.1:8000/` on that computer. Stop the server when finish
 | `04_case_studies` | Five anonymized cases in PDF, text and structured form |
 | `05_solution_delivery` | XML/JSON mapping, migration exceptions, correction checks and a pilot decision |
 | `06_knowledge_operations` | Synthetic handoff records, source-backed articles and tested knowledge gates |
+| `07_construction_workflow` | Subcontract engine, approval policy, 38 tests, Excel tracker and owner-side construction analysis |
 | `assets` | Bundled fonts and watercolor portrait |
 | `tools` | Portable current PDF builders and case-copy synchronization |
 

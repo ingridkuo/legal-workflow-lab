@@ -1,0 +1,25 @@
+{
+  "policy_name": "Fictional USD subcontract policy — independent demonstration",
+  "currency": "USD",
+  "base_review_roles": ["legal"],
+  "exception_review_role": "senior_legal",
+  "business_review_tiers": [
+    {"upper_bound_usd": "50000.00", "roles": ["project_manager"]},
+    {"upper_bound_usd": "250000.00", "roles": ["project_manager", "finance"]},
+    {"upper_bound_usd": null, "roles": ["project_manager", "finance", "executive"]}
+  ],
+  "role_owners": {
+    "legal": "legal_001",
+    "senior_legal": "senior_legal_001",
+    "project_manager": "pm_001",
+    "finance": "finance_001",
+    "executive": "exec_001"
+  },
+  "role_labels": {
+    "legal": "Legal", "senior_legal": "Senior Legal",
+    "project_manager": "Project Manager", "finance": "Finance", "executive": "Executive"
+  },
+  "workflow_admin_id": "ops_001",
+  "company_signatory_id": "company_signatory_001",
+  "demo_as_of": "2026-11-11"
+}

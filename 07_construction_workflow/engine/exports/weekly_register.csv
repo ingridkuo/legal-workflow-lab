@@ -1,0 +1,11 @@
+id,project_name,amount_usd,status,current_owner,submitted_at,needed_by_date,age_days,overdue,execution_date,turnaround_days,guarantee_expiry_date,document_issues
+SC-001,Harbor Office Interior Buildout,50000.00,Legal Review,legal_001,2026-11-09T09:00:00Z,2026-11-16,2,False,,,,
+SC-002,Riverside Clinic Upgrade,50000.01,Business Approval,pm_001,2026-11-04T09:00:00Z,2026-11-10,7,True,,,,
+SC-003,Northgate Logistics Hub,250000.00,Ready for Signature,sub_signatory_003,2026-11-01T09:00:00Z,2026-11-13,10,False,,,2026-11-25,
+SC-004,Eastbank Residential Phase II,250000.01,Business Approval,exec_001,2026-10-28T09:00:00Z,2026-11-09,14,True,,,2027-02-28,
+SC-005,Elm Street Retail Refresh,12500.00,Legal Review,senior_legal_001,2026-11-06T09:00:00Z,2026-11-13,5,False,,,,
+SC-006,Civic Annex Retrofit,80000.00,Hold,requester_006,2026-11-02T09:00:00Z,2026-11-12,9,False,,,,Missing required guarantee reference and expiry date
+SC-007,Westfield School Renewal,30000.00,Counterparty Signed,company_signatory_001,2026-11-03T09:00:00Z,2026-11-09,8,True,,,,
+SC-008,Brookside Library Extension,40000.00,Executed,,2026-10-29T09:00:00Z,2026-11-12,,False,2026-11-10,12.12,2026-12-05,
+SC-009,Airport Service Building,100000.00,Rejected,,2026-11-03T09:00:00Z,2026-11-10,,False,,,,
+SC-010,Seaview Community Center,150000.00,Intake,requester_010,2026-11-11T09:00:00Z,2026-11-18,0,False,,,,
