@@ -23,7 +23,7 @@ python workflow.py --db practice_events.jsonl show SC-006
 python workflow.py --db practice_events.jsonl history SC-006
 ```
 
-`demo` refuses to overwrite any nonempty store. The default deterministic report date is 11 November 2026; specify another `--as-of` date to reconstruct the available history at that date. Mutation commands use the current UTC time unless given `--at`.
+`demo` refuses to overwrite any nonempty store. The default deterministic report date is November 11, 2026; specify another `--as-of` date to reconstruct the available history at that date. Mutation commands use the current UTC time unless given `--at`.
 
 ## Intake form and JSON import
 
@@ -106,14 +106,14 @@ python workflow.py export-register --as-of 2026-11-11 --file live_register.json
 
 `report` writes `weekly_report.json`, `weekly_register.csv` and `slack_ready.txt`. The Slack-ready text is a local copy/paste draft; no message is sent. `export-register` produces a flat JSON register comparable to `sample_register.json`.
 
-For the included fixture as of 11 November 2026:
+For the included fixture as of November 11, 2026:
 
 | Metric | Result |
 |---|---:|
 | Total cases | 10 |
 | Open queue (excludes Executed and Rejected) | 8 |
-| Submitted this week, 9–11 November | 2 |
-| Executed this week, 9–11 November | 1 |
+| Submitted this week, November 9–11 | 2 |
+| Executed this week, November 9–11 | 1 |
 | Active overdue cases | 3 |
 | Guarantee expiry within 30 days | 2 |
 | Missing required guarantee | 1 |
@@ -124,7 +124,7 @@ Definitions:
 - Volume counts submitted/executed dates within that interval. Queue counts show all active records as of the date, grouped by stage and current owner.
 - Aging is calendar days since intake for active cases. Overdue means the needed-by date is before as-of; due today is not overdue. Executed and Rejected are excluded.
 - Execution turnaround is elapsed UTC days from intake to company signature. Review turnaround is elapsed UTC days from intake to the final required approval, only where all required reviews are complete. Means include all available completed cases as of the date, not only this week's cases, and display their sample sizes. The fixture has one completed execution (12.125 elapsed days) and four completed review sequences (2.625 elapsed days mean); rounded display is 12.12 and 2.62 respectively. The workbook may separately use calendar-date turnaround.
-- Guarantee alerts include required guarantees on non-rejected contracts whose contract end has not passed, including active Executed contracts. Missing reference/date takes priority; expired is before as-of; due within 30 days includes today through `as_of + 30` days. For 11 November, SC-003 and SC-008 are due; SC-006 is missing.
+- Guarantee alerts include required guarantees on non-rejected contracts whose contract end has not passed, including active Executed contracts. Missing reference/date takes priority; expired is before as-of; due within 30 days includes today through `as_of + 30` days. For November 11, SC-003 and SC-008 are due; SC-006 is missing.
 - No saved-time or productivity outcome has been measured.
 
 ## Audit and operating limits
