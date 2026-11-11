@@ -201,7 +201,7 @@ def transition(record, action, actor, at, **kwargs):
             raise WorkflowError('Record is not awaiting a review.')
         item = pending(record)
         if actor == record['requestor_id']:
-            raise WorkflowError('Requestors cannot approve or reject their own requests.')
+            raise WorkflowError('Requesters cannot approve or reject their own requests.')
         if actor != item['owner_id']:
             raise WorkflowError('Next reviewer is '+item['owner_id']+' ('+item['role']+').')
         if not kwargs.get('note','').strip():
