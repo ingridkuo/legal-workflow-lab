@@ -1,0 +1,219 @@
+{
+  "as_of": "2026-11-11",
+  "week_start": "2026-11-09",
+  "total_records": 10,
+  "submitted_this_week": 2,
+  "executed_this_week": 1,
+  "open_count": 8,
+  "queue_by_stage": {
+    "Business Approval": 2,
+    "Counterparty Signed": 1,
+    "Hold": 1,
+    "Intake": 1,
+    "Legal Review": 2,
+    "Ready for Signature": 1
+  },
+  "queue_by_owner": {
+    "company_signatory_001": 1,
+    "exec_001": 1,
+    "legal_001": 1,
+    "pm_001": 1,
+    "requester_006": 1,
+    "requester_010": 1,
+    "senior_legal_001": 1,
+    "sub_signatory_003": 1
+  },
+  "overdue_ids": [
+    "SC-002",
+    "SC-004",
+    "SC-007"
+  ],
+  "ageing_days": {
+    "SC-001": 2,
+    "SC-002": 7,
+    "SC-003": 10,
+    "SC-004": 14,
+    "SC-005": 5,
+    "SC-006": 9,
+    "SC-007": 8,
+    "SC-010": 0
+  },
+  "mean_execution_turnaround_days": 12.12,
+  "execution_turnaround_sample_size": 1,
+  "mean_review_turnaround_days": 2.62,
+  "review_turnaround_sample_size": 4,
+  "guarantee_status": [
+    {
+      "id": "SC-003",
+      "status": "Due within 30 days",
+      "expiry_date": "2026-11-25"
+    },
+    {
+      "id": "SC-004",
+      "status": "Current",
+      "expiry_date": "2027-02-28"
+    },
+    {
+      "id": "SC-006",
+      "status": "Missing",
+      "expiry_date": ""
+    },
+    {
+      "id": "SC-008",
+      "status": "Due within 30 days",
+      "expiry_date": "2026-12-05"
+    }
+  ],
+  "rows": [
+    {
+      "id": "SC-001",
+      "project_name": "Harbor Office Interior Buildout",
+      "amount_usd": "50000.00",
+      "status": "Legal Review",
+      "current_owner": "legal_001",
+      "submitted_at": "2026-11-09T09:00:00Z",
+      "needed_by_date": "2026-11-16",
+      "age_days": 2,
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-002",
+      "project_name": "Riverside Clinic Upgrade",
+      "amount_usd": "50000.01",
+      "status": "Business Approval",
+      "current_owner": "pm_001",
+      "submitted_at": "2026-11-04T09:00:00Z",
+      "needed_by_date": "2026-11-10",
+      "age_days": 7,
+      "overdue": true,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-003",
+      "project_name": "Northgate Logistics Hub",
+      "amount_usd": "250000.00",
+      "status": "Ready for Signature",
+      "current_owner": "sub_signatory_003",
+      "submitted_at": "2026-11-01T09:00:00Z",
+      "needed_by_date": "2026-11-13",
+      "age_days": 10,
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "2026-11-25",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-004",
+      "project_name": "Eastbank Residential Phase II",
+      "amount_usd": "250000.01",
+      "status": "Business Approval",
+      "current_owner": "exec_001",
+      "submitted_at": "2026-10-28T09:00:00Z",
+      "needed_by_date": "2026-11-09",
+      "age_days": 14,
+      "overdue": true,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "2027-02-28",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-005",
+      "project_name": "Elm Street Retail Refresh",
+      "amount_usd": "12500.00",
+      "status": "Legal Review",
+      "current_owner": "senior_legal_001",
+      "submitted_at": "2026-11-06T09:00:00Z",
+      "needed_by_date": "2026-11-13",
+      "age_days": 5,
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-006",
+      "project_name": "Civic Annex Retrofit",
+      "amount_usd": "80000.00",
+      "status": "Hold",
+      "current_owner": "requester_006",
+      "submitted_at": "2026-11-02T09:00:00Z",
+      "needed_by_date": "2026-11-12",
+      "age_days": 9,
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": "Missing required guarantee reference and expiry date"
+    },
+    {
+      "id": "SC-007",
+      "project_name": "Westfield School Renewal",
+      "amount_usd": "30000.00",
+      "status": "Counterparty Signed",
+      "current_owner": "company_signatory_001",
+      "submitted_at": "2026-11-03T09:00:00Z",
+      "needed_by_date": "2026-11-09",
+      "age_days": 8,
+      "overdue": true,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-008",
+      "project_name": "Brookside Library Extension",
+      "amount_usd": "40000.00",
+      "status": "Executed",
+      "current_owner": "",
+      "submitted_at": "2026-10-29T09:00:00Z",
+      "needed_by_date": "2026-11-12",
+      "age_days": "",
+      "overdue": false,
+      "execution_date": "2026-11-10",
+      "turnaround_days": 12.12,
+      "guarantee_expiry_date": "2026-12-05",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-009",
+      "project_name": "Airport Service Building",
+      "amount_usd": "100000.00",
+      "status": "Rejected",
+      "current_owner": "",
+      "submitted_at": "2026-11-03T09:00:00Z",
+      "needed_by_date": "2026-11-10",
+      "age_days": "",
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    },
+    {
+      "id": "SC-010",
+      "project_name": "Seaview Community Center",
+      "amount_usd": "150000.00",
+      "status": "Intake",
+      "current_owner": "requester_010",
+      "submitted_at": "2026-11-11T09:00:00Z",
+      "needed_by_date": "2026-11-18",
+      "age_days": 0,
+      "overdue": false,
+      "execution_date": "",
+      "turnaround_days": "",
+      "guarantee_expiry_date": "",
+      "document_issues": ""
+    }
+  ]
+}
