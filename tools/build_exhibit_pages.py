@@ -1,4 +1,4 @@
-"""Build recruiter-readable exhibit pages from the archived demonstration results.
+"""Build exhibit pages from the archived demonstration results.
 
 Python standard library only. This builder displays evidence; it does not execute
 the migration validator, knowledge gate, or a model, and does not change their data.

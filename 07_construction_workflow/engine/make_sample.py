@@ -8,7 +8,7 @@ names = [
  ('Riverside Clinic Upgrade','Cedar Vale Mechanical LLC','HVAC ductwork replacement'),
  ('Northgate Logistics Hub','Meridian Steelworks LLC','Structural steel fabrication and erection'),
  ('Eastbank Residential Phase II','Summit Facades LLC','External facade supply and installation'),
- ('Elm Street Retail Refresh','Juniper Interiors LLC','Joinery and interior finishes'),
+ ('Elm Street Retail Refresh','Pluto Interiors LLC','Joinery and interior finishes'),
  ('Civic Annex Retrofit','Pioneer Fire Systems LLC','Fire suppression retrofit'),
  ('Westfield School Renewal','Granite Civil LLC','Drainage and external works'),
  ('Brookside Library Extension','Maple Roofing LLC','Roofing and waterproofing'),
