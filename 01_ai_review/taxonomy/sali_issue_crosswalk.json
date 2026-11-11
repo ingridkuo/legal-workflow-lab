@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0",
+  "author": "Ingrid Kao",
+  "mapping_status": "Author-created portfolio crosswalk; not a SALI-endorsed mapping",
+  "scope": {
+    "local_rule_types": 15,
+    "heldout_documents": 15,
+    "heldout_reference_issue_instances": 16,
+    "instance_key": "document_id plus rule_id"
+  },
+  "source": {
+    "publisher": "SALI Alliance",
+    "repository": "https://github.com/sali-legal/LMSS",
+    "commit": "3f9ac0c9357b2a971582ae79ede243511d47811d",
+    "commit_date_utc": "2026-03-10T23:01:15Z",
+    "retrieved_on": "2026-11-11",
+    "source_url": "https://raw.githubusercontent.com/sali-legal/LMSS/3f9ac0c9357b2a971582ae79ede243511d47811d/LMSS.owl",
+    "source_sha256": "51acefd5051aa8f52e60d6dd142b0925c7cec3a5d789bfbe4fcbe69021c9bba1",
+    "source_bytes": 17832342,
+    "version_scope": "Pinned main commit; not represented as a formal release",
+    "license_in_repository": "MIT; original notice retained in sources/SALI_LICENSE.txt",
+    "standard_website_license_note": "The SALI website separately describes CC BY-ND. This package provides an author-created crosswalk and compact verbatim source records; it does not alter or republish the ontology as a competing standard."
+  },
+  "selected_concepts_sha256": "97016676aef9b92e89bce7e9673d32547d2f633b03b6c32e0556e7bc9680df70",
+  "relationship_definitions": {
+    "exact": "Same subject concept; would still not establish equivalence to a local risk rule. None claimed here.",
+    "broader": "SALI topic is broader than the local issue concept.",
+    "related": "Useful context or retrieval relationship; neither equivalence nor asserted subsumption.",
+    "unmapped": "No adequate concept identified in this pinned source; local rule is retained."
+  },
+  "rule_type_mappings": [
+    {
+      "local_rule_id": "DURATION",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R97IAAj73aQDTLnBU1eL5zB",
+          "label": "Survival Clause"
+        }
+      ],
+      "gap_note": "Five-year survival, the three-year fallback and the disclosure-window distinction are local policy tests; the SALI tag identifies the broader clause topic."
+    },
+    {
+      "local_rule_id": "TRADE_SECRET",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R71j0369f2ok96vA6rQOxa0",
+          "label": "Trade Secret Law"
+        },
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "Area-of-law and clause-topic tags do not encode duration while information remains a qualifying trade secret or decide whether a fixed cap is acceptable."
+    },
+    {
+      "local_rule_id": "RESIDUALS",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "No exact residual-memory NDA exception concept was identified in the pinned source. Use the broader confidentiality topic and preserve RESIDUALS as a local rule."
+    },
+    {
+      "local_rule_id": "PURPOSE",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "The confidentiality topic is broader than an evaluation-only use restriction. The privacy-specific Purpose Specification Principle was not substituted for a commercial NDA use rule."
+    },
+    {
+      "local_rule_id": "MODEL_TRAINING",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8wA0A8nszg5VoIH0n48aOO",
+          "label": "Machine Learning"
+        },
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "Machine Learning supplies technical context, not permission to train on confidential data. Separate express approval and shared-model scope remain local policy fields."
+    },
+    {
+      "local_rule_id": "REPRESENTATIVES",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDWI8MUWQm1rMjaPbJYLX21",
+          "label": "Permitted Disclosure Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/Rq9S0ffWaPRlWGpIfqg2Uy",
+          "label": "\"Representatives\" Definition"
+        }
+      ],
+      "gap_note": "The definition and disclosure topic do not encode need-to-know access, equivalent duties, professional-duty carveouts or recipient responsibility."
+    },
+    {
+      "local_rule_id": "COMPELLED_NOTICE",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8b3GwW18cMlKh0m1z3FjbJ",
+          "label": "Legally Compelled Disclosure Clause"
+        }
+      ],
+      "gap_note": "The common disclosure topic does not distinguish lawful notice and cooperation from a prohibited notice obligation. Keep this rule separate from compelled scope."
+    },
+    {
+      "local_rule_id": "COMPELLED_SCOPE",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8b3GwW18cMlKh0m1z3FjbJ",
+          "label": "Legally Compelled Disclosure Clause"
+        }
+      ],
+      "gap_note": "The common disclosure topic does not encode the minimum-legally-required production limit. Two distinct local rules intentionally share one SALI concept."
+    },
+    {
+      "local_rule_id": "RETENTION",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R5Ke1kRNzBeyrIie2uqlMn",
+          "label": "Retention and Litigation Hold Management"
+        }
+      ],
+      "gap_note": "This is an operational preservation topic, not an NDA return/destruction clause equivalent. Thirty-day timing, inactive backup and legal-retention exceptions remain local policy. A hold suspends deletion; it does not authorize disclosure."
+    },
+    {
+      "local_rule_id": "COMMERCIAL_RESTRICTION",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R7bddbBa7EIzMF8MI0EvJD",
+          "label": "Exclusive Agreement Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/R86B9DI1HdnEmOAclhBcRd1",
+          "label": "Non-Competition Covenant"
+        }
+      ],
+      "gap_note": "These tags cover examples of the rule, not its full scope: no-hire, IP transfer and other commercial commitments need their own analysis. The instance mapping retains the actual noncompete context."
+    },
+    {
+      "local_rule_id": "SOURCE_COMPLETENESS",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "unmapped",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [],
+      "gap_note": "No exact source-completeness or missing-incorporated-contract-source concept was identified. Do not use the SALI Attachment concept: its definition concerns prejudgment seizure, not a missing contract attachment. Keep NEED_SOURCE as local workflow state."
+    },
+    {
+      "local_rule_id": "EMBEDDED_INSTRUCTION",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDjGVtbkpmSvuHjMNBohZ8o",
+          "label": "Adversarial Machine Learning"
+        }
+      ],
+      "gap_note": "The SALI concept describes a broader attack domain. It is not an exact indirect prompt-injection or contract-review rule; instruction isolation and the human gate remain local controls."
+    },
+    {
+      "local_rule_id": "UNLIMITED_LIABILITY",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "broader",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RZVXNAbvbm2JirFGPT4Ihy",
+          "label": "Liability Clause"
+        }
+      ],
+      "gap_note": "The broad topic is liability allocation. A Limitation of Liability Clause is not an exact match for an express unlimited obligation; lack of a cap alone is not a defect under this policy."
+    },
+    {
+      "local_rule_id": "PERSONAL_DATA",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R7dzMUdHL38FTJVlhahuNbr",
+          "label": "Data Privacy Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/R9qSb7vRy506Q5Qr2GQetow",
+          "label": "Data Protection Agreement"
+        }
+      ],
+      "gap_note": "These tags support privacy routing and retrieval. They do not determine whether a DPA is required, whether processing is authorized or whether a privacy review has occurred."
+    },
+    {
+      "local_rule_id": "CONTROLLED_TECH",
+      "local_policy_id": "NDA-DEMO-1.0",
+      "relationship": "related",
+      "relationship_scope": "subject-matter mapping; not equivalence to policy test, severity or approval",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R9IoAlyOWrsbtjuz7qo2cd7",
+          "label": "Export Controls Practice"
+        }
+      ],
+      "gap_note": "Practice-area context is not an export classification, license decision or finding of an actual violation. No Export Control Claims tag is applied solely because technical data may be controlled."
+    }
+  ],
+  "heldout_issue_instances": [
+    {
+      "issue_instance_id": "NDA-07::DURATION",
+      "document_id": "NDA-07",
+      "source_path": "../inputs/heldout/NDA-07.txt",
+      "source_sha256": "1ccc440a52341002a626ea723fc085e69e6a8ac1102a814e714d3187093aef68",
+      "rule_id": "DURATION",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 5",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R97IAAj73aQDTLnBU1eL5zB",
+          "label": "Survival Clause"
+        }
+      ],
+      "gap_note": "Five-year survival, the three-year fallback and the disclosure-window distinction are local policy tests; the SALI tag identifies the broader clause topic."
+    },
+    {
+      "issue_instance_id": "NDA-08::DURATION",
+      "document_id": "NDA-08",
+      "source_path": "../inputs/heldout/NDA-08.txt",
+      "source_sha256": "89461cc828041e8b59170759e4e1767217600aa06eb798ef12e2a7130bc439a6",
+      "rule_id": "DURATION",
+      "reference_severity": "RED",
+      "source_locator": "Section 5",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R97IAAj73aQDTLnBU1eL5zB",
+          "label": "Survival Clause"
+        }
+      ],
+      "gap_note": "Five-year survival, the three-year fallback and the disclosure-window distinction are local policy tests; the SALI tag identifies the broader clause topic."
+    },
+    {
+      "issue_instance_id": "NDA-09::TRADE_SECRET",
+      "document_id": "NDA-09",
+      "source_path": "../inputs/heldout/NDA-09.txt",
+      "source_sha256": "69bca9b724045b31df0be89859be8e848164a8db0e597c92cdd85e7bab44716e",
+      "rule_id": "TRADE_SECRET",
+      "reference_severity": "RED",
+      "source_locator": "Section 5",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R71j0369f2ok96vA6rQOxa0",
+          "label": "Trade Secret Law"
+        },
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "Area-of-law and clause-topic tags do not encode duration while information remains a qualifying trade secret or decide whether a fixed cap is acceptable."
+    },
+    {
+      "issue_instance_id": "NDA-10::RESIDUALS",
+      "document_id": "NDA-10",
+      "source_path": "../inputs/heldout/NDA-10.txt",
+      "source_sha256": "8d675ef6dfd55756815ce7d388cf49569a7d8044a4057f1095b3125effb0d9ee",
+      "rule_id": "RESIDUALS",
+      "reference_severity": "RED",
+      "source_locator": "Section 3",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "No exact residual-memory NDA exception concept was identified in the pinned source. Use the broader confidentiality topic and preserve RESIDUALS as a local rule."
+    },
+    {
+      "issue_instance_id": "NDA-11::PURPOSE",
+      "document_id": "NDA-11",
+      "source_path": "../inputs/heldout/NDA-11.txt",
+      "source_sha256": "e0c72a92b38a987a8494fc991b8e20e8fc26c917ee6e6ea819e32f4893f0d05a",
+      "rule_id": "PURPOSE",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 3",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "The confidentiality topic is broader than an evaluation-only use restriction. The privacy-specific Purpose Specification Principle was not substituted for a commercial NDA use rule."
+    },
+    {
+      "issue_instance_id": "NDA-12::MODEL_TRAINING",
+      "document_id": "NDA-12",
+      "source_path": "../inputs/heldout/NDA-12.txt",
+      "source_sha256": "cd67f8a11f6b263bcff7d1ecdbe53c78dc176160c998cf02db2af288be8d0727",
+      "rule_id": "MODEL_TRAINING",
+      "reference_severity": "RED",
+      "source_locator": "Section 3",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8wA0A8nszg5VoIH0n48aOO",
+          "label": "Machine Learning"
+        },
+        {
+          "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+          "label": "Confidentiality Clause"
+        }
+      ],
+      "gap_note": "Machine Learning supplies technical context, not permission to train on confidential data. Separate express approval and shared-model scope remain local policy fields."
+    },
+    {
+      "issue_instance_id": "NDA-13::REPRESENTATIVES",
+      "document_id": "NDA-13",
+      "source_path": "../inputs/heldout/NDA-13.txt",
+      "source_sha256": "853181ff564859d9df9d654dc72810ae35d884bb4c7ec2ab9cf27833dc556007",
+      "rule_id": "REPRESENTATIVES",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 4",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDWI8MUWQm1rMjaPbJYLX21",
+          "label": "Permitted Disclosure Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/Rq9S0ffWaPRlWGpIfqg2Uy",
+          "label": "\"Representatives\" Definition"
+        }
+      ],
+      "gap_note": "The definition and disclosure topic do not encode need-to-know access, equivalent duties, professional-duty carveouts or recipient responsibility."
+    },
+    {
+      "issue_instance_id": "NDA-14::COMPELLED_SCOPE",
+      "document_id": "NDA-14",
+      "source_path": "../inputs/heldout/NDA-14.txt",
+      "source_sha256": "c2018768041eb83a94077d484a3785cb09fa038ae43e8fbd7147b3d045295f1b",
+      "rule_id": "COMPELLED_SCOPE",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 6",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8b3GwW18cMlKh0m1z3FjbJ",
+          "label": "Legally Compelled Disclosure Clause"
+        }
+      ],
+      "gap_note": "The common disclosure topic does not encode the minimum-legally-required production limit. Two distinct local rules intentionally share one SALI concept."
+    },
+    {
+      "issue_instance_id": "NDA-15::COMPELLED_NOTICE",
+      "document_id": "NDA-15",
+      "source_path": "../inputs/heldout/NDA-15.txt",
+      "source_sha256": "4e97e7e34323b3796e09328bf61fa2dcfdce64989c9090894f2b88a0c429629d",
+      "rule_id": "COMPELLED_NOTICE",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 6",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R8b3GwW18cMlKh0m1z3FjbJ",
+          "label": "Legally Compelled Disclosure Clause"
+        }
+      ],
+      "gap_note": "The common disclosure topic does not distinguish lawful notice and cooperation from a prohibited notice obligation. Keep this rule separate from compelled scope."
+    },
+    {
+      "issue_instance_id": "NDA-16::RETENTION",
+      "document_id": "NDA-16",
+      "source_path": "../inputs/heldout/NDA-16.txt",
+      "source_sha256": "55cceb14a304ecfd9f93b87fff435121ea971dd0b88cc3974b03fe139c6abbe7",
+      "rule_id": "RETENTION",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 7",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R5Ke1kRNzBeyrIie2uqlMn",
+          "label": "Retention and Litigation Hold Management"
+        }
+      ],
+      "gap_note": "This is an operational preservation topic, not an NDA return/destruction clause equivalent. Thirty-day timing, inactive backup and legal-retention exceptions remain local policy. A hold suspends deletion; it does not authorize disclosure."
+    },
+    {
+      "issue_instance_id": "NDA-17::COMMERCIAL_RESTRICTION",
+      "document_id": "NDA-17",
+      "source_path": "../inputs/heldout/NDA-17.txt",
+      "source_sha256": "3837a00769bcc6a1a9574d62cd8ae39a8aeb7d82f69d353184f300d66157408d",
+      "rule_id": "COMMERCIAL_RESTRICTION",
+      "reference_severity": "RED",
+      "source_locator": "Section 8",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R7bddbBa7EIzMF8MI0EvJD",
+          "label": "Exclusive Agreement Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/R86B9DI1HdnEmOAclhBcRd1",
+          "label": "Non-Competition Covenant"
+        }
+      ],
+      "gap_note": "These tags cover examples of the rule, not its full scope: no-hire, IP transfer and other commercial commitments need their own analysis. The instance mapping retains the actual noncompete context."
+    },
+    {
+      "issue_instance_id": "NDA-18::SOURCE_COMPLETENESS",
+      "document_id": "NDA-18",
+      "source_path": "../inputs/heldout/NDA-18.txt",
+      "source_sha256": "4d11c63d21477de6c0b7658b766aea748d9bec42323e8db19592088d4863d99d",
+      "rule_id": "SOURCE_COMPLETENESS",
+      "reference_severity": "YELLOW",
+      "source_locator": "Section 5",
+      "relationship": "unmapped",
+      "sali_targets": [],
+      "gap_note": "No exact source-completeness or missing-incorporated-contract-source concept was identified. Do not use the SALI Attachment concept: its definition concerns prejudgment seizure, not a missing contract attachment. Keep NEED_SOURCE as local workflow state."
+    },
+    {
+      "issue_instance_id": "NDA-19::UNLIMITED_LIABILITY",
+      "document_id": "NDA-19",
+      "source_path": "../inputs/heldout/NDA-19.txt",
+      "source_sha256": "8b7f9c2ba033c0ff8d45cfa9de5c9c712f94c0caca6e74f3bf563a53becd415a",
+      "rule_id": "UNLIMITED_LIABILITY",
+      "reference_severity": "RED",
+      "source_locator": "Section 8",
+      "relationship": "broader",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RZVXNAbvbm2JirFGPT4Ihy",
+          "label": "Liability Clause"
+        }
+      ],
+      "gap_note": "The broad topic is liability allocation. A Limitation of Liability Clause is not an exact match for an express unlimited obligation; lack of a cap alone is not a defect under this policy."
+    },
+    {
+      "issue_instance_id": "NDA-19::EMBEDDED_INSTRUCTION",
+      "document_id": "NDA-19",
+      "source_path": "../inputs/heldout/NDA-19.txt",
+      "source_sha256": "8b7f9c2ba033c0ff8d45cfa9de5c9c712f94c0caca6e74f3bf563a53becd415a",
+      "rule_id": "EMBEDDED_INSTRUCTION",
+      "reference_severity": "RED",
+      "source_locator": "Section 10",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/RDjGVtbkpmSvuHjMNBohZ8o",
+          "label": "Adversarial Machine Learning"
+        }
+      ],
+      "gap_note": "The SALI concept describes a broader attack domain. It is not an exact indirect prompt-injection or contract-review rule; instruction isolation and the human gate remain local controls."
+    },
+    {
+      "issue_instance_id": "NDA-20::PERSONAL_DATA",
+      "document_id": "NDA-20",
+      "source_path": "../inputs/heldout/NDA-20.txt",
+      "source_sha256": "0f1c351b238fd252d32bd268bd9d387528d78a0e662a63c9e634de54c8e2c503",
+      "rule_id": "PERSONAL_DATA",
+      "reference_severity": "RED",
+      "source_locator": "Section 1",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R7dzMUdHL38FTJVlhahuNbr",
+          "label": "Data Privacy Clause"
+        },
+        {
+          "iri": "http://lmss.sali.org/R9qSb7vRy506Q5Qr2GQetow",
+          "label": "Data Protection Agreement"
+        }
+      ],
+      "gap_note": "These tags support privacy routing and retrieval. They do not determine whether a DPA is required, whether processing is authorized or whether a privacy review has occurred."
+    },
+    {
+      "issue_instance_id": "NDA-20::CONTROLLED_TECH",
+      "document_id": "NDA-20",
+      "source_path": "../inputs/heldout/NDA-20.txt",
+      "source_sha256": "0f1c351b238fd252d32bd268bd9d387528d78a0e662a63c9e634de54c8e2c503",
+      "rule_id": "CONTROLLED_TECH",
+      "reference_severity": "RED",
+      "source_locator": "Section 1",
+      "relationship": "related",
+      "sali_targets": [
+        {
+          "iri": "http://lmss.sali.org/R9IoAlyOWrsbtjuz7qo2cd7",
+          "label": "Export Controls Practice"
+        }
+      ],
+      "gap_note": "Practice-area context is not an export classification, license decision or finding of an actual violation. No Export Control Claims tag is applied solely because technical data may be controlled."
+    }
+  ]
+}

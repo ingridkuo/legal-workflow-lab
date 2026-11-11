@@ -1,0 +1,69 @@
+{
+  "scope": "Synthetic evaluation; policy-rule match, source quote and location checks.",
+  "counting": "One document_id plus rule_id. Exact source support is required for a match. Extra under key includes supported cross-family overlap; it is not a legal-falsity determination.",
+  "review_credit": {
+    "statement": "Reference labels reviewed by Ingrid Kao",
+    "scope": "All 25 reference issue labels across 20 synthetic NDAs.",
+    "reviewed_on": "2026-11-10",
+    "labels_changed": 0
+  },
+  "reviews": [
+    {
+      "reference_issues": 9,
+      "red_reference_issues": 6,
+      "returned_findings": 10,
+      "supported_matches": 9,
+      "extra_under_key": 1,
+      "missed_reference_issues": 0,
+      "red_misses": 0,
+      "unsupported_quotes": 0,
+      "wrong_locations": 0,
+      "severity_differences": 0,
+      "route_differences": 0,
+      "status_differences": 0,
+      "human_gate_errors": 0,
+      "review": "v1_development",
+      "documents": 5,
+      "precision": 0.9,
+      "recall": 1.0
+    },
+    {
+      "reference_issues": 9,
+      "red_reference_issues": 6,
+      "returned_findings": 9,
+      "supported_matches": 9,
+      "extra_under_key": 0,
+      "missed_reference_issues": 0,
+      "red_misses": 0,
+      "unsupported_quotes": 0,
+      "wrong_locations": 0,
+      "severity_differences": 0,
+      "route_differences": 0,
+      "status_differences": 0,
+      "human_gate_errors": 0,
+      "review": "v2_development",
+      "documents": 5,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "reference_issues": 16,
+      "red_reference_issues": 9,
+      "returned_findings": 16,
+      "supported_matches": 16,
+      "extra_under_key": 0,
+      "missed_reference_issues": 0,
+      "red_misses": 0,
+      "unsupported_quotes": 0,
+      "wrong_locations": 0,
+      "severity_differences": 0,
+      "route_differences": 0,
+      "status_differences": 0,
+      "human_gate_errors": 0,
+      "review": "v2_heldout",
+      "documents": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  ]
+}

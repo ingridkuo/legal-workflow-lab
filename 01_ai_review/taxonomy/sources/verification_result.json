@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mode": "official_upstream_verified",
+  "checks_passed": 222,
+  "rule_types": 15,
+  "heldout_issue_instances": 16,
+  "selected_source_concepts": 20,
+  "source_commit": "3f9ac0c9357b2a971582ae79ede243511d47811d"
+}

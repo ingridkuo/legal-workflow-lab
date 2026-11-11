@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-11-10",
+  "scope": "Executed behavioral checks on synthetic records",
+  "tests_run": 29,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "external_actions": 0
+}

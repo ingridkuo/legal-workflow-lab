@@ -1,0 +1,52 @@
+{
+  "id": "ESC-102",
+  "received": "2026-11-05",
+  "channel": "Email to the legal intake mailbox",
+  "source": {
+    "path": "sources/ESC-102.txt",
+    "sha256": "994cb803a4f820327bd177728245da4c75e43a6a9bfa1b3354602c91e42c5ee8"
+  },
+  "quotes": [
+    "Either party may terminate this Agreement for convenience on sixty (60) days' written notice.",
+    "Fees paid before the effective date of termination are non-refundable.",
+    "Please confirm by Friday so I can tell the vendor."
+  ],
+  "known_facts": [
+    "The supplied Section 9.2 excerpt permits termination for convenience on 60 days' written notice.",
+    "The supplied Section 9.2 excerpt states that fees paid before the effective termination date are non-refundable.",
+    "The requester asks for confirmation by Friday."
+  ],
+  "unknowns": [
+    "Whether an amendment or order form changes Section 9.2.",
+    "The method of notice the agreement requires.",
+    "Whether any fees are prepaid beyond the termination date."
+  ],
+  "owner": "Fictional Contract Manager",
+  "owner_role": "contract_manager",
+  "next_action": "Pull the executed agreement, amendments and order forms and send them to Counsel with the Section 9.2 excerpt.",
+  "named_reviewer": "Fictional Counsel",
+  "decision": "Hold for named review. No termination notice is sent and no refund position is given to the vendor. KA-03 is past its review date, so it is not used to calculate the notice date.",
+  "guidance_used": [],
+  "authority_granted": {
+    "disclosure": false,
+    "export": false,
+    "approval_to_sign": false
+  },
+  "fact_support": [
+    {
+      "fact": "The supplied Section 9.2 excerpt permits termination for convenience on 60 days' written notice.",
+      "quote": "Either party may terminate this Agreement for convenience on sixty (60) days' written notice."
+    },
+    {
+      "fact": "The supplied Section 9.2 excerpt states that fees paid before the effective termination date are non-refundable.",
+      "quote": "Fees paid before the effective date of termination are non-refundable."
+    },
+    {
+      "fact": "The requester asks for confirmation by Friday.",
+      "quote": "Please confirm by Friday so I can tell the vendor."
+    }
+  ],
+  "interpretations": [
+    "A same-day termination or full-refund conclusion is unsupported by the supplied excerpt; amendments and the full executed agreement still need review."
+  ]
+}

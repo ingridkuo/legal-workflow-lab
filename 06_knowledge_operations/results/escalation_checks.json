@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ESC-101",
+    "ok": true,
+    "named_review_gate": true,
+    "guidance_used": [
+      "KA-01"
+    ],
+    "problems": [],
+    "preservation_status": "requested",
+    "action_authorized": false
+  },
+  {
+    "id": "ESC-102",
+    "ok": true,
+    "named_review_gate": true,
+    "guidance_used": [],
+    "problems": [],
+    "preservation_status": null,
+    "action_authorized": false
+  },
+  {
+    "id": "ESC-103",
+    "ok": true,
+    "named_review_gate": true,
+    "guidance_used": [],
+    "problems": [],
+    "preservation_status": null,
+    "action_authorized": false
+  }
+]

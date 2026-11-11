@@ -1,0 +1,59 @@
+{
+  "schema": "MIGRATION-DEMO-FACTS-1.0",
+  "data_classification": "eight fictional contracts; seeded defects",
+  "test_count": 30,
+  "tests_passed": 30,
+  "failures": 0,
+  "errors": 0,
+  "archived_reports_match_fresh_run": true,
+  "verified_report_files": [
+    "corrected_exceptions.csv",
+    "corrected_report.json",
+    "corrected_summary.md",
+    "flawed_exceptions.csv",
+    "flawed_report.json",
+    "flawed_summary.md",
+    "normalized_source.json"
+  ],
+  "scenarios": {
+    "flawed": {
+      "source_records": 8,
+      "destination_records": 8,
+      "clean_records": 3,
+      "held_records": 5,
+      "exception_groups": 4,
+      "exception_count": 4,
+      "exception_types": [
+        "DUPLICATE_REPOSITORY_ID",
+        "INVALID_DATE",
+        "REQUIRED_METADATA",
+        "SOURCE_REVISION_MISMATCH"
+      ],
+      "source_identity_reconciled": true,
+      "counts_reconcile": true,
+      "release_status": "HOLD_FOR_CORRECTION",
+      "release_approved": false,
+      "source_known_value_usd": "622000.50",
+      "source_records_with_unknown_value": 1
+    },
+    "corrected": {
+      "source_records": 8,
+      "destination_records": 8,
+      "clean_records": 8,
+      "held_records": 0,
+      "exception_groups": 0,
+      "exception_count": 0,
+      "exception_types": [],
+      "source_identity_reconciled": true,
+      "counts_reconcile": true,
+      "release_status": "READY_FOR_OWNER_SIGNOFF",
+      "release_approved": false,
+      "source_known_value_usd": "622000.50",
+      "source_records_with_unknown_value": 1
+    }
+  },
+  "test_command": "python3 test_migration.py",
+  "reproduce_command": "python3 migration_demo.py",
+  "verification_command": "python3 verify_demo.py",
+  "release_decision": "Metadata checks never authorize release. Record-owner signoff and platform checks remain required."
+}

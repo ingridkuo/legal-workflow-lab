@@ -1,0 +1,5 @@
+issue_id,code,source_record_id,field,expected,actual,owner,action
+EX-001,DUPLICATE_REPOSITORY_ID,"LEG-001, LEG-003",repository_record_id,unique destination identifier,rep-001,Legal operations / data steward,Resolve the collision against the source-to-destination crosswalk; retain both source records.
+EX-002,REQUIRED_METADATA,LEG-002,business_owner,nonempty text,,Legal operations / data steward,Obtain the value from the source and record owner; do not fill it by guesswork.
+EX-003,INVALID_DATE,LEG-006,expiry_date,valid YYYY-MM-DD date,2027-02-30,Legal operations / data steward,Verify the source date; reject impossible or ambiguous date values.
+EX-004,SOURCE_REVISION_MISMATCH,LEG-008,source_revision,3,1,Legal operations / data steward,Replace the stale destination revision after verifying the source version.

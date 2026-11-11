@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<contracts fictional="true" export_version="1.0">
+  <contract id="LEG-001" revision="2">
+    <contract_number>SYN-001</contract_number>
+    <party_name>Cedar Reach Components Ltd.</party_name>
+    <document_type>Supply</document_type>
+    <owner>Maya Chen</owner>
+    <signed_on>2026-01-10</signed_on>
+    <expires_on>2027-01-10</expires_on>
+    <amount_usd>120000</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-002" revision="3">
+    <contract_number>SYN-002</contract_number>
+    <party_name>Amber Harbor Labs Inc.</party_name>
+    <document_type>NDA</document_type>
+    <owner>Owen Reed</owner>
+    <signed_on>2026-02-10</signed_on>
+    <expires_on>2027-02-10</expires_on>
+    <amount_usd>0</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-003" revision="1">
+    <contract_number>SYN-003</contract_number>
+    <party_name>Pebble Creek Systems LLC</party_name>
+    <document_type>SaaS</document_type>
+    <owner>Leah Park</owner>
+    <signed_on>2026-03-10</signed_on>
+    <expires_on>2027-03-10</expires_on>
+    <amount_usd>48000.50</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-004" revision="2">
+    <contract_number>SYN-004</contract_number>
+    <party_name>Moss Vale Equipment Ltd.</party_name>
+    <document_type>Equipment</document_type>
+    <owner>Tariq Moss</owner>
+    <signed_on>2026-04-10</signed_on>
+    <expires_on>2027-04-10</expires_on>
+    <amount_usd>250000</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-005" revision="3">
+    <contract_number>SYN-005</contract_number>
+    <party_name>Silver Pine Services Inc.</party_name>
+    <document_type>Services</document_type>
+    <owner>Maya Chen</owner>
+    <signed_on>2026-05-10</signed_on>
+    <expires_on>2027-05-10</expires_on>
+    <amount_usd>36000</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-006" revision="1">
+    <contract_number>SYN-006</contract_number>
+    <party_name>Eastmere Analytics LLC</party_name>
+    <document_type>SaaS</document_type>
+    <owner>Owen Reed</owner>
+    <signed_on>2026-06-10</signed_on>
+    <expires_on>2027-06-10</expires_on>
+    <amount_usd>72000</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-007" revision="2">
+    <contract_number>SYN-007</contract_number>
+    <party_name>Alder Bay Manufacturing Ltd.</party_name>
+    <document_type>Supply</document_type>
+    <owner>Leah Park</owner>
+    <signed_on>2026-07-10</signed_on>
+    <expires_on>2027-07-10</expires_on>
+    <amount_usd></amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+  <contract id="LEG-008" revision="3">
+    <contract_number>SYN-008</contract_number>
+    <party_name>Copper Finch Software Inc.</party_name>
+    <document_type>SaaS</document_type>
+    <owner>Tariq Moss</owner>
+    <signed_on>2026-08-10</signed_on>
+    <expires_on>2027-08-10</expires_on>
+    <amount_usd>96000</amount_usd>
+    <visibility_group>Legal</visibility_group>
+  </contract>
+</contracts>

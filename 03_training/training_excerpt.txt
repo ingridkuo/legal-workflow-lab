@@ -1,0 +1,27 @@
+SAMPLE TRAINING EXERCISE
+Clause Harbor | NDA review | 10 November 2026
+All parties and contract language in this exercise are fictional.
+
+Sample review rules
+- Ordinary confidentiality: five years after expiry or termination.
+- Trade secrets: protection continues while the information qualifies under applicable law.
+- Shared-model training permission: RED; refer to Legal, Privacy, and Security for a decision.
+- Verify a quote and clause locator before using a review result. An individual passing clause leaves other issues open.
+
+1 Parties and purpose
+Aster Vale Systems Inc. and Northbank Components Ltd. exchange information to evaluate a possible component supply relationship. Aster Vale is the discloser for this exercise.
+
+2 Duration
+Ordinary confidentiality obligations continue for five years after expiry or termination. Trade secrets remain protected for as long as they qualify for protection under applicable law.
+
+3 Use
+The recipient may use the disclosed information to evaluate the proposed component supply relationship. The recipient may use the disclosed information to train shared machine-learning models without further consent.
+
+4 Required disclosure
+The recipient may disclose only information legally required, after giving notice and reasonable cooperation to the extent legally permitted.
+
+5 Return and destruction
+Within thirty days of a request or termination, the recipient will return or destroy the information, except for records required by law and inaccessible routine backups. Retained information remains confidential and may not be actively used.
+
+Facilitator reference
+Clause 3 conflicts with the sample rule on shared-model training. Capture the exact quote, name the rule, explain the disclosure concern, and refer it to Legal, Privacy, and Security. Clause 2 meets the sample duration rule; the clause 3 issue remains open.

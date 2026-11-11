@@ -1,0 +1,7 @@
+contract_id,contract_type,counterparty,business_owner,value_usd,value_escalation,overall_rag,risk_trigger,next_action,decision_limit
+C020,Equipment,Cedar Ridge Analytics LLC,Sam Patel,450000,RED VALUE BAND - SENIOR LEGAL / FINANCE / BUSINESS OWNER,RED,None,Review upcoming notice deadline,DEMONSTRATION ROUTING ONLY - NOT APPROVAL
+C006,Equipment,Aspen Bridge Works Ltd.,Jordan Lee,250000,RED VALUE BAND - SENIOR LEGAL / FINANCE / BUSINESS OWNER,RED,None,Obtain named exception approval,DEMONSTRATION ROUTING ONLY - NOT APPROVAL
+C005,Hardware supply,Stonewater Facilities LLC,Maya Chen,249999,YELLOW VALUE BAND - LEGAL / FINANCE,YELLOW,None,Confirm fallback position,DEMONSTRATION ROUTING ONLY - NOT APPROVAL
+C014,Subcontract,Cedar Ridge Analytics LLC,Jordan Lee,150000,YELLOW VALUE BAND - LEGAL / FINANCE,YELLOW,None,Obtain named exception approval,DEMONSTRATION ROUTING ONLY - NOT APPROVAL
+C018,SaaS,Aspen Bridge Works Ltd.,Jordan Lee,120000,YELLOW VALUE BAND - LEGAL / FINANCE,YELLOW,None,Obtain named exception approval,DEMONSTRATION ROUTING ONLY - NOT APPROVAL
+C004,Services,Birch Crossing Equipment Co.,Sam Patel,100000,YELLOW VALUE BAND - LEGAL / FINANCE,YELLOW,None,Review upcoming notice deadline,DEMONSTRATION ROUTING ONLY - NOT APPROVAL

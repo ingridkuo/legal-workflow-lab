@@ -1,0 +1,19 @@
+{
+  "request_id": "REQ-DEMO-07",
+  "type": "NDA",
+  "business_owner": "Maya Chen",
+  "value_usd": 8000,
+  "entity_verified": true,
+  "signature_authority": true,
+  "template_unchanged": true,
+  "routine_purpose": true,
+  "legal_reference_policy_validated": true,
+  "personal_data": false,
+  "controlled_technology": false,
+  "shared_model_training": false,
+  "unlimited_liability": false,
+  "commercial_exclusivity": false,
+  "residuals": false,
+  "sanctions_export_alert": false,
+  "other_red_flag": false
+}

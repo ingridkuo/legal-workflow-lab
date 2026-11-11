@@ -1,0 +1,9 @@
+Received: 2026-11-06 16:25 (fictional)
+From: Sam Patel, sales (fictional)
+To: legal intake mailbox
+Subject: NDA with a prospect
+
+Their redline only touches the residuals clause, so it's basically our standard NDA. Can I sign it under the self-service NDA process today?
+
+Counterparty redline, Section 6 (fictional):
+Recipient may use Residuals for any purpose, including the development of its products.

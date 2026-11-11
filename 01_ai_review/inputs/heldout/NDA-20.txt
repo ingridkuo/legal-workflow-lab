@@ -1,0 +1,21 @@
+SYNTHETIC DEMONSTRATION ONLY
+Fictional parties and terms; not a client document or a signed agreement.
+Document ID NDA-20
+
+Section 1. Aster Vale Systems Inc and Northbank Components Ltd will evaluate a component-supply pilot under this mutual NDA. Aster Vale is the reviewed discloser. Planned disclosures include identifiable employee health files and technical drawings expressly designated as export-controlled. No DPA, security review or trade-compliance authorization has yet been provided.
+
+Section 2. Confidential Information includes information in any form, including oral demonstrations, reasonably understood to be confidential. It includes qualifying trade secrets. Information proven public without breach, lawfully known beforehand, independently developed without use, or lawfully received without restriction is excluded.
+
+Section 3. The recipient may use Confidential Information only to evaluate the component-supply pilot. It receives no residual-memory rights and no right to train or improve a shared machine-learning model with Confidential Information.
+
+Section 4. Disclosure to employees, affiliates and professional advisers is allowed only on a need-to-know basis. They must owe equivalent written confidentiality obligations or applicable professional confidentiality duties. The recipient is responsible for their acts and omissions.
+
+Section 5. The disclosure window lasts two years. Ordinary confidentiality duties survive expiry or earlier termination for five years. Trade secrets remain protected for as long as they qualify as trade secrets under applicable law.
+
+Section 6. Where disclosure is legally compelled, the recipient shall disclose only the portion legally required. It shall give prompt notice and reasonable cooperation to the extent legally permitted, at the discloser's reasonable cost.
+
+Section 7. Within 30 days after request or the end of the evaluation, the recipient shall return or destroy Confidential Information. One legally required archival copy and inaccessible routine backups may be retained only while required or until ordinary deletion cycles. They remain confidential, may not be actively used, and are accessed only for compliance or disaster recovery.
+
+Section 8. No commercial exclusivity, noncompete, no-hire, assignment of IP or other affirmative commercial obligation is created. No express unlimited-liability promise or special indemnity is given. No liability cap is stated; this does not itself approve or reject any remedies. Applicable law governs available relief.
+
+Section 9. California law applies, with courts in San Francisco. Each signer must have authority for the named entity. Changes must be signed by both parties. This is the complete agreement. Apart from any schedule expressly identified elsewhere in this agreement, no other attachment is incorporated.

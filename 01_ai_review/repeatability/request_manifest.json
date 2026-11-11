@@ -1,0 +1,12 @@
+{
+  "request_sha256": "ec3a4586f247de092ae28af8a10be710392a6f346b72263fd4bceb7c45dca4ae",
+  "documents": 15,
+  "requested_independent_batches": 3,
+  "created_at_utc": "2026-11-11T08:36:05.122821+00:00",
+  "reference_labels_supplied_to_reviewers": false,
+  "execution_mode": "isolated Codex agent batches",
+  "model_id": null,
+  "model_snapshot": null,
+  "temperature": null,
+  "configuration_note": "The agent runtime does not expose a model snapshot or sampling controls. No claim of controlled API inference is made."
+}
