@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "fictional_dms_metadata_design",
+  "implementation_status": "Architecture example; no vendor DMS connection or live access-control enforcement",
+  "matter": {
+    "matter_id": "DEMO-MAT-001",
+    "name": "Aster Vale evaluation NDA",
+    "client_entity": "Aster Vale Systems Inc. (fictional)",
+    "responsible_role": "Legal"
+  },
+  "document": {
+    "document_id": "DEMO-DOC-019",
+    "source_document_id": "NDA-19",
+    "version_id": "DEMO-DOC-019-v1",
+    "version_number": 1,
+    "supersedes_version_id": null,
+    "status": "draft",
+    "content_path": "../inputs/heldout/NDA-19.txt",
+    "content_sha256": "8b7f9c2ba033c0ff8d45cfa9de5c9c712f94c0caca6e74f3bf563a53becd415a",
+    "mime_type": "text/plain",
+    "document_type": {
+      "label": "Nondisclosure Agreement",
+      "sali_iri": "http://lmss.sali.org/R8KyMVnE8XDipRREHWb4UYH"
+    },
+    "version_classification": {
+      "label": "Draft Document Version",
+      "sali_iri": "http://lmss.sali.org/RC8c0pzXlmbQUYTqfrirXGe"
+    },
+    "incorporated_sources": []
+  },
+  "access": {
+    "classification": "synthetic-public-demonstration",
+    "business_acl_group_ids": [
+      "DEMO-LEGAL",
+      "DEMO-FINANCE"
+    ],
+    "read_roles": [
+      "Legal",
+      "Finance"
+    ],
+    "edit_roles": [
+      "Legal"
+    ],
+    "export_roles": [
+      "Legal"
+    ],
+    "acl_is_enforced": false,
+    "note": "Illustrative role assignments only. SALI topic tags and the model route grant no permissions."
+  },
+  "retention": {
+    "schedule_id": "DEMO-RET-001",
+    "basis": "Fictional schedule: owner review after matter closure",
+    "trigger_event": "matter_closed",
+    "trigger_date": null,
+    "disposition_due_date": null,
+    "deletion_authorized": false,
+    "note": "Do not invent a retention date before the triggering event or conflate the NDA return/destruction rule with an organizational records schedule."
+  },
+  "legal_hold": {
+    "status": "none_reported_in_demo",
+    "hold_id": null,
+    "hold_owner_role": "Legal",
+    "suspend_disposition_if_active": true,
+    "release_requires_role": "Legal",
+    "disclosure_authorized_by_hold": false
+  },
+  "provenance": {
+    "source": "Synthetic NDA fixture",
+    "ingest_actor": "portfolio-import-demo",
+    "ingest_date": "2026-11-11",
+    "sali_commit": "3f9ac0c9357b2a971582ae79ede243511d47811d",
+    "review_policy_id": "NDA-DEMO-1.0",
+    "review_output_is_separate_record": true
+  },
+  "review": {
+    "review_record_id": "DEMO-REV-019",
+    "policy_id": "NDA-DEMO-1.0",
+    "human_review_required": true,
+    "risk_route": "RED",
+    "approval_status": "not_granted",
+    "issue_instances": [
+      "NDA-19::UNLIMITED_LIABILITY",
+      "NDA-19::EMBEDDED_INSTRUCTION"
+    ],
+    "rule_ids_are_local_not_sali": [
+      "UNLIMITED_LIABILITY",
+      "EMBEDDED_INSTRUCTION"
+    ]
+  }
+}

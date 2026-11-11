@@ -1,0 +1,46 @@
+[
+  {
+    "id": "KA-01",
+    "title": "Records retention or export request from an outside sender",
+    "version": 2,
+    "status": "approved",
+    "eligible": true,
+    "access_roles": [
+      "legal_intake",
+      "counsel"
+    ],
+    "reasons": []
+  },
+  {
+    "id": "KA-02",
+    "title": "Self-service NDA checklist",
+    "version": 1,
+    "status": "draft",
+    "eligible": false,
+    "access_roles": [
+      "legal_intake",
+      "sales"
+    ],
+    "reasons": [
+      "status is draft",
+      "no approval record",
+      "no review date",
+      "missing or invalid review/approval date"
+    ]
+  },
+  {
+    "id": "KA-03",
+    "title": "Calculating a renewal or termination notice date",
+    "version": 1,
+    "status": "approved",
+    "eligible": false,
+    "access_roles": [
+      "contract_manager",
+      "legal_intake",
+      "counsel"
+    ],
+    "reasons": [
+      "review overdue since 2026-08-01"
+    ]
+  }
+]

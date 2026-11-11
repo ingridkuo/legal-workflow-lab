@@ -1,0 +1,19 @@
+# Local credentials and private work
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*Private_Review*
+private_review/
+
+# Generated local state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+.DS_Store
+
+# Preserve API runs privately until reviewed for publication
+api_studies/

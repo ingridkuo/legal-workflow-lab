@@ -1,0 +1,4 @@
+run_id,reference_issues,returned_findings,tp,fp,fn,presence_tp,unsupported_quotes,wrong_locations,severity_differences,reference_locator_differences,reference_route_differences,internal_route_errors,reference_status_differences,internal_status_errors,documents,precision,recall
+run_a,16,16,16,0,0,16,0,0,0,0,0,0,0,0,15,1.0,1.0
+run_b,16,16,16,0,0,16,0,0,0,0,0,0,0,0,15,1.0,1.0
+run_c,16,16,16,0,0,16,0,0,0,0,0,0,0,0,15,1.0,1.0

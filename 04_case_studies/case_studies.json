@@ -1,0 +1,47 @@
+[
+  {
+    "n": "01",
+    "title": "BMS licensing: resolve ownership without losing use rights",
+    "context": "PATENT AND TECHNOLOGY LICENSE",
+    "body": "The negotiation had stalled over ownership of improvements to a battery-management system. I separated ownership of new improvements from the rights needed to use them, then aligned those rights with sublicensing and technology-transfer obligations. I drafted and negotiated the cross-border patent and technology license, including staged payments linked to the agreed transfer milestones.",
+    "result_label": "Outcome",
+    "outcome": "The parties resolved the impasse, and both signed.",
+    "featured_summary": "I separated ownership of improvements from use rights to resolve a licensing impasse; both parties signed."
+  },
+  {
+    "n": "02",
+    "title": "Cloud services: make the confidentiality remedy work",
+    "context": "LIABILITY CAP / REMEDY STRUCTURE",
+    "body": "I identified a general liability cap that could undermine a separately stated confidentiality remedy. My redline proposed expressly excluding that remedy from the cap and broadening its trigger from disclosure of confidential information to breach of the confidentiality obligations. I reviewed how the liability cap interacted with the remedy and incident provisions. The signed terms also included repair commitments and service credits.",
+    "result_label": "Outcome",
+    "outcome": "The signed agreement raised the liability cap.",
+    "featured_summary": "I proposed a confidentiality-remedy carveout and broader breach trigger after identifying an interaction with the general liability cap. The signed agreement raised the cap."
+  },
+  {
+    "n": "03",
+    "title": "Equipment procurement: connect acceptance, payment and remedies",
+    "context": "DELIVERY / ACCEPTANCE / PAYMENT",
+    "body": "I built a contract-by-contract record of planned and actual delivery, acceptance evidence, and deposit, delivery and acceptance payments. The technical acceptance requirements included a 95% operating rate. When delivery or performance fell short, I connected the record to the relevant contractual cure and termination provisions and drafted default and termination notices. The handoff kept the clause, date, evidence and next action together.",
+    "result_label": "Outcome",
+    "outcome": "Prepared the procurement tracker and drafted the default and termination notices.",
+    "featured_summary": "I connected a 95% operating-rate acceptance requirement with delivery, payment and remedy records, then drafted default and termination notices."
+  },
+  {
+    "n": "04",
+    "title": "Transaction execution: turn legal requirements into a closing sequence",
+    "context": "CORPORATE DIVISION / CROSS-BORDER ACQUISITION",
+    "body": "I wrote a 17-step execution plan for a corporate division in Taiwan, sequencing resolutions, filings and registrations and checking the transaction figures. I later wrote a 12-stage plan for a cross-border share acquisition, covering overseas counsel, diligence, payment arrangements, share transfers and handover. Each plan made the dependencies and responsible person visible so the team could work from one coordinated document.",
+    "result_label": "Outcome",
+    "outcome": "Both transactions closed.",
+    "featured_summary": "I prepared 17-step division and 12-stage cross-border acquisition plans with dependencies, owners and checked transaction figures. Both transactions closed."
+  },
+  {
+    "n": "05",
+    "title": "Legal data: obtain permission for the intended product use",
+    "context": "GOVERNMENT DATA SOURCE / LEGAL PRODUCT",
+    "body": "At Lawsnote, I worked on obtaining government permission to use Taiwan's Ministry of Justice legal database as a data source for an AI product. I treated access to the database and permission to use its data in a product as separate questions, and connected the permission workstream with the product's intended use and the boundaries discussed with engineers.",
+    "result_label": "Outcome",
+    "outcome": "Permission was obtained to use the Ministry of Justice legal database as a data source for the AI product.",
+    "featured_summary": "At Lawsnote, I worked on the Ministry of Justice data-use permission for an AI product. The permission was obtained."
+  }
+]

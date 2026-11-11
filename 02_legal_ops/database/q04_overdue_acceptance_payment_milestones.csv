@@ -1,0 +1,4 @@
+obligation_id,contract_id,counterparty,milestone,owner,planned_date,actual_date,days_past_due,acceptance_required,acceptance_evidence,invoiced_usd,paid_usd,reviewer_check,status,source_locator
+OB004,C002,Cedar Ridge Analytics LLC,Payment,Jordan Lee,2026-11-09,\N,1,No,Pending,0,0,Verified,DUE DATE PASSED - COMPLETION UNCONFIRMED,C002 schedule 2
+OB024,C012,Aspen Bridge Works Ltd.,Payment,Sam Patel,2026-11-09,\N,1,No,Missing,4800,0,Verified,DUE DATE PASSED - COMPLETION UNCONFIRMED,C012 schedule 2
+OB044,C022,Birch Crossing Equipment Co.,Payment,Jordan Lee,2026-11-09,\N,1,No,Verified,0,0,Verified,DUE DATE PASSED - COMPLETION UNCONFIRMED,C022 schedule 2

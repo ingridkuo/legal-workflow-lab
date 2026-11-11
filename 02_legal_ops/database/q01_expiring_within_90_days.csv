@@ -1,0 +1,13 @@
+contract_id,contract_type,counterparty,business_owner,renewal_date,days_until_renewal,value_usd,computed_rag,calculated_notice_date,notice_gate,source_locator
+C007,Hardware supply,Northbank Components Ltd.,Alex Rivera,2026-11-10,0,84000,GREEN,2026-11-10,CALCULATED - VERIFY NOTICE DELIVERY,C007 agreement record
+C002,NDA,Cedar Ridge Analytics LLC,Jordan Lee,2026-11-20,10,0,GREEN,2026-11-10,CALCULATED - VERIFY NOTICE DELIVERY,C002 agreement record
+C013,Lease,Northbank Components Ltd.,Maya Chen,2026-11-30,20,75000,YELLOW,\N,MANUAL REVIEW - NOTICE BASIS,C013 agreement record
+C021,Hardware supply,Briar Glen Field Services Ltd.,Maya Chen,2026-12-01,21,61000,GREEN,2026-11-01,CALCULATED - VERIFY NOTICE DELIVERY,C021 agreement record
+C001,NDA,Northbank Components Ltd.,Maya Chen,2026-12-10,30,1000,GREEN,2026-11-10,CALCULATED - VERIFY NOTICE DELIVERY,C001 agreement record
+C010,SaaS,Birch Crossing Equipment Co.,Jordan Lee,2026-12-15,35,68000,RED,2026-11-15,CALCULATED - VERIFY NOTICE DELIVERY,C010 agreement record
+C014,Subcontract,Cedar Ridge Analytics LLC,Jordan Lee,2026-12-25,45,150000,YELLOW,2026-11-25,CALCULATED - VERIFY NOTICE DELIVERY,C014 agreement record
+C023,Services,Stonewater Facilities LLC,Alex Rivera,2027-01-01,52,\N,NEEDS INPUT,\N,MANUAL REVIEW - MISSING NOTICE METHOD,C023 agreement record
+C004,Services,Birch Crossing Equipment Co.,Sam Patel,2027-01-09,60,100000,YELLOW,\N,MANUAL REVIEW - NOTICE BASIS,C004 agreement record
+C017,Equipment,Stonewater Facilities LLC,Maya Chen,2027-01-10,61,99000,YELLOW,2026-12-11,CALCULATED - VERIFY NOTICE DELIVERY,C017 agreement record
+C012,Services,Aspen Bridge Works Ltd.,Sam Patel,2027-01-20,71,15000,RED,2026-12-21,CALCULATED - VERIFY NOTICE DELIVERY,C012 agreement record
+C005,Hardware supply,Stonewater Facilities LLC,Maya Chen,2027-02-08,90,249999,YELLOW,2027-01-09,CALCULATED - VERIFY NOTICE DELIVERY,C005 agreement record

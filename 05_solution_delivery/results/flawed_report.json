@@ -1,0 +1,67 @@
+{
+  "schema": "CONTRACT-MIGRATION-DEMO-1.1",
+  "scenario": "flawed",
+  "as_of_date": "2026-11-10",
+  "data_classification": "synthetic demonstration",
+  "source_records": 8,
+  "destination_records": 8,
+  "exception_groups": 4,
+  "exception_count": 4,
+  "exception_types": [
+    "DUPLICATE_REPOSITORY_ID",
+    "INVALID_DATE",
+    "REQUIRED_METADATA",
+    "SOURCE_REVISION_MISMATCH"
+  ],
+  "clean_records": 3,
+  "held_records": 5,
+  "source_identity_reconciled": true,
+  "counts_reconcile": true,
+  "source_known_value_usd": "622000.50",
+  "source_records_with_unknown_value": 1,
+  "validation_gate_passed": false,
+  "release_status": "HOLD_FOR_CORRECTION",
+  "release_approved": false,
+  "exceptions": [
+    {
+      "issue_id": "EX-001",
+      "code": "DUPLICATE_REPOSITORY_ID",
+      "source_record_id": "LEG-001, LEG-003",
+      "field": "repository_record_id",
+      "expected": "unique destination identifier",
+      "actual": "rep-001",
+      "owner": "Legal operations / data steward",
+      "action": "Resolve the collision against the source-to-destination crosswalk; retain both source records."
+    },
+    {
+      "issue_id": "EX-002",
+      "code": "REQUIRED_METADATA",
+      "source_record_id": "LEG-002",
+      "field": "business_owner",
+      "expected": "nonempty text",
+      "actual": "",
+      "owner": "Legal operations / data steward",
+      "action": "Obtain the value from the source and record owner; do not fill it by guesswork."
+    },
+    {
+      "issue_id": "EX-003",
+      "code": "INVALID_DATE",
+      "source_record_id": "LEG-006",
+      "field": "expiry_date",
+      "expected": "valid YYYY-MM-DD date",
+      "actual": "2027-02-30",
+      "owner": "Legal operations / data steward",
+      "action": "Verify the source date; reject impossible or ambiguous date values."
+    },
+    {
+      "issue_id": "EX-004",
+      "code": "SOURCE_REVISION_MISMATCH",
+      "source_record_id": "LEG-008",
+      "field": "source_revision",
+      "expected": 3,
+      "actual": 1,
+      "owner": "Legal operations / data steward",
+      "action": "Replace the stale destination revision after verifying the source version."
+    }
+  ]
+}

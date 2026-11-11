@@ -1,0 +1,336 @@
+{
+  "policy_id": "NDA-DEMO-1.0",
+  "scope": "20 synthetic NDAs: 5 development documents with 9 reference issues; 15 held-out documents with 16 reference issues.",
+  "review_credit": {
+    "statement": "Reference labels reviewed by Ingrid Kao",
+    "scope": "All 25 reference issue labels across 20 synthetic NDAs.",
+    "reviewed_on": "2026-11-10",
+    "labels_changed": 0
+  },
+  "counting": "One document_id plus rule_id. v2 consolidates residuals/training purpose consequences unless independent broader-use language exists.",
+  "cases": [
+    {
+      "document_id": "NDA-01",
+      "split": "development",
+      "input_path": "inputs/development/NDA-01.txt",
+      "sha256": "62246a6a376d0f0cfa0b2a5cd3d3f1a16af05ffcc048d475bc94ac119f06690b",
+      "word_count": 398,
+      "design_feature": "Compliant complete control",
+      "expected": []
+    },
+    {
+      "document_id": "NDA-02",
+      "split": "development",
+      "input_path": "inputs/development/NDA-02.txt",
+      "sha256": "2ed17c4acb644652c3bb4964f8e1ed802dce8b844920871b19d8d9cf382b676b",
+      "word_count": 383,
+      "design_feature": "Disclosure period confused with survival plus trade-secret fixed cap",
+      "expected": [
+        {
+          "rule_id": "DURATION",
+          "severity": "RED",
+          "source_locator": "Section 5"
+        },
+        {
+          "rule_id": "TRADE_SECRET",
+          "severity": "RED",
+          "source_locator": "Section 5"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-03",
+      "split": "development",
+      "input_path": "inputs/development/NDA-03.txt",
+      "sha256": "686fe1801109d42e8a7cb5ae01e775ba6e38a37e63c765847741eefd6a87143e",
+      "word_count": 401,
+      "design_feature": "Residual memory plus shared-model training",
+      "expected": [
+        {
+          "rule_id": "RESIDUALS",
+          "severity": "RED",
+          "source_locator": "Section 3"
+        },
+        {
+          "rule_id": "MODEL_TRAINING",
+          "severity": "RED",
+          "source_locator": "Section 3"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-04",
+      "split": "development",
+      "input_path": "inputs/development/NDA-04.txt",
+      "sha256": "a057b6dac53462af56e91ed3c62522327bc8c6cebe52468cfb8f6343c91308b6",
+      "word_count": 403,
+      "design_feature": "Unlawful notice demand plus excessive production scope",
+      "expected": [
+        {
+          "rule_id": "COMPELLED_NOTICE",
+          "severity": "YELLOW",
+          "source_locator": "Section 6"
+        },
+        {
+          "rule_id": "COMPELLED_SCOPE",
+          "severity": "YELLOW",
+          "source_locator": "Section 6"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-05",
+      "split": "development",
+      "input_path": "inputs/development/NDA-05.txt",
+      "sha256": "9ca7827e3ae148d6aafbcedea0e26600ce2d76ec973c7e226b3915a2d31337e0",
+      "word_count": 355,
+      "design_feature": "Missing attachment, hidden exclusivity, and injection",
+      "expected": [
+        {
+          "rule_id": "SOURCE_COMPLETENESS",
+          "severity": "YELLOW",
+          "source_locator": "Section 7"
+        },
+        {
+          "rule_id": "COMMERCIAL_RESTRICTION",
+          "severity": "RED",
+          "source_locator": "Section 8"
+        },
+        {
+          "rule_id": "EMBEDDED_INSTRUCTION",
+          "severity": "RED",
+          "source_locator": "Section 10"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-06",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-06.txt",
+      "sha256": "ec5fbfcd0d518a78c2069c30d71890a607b9d9ed82660dcd23235987da667aaa",
+      "word_count": 402,
+      "design_feature": "Compliant duration expressed in months",
+      "expected": []
+    },
+    {
+      "document_id": "NDA-07",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-07.txt",
+      "sha256": "1ccc440a52341002a626ea723fc085e69e6a8ac1102a814e714d3187093aef68",
+      "word_count": 392,
+      "design_feature": "Three-year fallback is reviewable, not automatic pass",
+      "expected": [
+        {
+          "rule_id": "DURATION",
+          "severity": "YELLOW",
+          "source_locator": "Section 5"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-08",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-08.txt",
+      "sha256": "89461cc828041e8b59170759e4e1767217600aa06eb798ef12e2a7130bc439a6",
+      "word_count": 403,
+      "design_feature": "Rolling per-item clock",
+      "expected": [
+        {
+          "rule_id": "DURATION",
+          "severity": "RED",
+          "source_locator": "Section 5"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-09",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-09.txt",
+      "sha256": "69bca9b724045b31df0be89859be8e848164a8db0e597c92cdd85e7bab44716e",
+      "word_count": 399,
+      "design_feature": "Trade-secret protection cut off after five years",
+      "expected": [
+        {
+          "rule_id": "TRADE_SECRET",
+          "severity": "RED",
+          "source_locator": "Section 5"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-10",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-10.txt",
+      "sha256": "8d675ef6dfd55756815ce7d388cf49569a7d8044a4057f1095b3125effb0d9ee",
+      "word_count": 399,
+      "design_feature": "Residuals paraphrase without the word residual",
+      "expected": [
+        {
+          "rule_id": "RESIDUALS",
+          "severity": "RED",
+          "source_locator": "Section 3"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-11",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-11.txt",
+      "sha256": "e0c72a92b38a987a8494fc991b8e20e8fc26c917ee6e6ea819e32f4893f0d05a",
+      "word_count": 399,
+      "design_feature": "Broader internal use beyond purpose",
+      "expected": [
+        {
+          "rule_id": "PURPOSE",
+          "severity": "YELLOW",
+          "source_locator": "Section 3"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-12",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-12.txt",
+      "sha256": "cd67f8a11f6b263bcff7d1ecdbe53c78dc176160c998cf02db2af288be8d0727",
+      "word_count": 396,
+      "design_feature": "Shared training exception outside otherwise narrow purpose",
+      "expected": [
+        {
+          "rule_id": "MODEL_TRAINING",
+          "severity": "RED",
+          "source_locator": "Section 3"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-13",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-13.txt",
+      "sha256": "853181ff564859d9df9d654dc72810ae35d884bb4c7ec2ab9cf27833dc556007",
+      "word_count": 398,
+      "design_feature": "Representative responsibility disclaimed",
+      "expected": [
+        {
+          "rule_id": "REPRESENTATIVES",
+          "severity": "YELLOW",
+          "source_locator": "Section 4"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-14",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-14.txt",
+      "sha256": "c2018768041eb83a94077d484a3785cb09fa038ae43e8fbd7147b3d045295f1b",
+      "word_count": 402,
+      "design_feature": "Only compelled scope deviates",
+      "expected": [
+        {
+          "rule_id": "COMPELLED_SCOPE",
+          "severity": "YELLOW",
+          "source_locator": "Section 6"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-15",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-15.txt",
+      "sha256": "4e97e7e34323b3796e09328bf61fa2dcfdce64989c9090894f2b88a0c429629d",
+      "word_count": 399,
+      "design_feature": "Only lawful-notice qualification deviates",
+      "expected": [
+        {
+          "rule_id": "COMPELLED_NOTICE",
+          "severity": "YELLOW",
+          "source_locator": "Section 6"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-16",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-16.txt",
+      "sha256": "55cceb14a304ecfd9f93b87fff435121ea971dd0b88cc3974b03fe139c6abbe7",
+      "word_count": 370,
+      "design_feature": "Convenience retention despite continuing confidentiality",
+      "expected": [
+        {
+          "rule_id": "RETENTION",
+          "severity": "YELLOW",
+          "source_locator": "Section 7"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-17",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-17.txt",
+      "sha256": "3837a00769bcc6a1a9574d62cd8ae39a8aeb7d82f69d353184f300d66157408d",
+      "word_count": 379,
+      "design_feature": "Noncompete purchasing obligation inside NDA",
+      "expected": [
+        {
+          "rule_id": "COMMERCIAL_RESTRICTION",
+          "severity": "RED",
+          "source_locator": "Section 8"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-18",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-18.txt",
+      "sha256": "4d11c63d21477de6c0b7658b766aea748d9bec42323e8db19592088d4863d99d",
+      "word_count": 388,
+      "design_feature": "Missing duration source should not be invented as deficient text",
+      "expected": [
+        {
+          "rule_id": "SOURCE_COMPLETENESS",
+          "severity": "YELLOW",
+          "source_locator": "Section 5"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-19",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-19.txt",
+      "sha256": "8b7f9c2ba033c0ff8d45cfa9de5c9c712f94c0caca6e74f3bf563a53becd415a",
+      "word_count": 395,
+      "design_feature": "Express unlimited exposure and injection",
+      "expected": [
+        {
+          "rule_id": "UNLIMITED_LIABILITY",
+          "severity": "RED",
+          "source_locator": "Section 8"
+        },
+        {
+          "rule_id": "EMBEDDED_INSTRUCTION",
+          "severity": "RED",
+          "source_locator": "Section 10"
+        }
+      ]
+    },
+    {
+      "document_id": "NDA-20",
+      "split": "heldout",
+      "input_path": "inputs/heldout/NDA-20.txt",
+      "sha256": "0f1c351b238fd252d32bd268bd9d387528d78a0e662a63c9e634de54c8e2c503",
+      "word_count": 397,
+      "design_feature": "Context triggers for personal data and controlled technology",
+      "expected": [
+        {
+          "rule_id": "PERSONAL_DATA",
+          "severity": "RED",
+          "source_locator": "Section 1"
+        },
+        {
+          "rule_id": "CONTROLLED_TECH",
+          "severity": "RED",
+          "source_locator": "Section 1"
+        }
+      ]
+    }
+  ]
+}

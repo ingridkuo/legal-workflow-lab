@@ -1,0 +1,86 @@
+{
+  "note": "Article metadata. Each hash is taken from the registered text; a changed article or cited policy needs a new approval.",
+  "articles": [
+    {
+      "id": "KA-01",
+      "title": "Records retention or export request from an outside sender",
+      "path": "articles/KA-01.md",
+      "version": 2,
+      "status": "approved",
+      "owner": "Fictional Legal Intake Owner",
+      "access_roles": [
+        "legal_intake",
+        "counsel"
+      ],
+      "next_review_due": "2027-03-15",
+      "approval_id": "APR-0012",
+      "sources": [
+        {
+          "path": "policies/RD-1_records_and_disclosure.md",
+          "sections": [
+            "2",
+            "3",
+            "4"
+          ],
+          "sha256": "77f51d88fafc5c734f11226549aa4a263fade98973d6cea7d21a3b6a7b3d1060",
+          "version": 3
+        }
+      ],
+      "sha256": "af94f53623b8b1146dbc056af81c3f7488ba576e4d3f0d4c2fd99878fdbfda7e",
+      "reviewed_on": "2026-09-15"
+    },
+    {
+      "id": "KA-02",
+      "title": "Self-service NDA checklist",
+      "path": "articles/KA-02.md",
+      "version": 1,
+      "status": "draft",
+      "owner": "Fictional Legal Operations Lead",
+      "access_roles": [
+        "legal_intake",
+        "sales"
+      ],
+      "next_review_due": null,
+      "approval_id": null,
+      "sources": [
+        {
+          "path": "policies/CT-2_contract_handling.md",
+          "sections": [
+            "1"
+          ],
+          "sha256": "bcdf5b6c05818af018789cc1b96bd3dc8deaf7e3605fabd453183c80252d9972",
+          "version": 5
+        }
+      ],
+      "sha256": "5bf7bebcf8e2b4617b8e0df3ab68fc162d866fb986f8298a87b56d17c1a25b30",
+      "reviewed_on": null
+    },
+    {
+      "id": "KA-03",
+      "title": "Calculating a renewal or termination notice date",
+      "path": "articles/KA-03.md",
+      "version": 1,
+      "status": "approved",
+      "owner": "Fictional Contract Manager",
+      "access_roles": [
+        "contract_manager",
+        "legal_intake",
+        "counsel"
+      ],
+      "next_review_due": "2026-08-01",
+      "approval_id": "APR-0007",
+      "sources": [
+        {
+          "path": "policies/CT-2_contract_handling.md",
+          "sections": [
+            "2"
+          ],
+          "sha256": "bcdf5b6c05818af018789cc1b96bd3dc8deaf7e3605fabd453183c80252d9972",
+          "version": 5
+        }
+      ],
+      "sha256": "7b9510fd84f6b0d887dfdd315cfbbda315ef9b410f5dcb5bfdf17de229b317b0",
+      "reviewed_on": "2025-08-01"
+    }
+  ]
+}

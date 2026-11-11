@@ -1,0 +1,21 @@
+{
+  "schema": "CONTRACT-MIGRATION-DEMO-1.1",
+  "scenario": "corrected",
+  "as_of_date": "2026-11-10",
+  "data_classification": "synthetic demonstration",
+  "source_records": 8,
+  "destination_records": 8,
+  "exception_groups": 0,
+  "exception_count": 0,
+  "exception_types": [],
+  "clean_records": 8,
+  "held_records": 0,
+  "source_identity_reconciled": true,
+  "counts_reconcile": true,
+  "source_known_value_usd": "622000.50",
+  "source_records_with_unknown_value": 1,
+  "validation_gate_passed": true,
+  "release_status": "READY_FOR_OWNER_SIGNOFF",
+  "release_approved": false,
+  "exceptions": []
+}

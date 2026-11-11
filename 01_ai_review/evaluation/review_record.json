@@ -1,0 +1,13 @@
+{
+  "reviewed_by": "Ingrid Kao",
+  "role": "Attorney (Taiwan)",
+  "reviewed_on": "2026-11-10",
+  "scope": "All 25 reference issue labels across 20 synthetic NDAs.",
+  "labels_changed": 0,
+  "reference_file": "evaluation/reference_labels.json",
+  "reference_file_sha256": "7225a4df397876b872ba41964d88ef6bc9c0f4a9eb423aeedf6d16bb60f8e345",
+  "reference_cases_canonical_sha256": "063158ad909edfd1c0387f3e9d9071f74b444ba440bbeb8843689b691ea57673",
+  "policy_rules_canonical_sha256": "3da997c95febb47f3819dec7ca8b5f085ca55268dfc1b418f8c5917085c814f1",
+  "source_inputs_verified": 20,
+  "label_review_scope": "Reference issue labels; held-out model performance remains 15 documents and 16 reference issues."
+}

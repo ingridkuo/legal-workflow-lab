@@ -1,0 +1,54 @@
+{
+  "id": "ESC-101",
+  "received": "2026-11-03",
+  "channel": "Email to the legal intake mailbox",
+  "source": {
+    "path": "sources/ESC-101.txt",
+    "sha256": "a8ed60278a50808085ddbe9b2e65d05e664ea3b9717f7b6e48b2c62d2fa96c4c"
+  },
+  "quotes": [
+    "Please retain the records for Account DEMO-71 and send me the account export.",
+    "I have not attached an authorization document."
+  ],
+  "known_facts": [
+    "The sender requests retention of records for Account DEMO-71 and an account export.",
+    "The sender states that no authorization document is attached."
+  ],
+  "unknowns": [
+    "The sender's identity.",
+    "The sender's authority to make the request.",
+    "The scope of the request and any preservation or disclosure duty that applies."
+  ],
+  "owner": "Fictional Legal Intake Owner",
+  "owner_role": "legal_intake",
+  "next_action": "Immediately ask the system owner to pause routine deletion for DEMO-71 pending Counsel review; track acknowledgment. Separately verify identity and authority through a contact already on file.",
+  "named_reviewer": "Fictional Counsel",
+  "decision": "Hold for Fictional Counsel. Preservation pause requested; system-owner acknowledgment remains open. Nothing is disclosed or exported until identity and authority are verified and Counsel approves the scope.",
+  "guidance_used": [
+    "KA-01"
+  ],
+  "authority_granted": {
+    "disclosure": false,
+    "export": false,
+    "approval_to_sign": false
+  },
+  "fact_support": [
+    {
+      "fact": "The sender requests retention of records for Account DEMO-71 and an account export.",
+      "quote": "Please retain the records for Account DEMO-71 and send me the account export."
+    },
+    {
+      "fact": "The sender states that no authorization document is attached.",
+      "quote": "I have not attached an authorization document."
+    }
+  ],
+  "interpretations": [
+    "The request needs separate preservation and disclosure decisions under the fictional RD-1 policy."
+  ],
+  "preservation": {
+    "status": "requested",
+    "requested_action": "Pause routine deletion for DEMO-71 pending Counsel review.",
+    "system_owner_confirmation": false,
+    "legal_duty_determined": false
+  }
+}

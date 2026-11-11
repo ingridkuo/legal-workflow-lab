@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-11-10",
+  "articles_checked": 3,
+  "eligible_articles": [
+    "KA-01"
+  ],
+  "blocked_articles": {
+    "KA-02": [
+      "status is draft",
+      "no approval record",
+      "no review date",
+      "missing or invalid review/approval date"
+    ],
+    "KA-03": [
+      "review overdue since 2026-08-01"
+    ]
+  },
+  "escalations_checked": 3,
+  "escalations_passing": 3,
+  "named_review_gates": 3,
+  "note": "Synthetic records and simulated approvals. Checks verify recorded evidence, not legal correctness or real identity. No disclosure, export, signing or preservation action is executed."
+}

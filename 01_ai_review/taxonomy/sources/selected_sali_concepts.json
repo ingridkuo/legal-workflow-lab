@@ -1,0 +1,178 @@
+{
+  "source": {
+    "publisher": "SALI Alliance",
+    "repository": "https://github.com/sali-legal/LMSS",
+    "commit": "3f9ac0c9357b2a971582ae79ede243511d47811d",
+    "commit_date_utc": "2026-03-10T23:01:15Z",
+    "retrieved_on": "2026-11-11",
+    "source_url": "https://raw.githubusercontent.com/sali-legal/LMSS/3f9ac0c9357b2a971582ae79ede243511d47811d/LMSS.owl",
+    "source_sha256": "51acefd5051aa8f52e60d6dd142b0925c7cec3a5d789bfbe4fcbe69021c9bba1",
+    "source_bytes": 17832342,
+    "version_scope": "Pinned main commit; not represented as a formal release",
+    "license_in_repository": "MIT; original notice retained in sources/SALI_LICENSE.txt",
+    "standard_website_license_note": "The SALI website separately describes CC BY-ND. This package provides an author-created crosswalk and compact verbatim source records; it does not alter or republish the ontology as a competing standard."
+  },
+  "selection": "Verbatim labels, definitions and direct parent IRIs selected from the pinned official OWL source. This is a compact source excerpt, not a complete ontology.",
+  "concepts": [
+    {
+      "iri": "http://lmss.sali.org/Rq9S0ffWaPRlWGpIfqg2Uy",
+      "label": "\"Representatives\" Definition",
+      "definition": "",
+      "parent_iris": [
+        "http://lmss.sali.org/R74IJAT8MHMqUZeBJR7txV1"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RDjGVtbkpmSvuHjMNBohZ8o",
+      "label": "Adversarial Machine Learning",
+      "definition": "Adversarial Machine Learning refers to the study and design of algorithms that can withstand intentional manipulation or adversarial attacks. These attacks aim to deceive machine learning models by supplying deceptive inputs, highlighting vulnerabilities and the need for robust defenses in AI systems.",
+      "parent_iris": [
+        "http://lmss.sali.org/RBHMad8oNmYXkYHOHZLCgqv"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RDOq8HJJl8YdcwBdCZmjlOW",
+      "label": "Confidentiality Clause",
+      "definition": "A confidentiality clause is a provision in a contract that requires one or more parties to keep certain information confidential and not disclose it to others.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R7dzMUdHL38FTJVlhahuNbr",
+      "label": "Data Privacy Clause",
+      "definition": "A Data Privacy Clause is a provision in a contract that outlines the obligations and rights of parties with respect to the collection, use, and protection of personal data.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R9qSb7vRy506Q5Qr2GQetow",
+      "label": "Data Protection Agreement",
+      "definition": "A Data Protection Agreement is a contract that outlines the terms and conditions under which personal data will be processed, stored, and protected. It's especially relevant in jurisdictions with strict data protection laws, ensuring that both parties are aware of and comply with their obligations to protect personal data from breaches and unauthorized access.",
+      "parent_iris": [
+        "http://lmss.sali.org/RVYssk48JQ3Ouv98v8U1Ai"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RCOOyyZhW3l3cdenBfC5LT4",
+      "label": "Document Management",
+      "definition": "Document Management: The process of organizing, storing, and retrieving electronic or physical documents in a systematic and efficient manner, often involving the use of software tools and workflows.",
+      "parent_iris": [
+        "http://lmss.sali.org/R9B8sRCK209t5Y8LlU4f62a"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R9rAx8tTZaguHOK8Gku2h8L",
+      "label": "Document Version",
+      "definition": "Attributes of a document's version (e.g., version 2, version modified date, version description, version title).",
+      "parent_iris": [
+        "http://lmss.sali.org/RDSepz944v79Sc4zhy0qy2X"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RC8c0pzXlmbQUYTqfrirXGe",
+      "label": "Draft Document Version",
+      "definition": "Draft Document Version refers to an initial or intermediate version of a document that is still under review and subject to revisions and edits. This version serves as a preliminary outline or proposal and is not considered final or authoritative.",
+      "parent_iris": [
+        "http://lmss.sali.org/R9rAx8tTZaguHOK8Gku2h8L"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R7bddbBa7EIzMF8MI0EvJD",
+      "label": "Exclusive Agreement Clause",
+      "definition": "An exclusive agreement clause is a provision in a contract that restricts one or both parties from entering into similar agreements with other parties during the term of the contract.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDgEiiX23zftUP0Mggfc68n"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R9IoAlyOWrsbtjuz7qo2cd7",
+      "label": "Export Controls Practice",
+      "definition": "Export Controls Practice involves the legal frameworks and regulations governing the export of goods, services, and technology from a country. This practice area includes compliance with export control laws, export licensing, restrictions on certain goods and technologies, and enforcement of export regulations.",
+      "parent_iris": [
+        "http://lmss.sali.org/R8x520MB0xME0o4Wrg2o1so"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RC2H4sdBxtPmzSlLf3H63Iu",
+      "label": "Legal Hold Management",
+      "definition": "Legal Hold Management refers to the process of preserving relevant information and documents related to a legal matter, in order to comply with legal obligations and avoid spoliation of evidence.",
+      "parent_iris": [
+        "http://lmss.sali.org/R9QcJpEJ19eAN8glCzxd4Wo"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R8b3GwW18cMlKh0m1z3FjbJ",
+      "label": "Legally Compelled Disclosure Clause",
+      "definition": "A Legally Compelled Disclosure Clause is a provision in a contract that requires one or both parties to disclose information if legally required to do so.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RZVXNAbvbm2JirFGPT4Ihy",
+      "label": "Liability Clause",
+      "definition": "A Liability Clause is a provision in a contract that outlines the responsibility of one party to compensate the other party for any losses or damages incurred as a result of a breach of the contract.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R8wA0A8nszg5VoIH0n48aOO",
+      "label": "Machine Learning",
+      "definition": "Machine Learning (ML) is a branch of Artificial Intelligence (AI) that focuses on developing systems capable of learning from data to perform tasks without being explicitly programmed. Learning involves optimizing model parameters through computational techniques to enhance the model's performance for specific training tasks",
+      "parent_iris": [
+        "http://lmss.sali.org/RBHMad8oNmYXkYHOHZLCgqv"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R86B9DI1HdnEmOAclhBcRd1",
+      "label": "Non-Competition Covenant",
+      "definition": "A \"Non-Competition Covenant\" is a contractual agreement in which one party agrees not to engage in business activities that would compete with another party, typically for a specified period and within a defined geographic region. Such covenants are often used in employment contracts, business sale agreements, and partnerships to protect trade secrets, customer relationships, and other valuable business assets from potential competition by the restricted party.",
+      "parent_iris": [
+        "http://lmss.sali.org/RBdRbQ6LheYkEvM4LBGBHps"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R8KyMVnE8XDipRREHWb4UYH",
+      "label": "Nondisclosure Agreement",
+      "definition": "A Nondisclosure Agreement (NDA) is a legal contract between two or more parties that outlines confidential material, knowledge, or information that the parties wish to share with one another for certain purposes, but wish to restrict access to or by third parties.",
+      "parent_iris": [
+        "http://lmss.sali.org/R9u4hHZJYFWdtdGcgkoqz1x"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/RDWI8MUWQm1rMjaPbJYLX21",
+      "label": "Permitted Disclosure Clause",
+      "definition": "A Permitted Disclosure Clause is a provision in a contract that allows for the sharing of confidential information between parties under certain circumstances.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R5Ke1kRNzBeyrIie2uqlMn",
+      "label": "Retention and Litigation Hold Management",
+      "definition": "Retention and Litigation Hold Management refers to the process of preserving and managing electronic data that may be relevant to a legal matter, in order to comply with legal obligations and avoid spoliation sanctions.",
+      "parent_iris": [
+        "http://lmss.sali.org/R9O8DfnQ5nFlMiycGkJ0eDG"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R97IAAj73aQDTLnBU1eL5zB",
+      "label": "Survival Clause",
+      "definition": "A survival clause is a provision in a contract that specifies which obligations and rights of the parties will continue to be in effect after the termination or expiration of the contract.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDe0RKU39BlhcyACJW30ZLc"
+      ]
+    },
+    {
+      "iri": "http://lmss.sali.org/R71j0369f2ok96vA6rQOxa0",
+      "label": "Trade Secret Law",
+      "definition": "Law relating to trade secrets.",
+      "parent_iris": [
+        "http://lmss.sali.org/RDdMucRftztKt4Ag7WzUxX"
+      ]
+    }
+  ]
+}

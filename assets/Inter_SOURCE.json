@@ -1,0 +1,17 @@
+{
+  "family": "Inter",
+  "license": "SIL Open Font License 1.1",
+  "source": "https://github.com/google/fonts/tree/main/ofl/inter",
+  "source_file": "Inter[opsz,wght].ttf",
+  "static_instances": {
+    "optical_size": 14,
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "web": "Inter.woff2",
+  "note": "Bundled locally; no remote font request."
+}

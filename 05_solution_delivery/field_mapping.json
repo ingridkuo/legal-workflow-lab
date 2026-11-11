@@ -1,0 +1,64 @@
+{
+  "schema": "CONTRACT-MIGRATION-DEMO-1.1",
+  "source_format": "fictional XML export",
+  "destination_format": "local JSON repository export",
+  "destination_identifier": "Sequential REP identifier in this fixture; uniqueness is case-insensitive in the destination",
+  "fields": [
+    {
+      "xml_source": "@id",
+      "target_field": "source_record_id",
+      "transform": "text"
+    },
+    {
+      "xml_source": "@revision",
+      "target_field": "source_revision",
+      "transform": "integer"
+    },
+    {
+      "xml_source": "contract_number",
+      "target_field": "contract_number",
+      "transform": "text"
+    },
+    {
+      "xml_source": "party_name",
+      "target_field": "counterparty",
+      "transform": "text"
+    },
+    {
+      "xml_source": "document_type",
+      "target_field": "agreement_type",
+      "transform": "text"
+    },
+    {
+      "xml_source": "owner",
+      "target_field": "business_owner",
+      "transform": "text"
+    },
+    {
+      "xml_source": "signed_on",
+      "target_field": "signed_date",
+      "transform": "iso_date"
+    },
+    {
+      "xml_source": "expires_on",
+      "target_field": "expiry_date",
+      "transform": "iso_date"
+    },
+    {
+      "xml_source": "amount_usd",
+      "target_field": "value_usd",
+      "transform": "usd_decimal_string",
+      "nullable": true
+    },
+    {
+      "xml_source": "visibility_group",
+      "target_field": "access_group",
+      "transform": "text"
+    }
+  ],
+  "approved_access_groups": [
+    "Legal",
+    "Legal-Finance",
+    "Restricted"
+  ]
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>NDA Review Lab · Local Prototype</title>
+<style>
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#202738;background:#f6f7fb;font-synthesis:none;line-height:1.5;font-size:15px}*{box-sizing:border-box}body{margin:0}button,a{touch-action:manipulation}a{color:#4347a2;text-underline-offset:3px}button{font:inherit}header{border-bottom:1px solid #dfe3ed;background:#fff}.topline{max-width:1120px;margin:auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:700;letter-spacing:-.02em;font-size:17px}.tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#555b6d;background:#f0f1f7;border:1px solid #e2e4ed;border-radius:5px;padding:5px 8px}main{max-width:1120px;padding:48px 32px 36px;margin:auto}.eyebrow{font-size:11px;font-weight:700;color:#5b5fa5;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}h1{font-size:clamp(30px,4vw,43px);letter-spacing:-.045em;line-height:1.13;margin:0 0 18px;font-weight:650}p{margin:0 0 16px}.intro{max-width:730px;color:#626a7a;font-size:16px}.callout{margin:24px 0 30px;border-left:3px solid #7275bd;background:#eeeff8;padding:13px 17px;color:#454d65;font-size:13px}.workflow{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;background:#fff;border:1px solid #dfe3ed;border-radius:10px;padding:22px 24px;margin-bottom:22px}.statusline{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:650}.dot{width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:#8a91a2}.dot.pass{background:#34785a}.dot.fail{background:#b24c49}.dot.running{background:#656ac3}.subtle{font-size:12px;color:#737c8c;margin:6px 0 0}.primary{border:1px solid #464ba0;background:#5056ad;color:#fff;border-radius:6px;padding:10px 19px;cursor:pointer;white-space:nowrap;font-weight:650;font-size:13px}.primary:hover{background:#414796}.primary:disabled{opacity:.65;cursor:wait}.primary:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #a0a4df;outline-offset:4px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:26px}.card{background:#fff;border:1px solid #dfe3ed;border-radius:8px;padding:19px 20px}.value{font-size:29px;font-weight:650;letter-spacing:-.04em;line-height:1.2}.label{font-size:11px;color:#6c7484;margin-top:6px;font-weight:550}.section-head{display:flex;gap:20px;align-items:baseline;justify-content:space-between;margin-bottom:12px}h2{font-size:17px;font-weight:650;letter-spacing:-.02em;margin:0}.saved-note{font-size:11px;color:#737c8c;margin:0}.table-wrap{background:#fff;border:1px solid #dfe3ed;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px;text-align:right;white-space:nowrap}th{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#737b8b;background:#fafbfe;font-weight:650}td,th{padding:14px 18px;border-bottom:1px solid #e9ebf2}th:first-child,td:first-child{text-align:left}tbody tr:last-child td{border-bottom:0}td:first-child{font-weight:600;color:#414a60}.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}.panel{background:#fff;border:1px solid #dfe3ed;border-radius:8px;padding:22px}.panel h2{margin-bottom:12px}.panel p{font-size:13px;color:#626b7b}.panel p:last-child{margin-bottom:0}.checks{list-style:none;padding:0;margin:0;font-size:12px;color:#626b7b;columns:2;column-gap:15px}.checks li{break-inside:avoid;padding:5px 0}.checks li::before{content:"·";color:#6c72b4;font-weight:700;margin-right:7px}.links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;margin:16px 0 0}.links a[hidden]{display:none}details{border-top:1px solid #e5e7ef;padding-top:12px;margin-top:18px}summary{font-size:12px;cursor:pointer;color:#60698a}pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;color:#646c7c;max-height:240px;overflow:auto;background:#f7f8fc;padding:12px;border-radius:5px}.error{color:#a44343;font-size:12px;margin:8px 0 0;max-width:680px}.footer{margin-top:28px;border-top:1px solid #dfe3ed;padding-top:17px;font-size:11px;color:#7b8393;display:flex;justify-content:space-between;gap:16px}@media(max-width:740px){main{padding:32px 20px}.topline{padding:18px 20px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.two-cols{grid-template-columns:1fr}.workflow{grid-template-columns:1fr;padding:20px;gap:16px}.primary{justify-self:start}.section-head{display:block}.saved-note{margin-top:5px}td,th{padding:13px 14px}.checks{columns:1}.footer{display:block}.footer span{display:block;margin-bottom:6px}}@media(prefers-reduced-motion:no-preference){.dot.running{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}}
+</style>
+</head>
+<body>
+<header><div class="topline"><span class="brand">NDA Review Lab</span><span class="tag">Local prototype</span></div></header>
+<main>
+<p class="eyebrow">Policy → structured findings → evidence checks</p>
+<h1>Review output you can inspect.</h1>
+<p class="intro">A full-stack local prototype connecting a browser to a Python validation CLI. Recheck three archived reviewer batches against the same frozen prompt, policy and 15 synthetic agreements.</p>
+<div class="callout"><strong>Archived model output. New local verification.</strong> “Run checks” validates saved files and recomputes their metrics. It makes no new model calls, reviews no new contract and grants no legal approval.</div>
+
+<section class="workflow" aria-label="Local verification">
+ <div aria-live="polite"><div class="statusline"><span id="status-dot" class="dot"></span><span id="status">Connecting to local server…</span></div><p id="status-detail" class="subtle">Checks run only when requested.</p><p id="error" class="error" hidden></p></div>
+ <button id="run" type="button" class="primary" disabled>Run checks</button>
+</section>
+
+<section class="cards" aria-label="Archived study scope">
+ <div class="card"><div id="batches" class="value">—</div><div class="label">Archived agent batches</div></div>
+ <div class="card"><div id="documents" class="value">—</div><div class="label">Documents per batch</div></div>
+ <div class="card"><div id="consistent" class="value">—</div><div class="label">Reference issues supported in all batches</div></div>
+ <div class="card"><div class="value">0</div><div class="label">New model calls from this app</div></div>
+</section>
+
+<section aria-label="Batch metrics">
+ <div class="section-head"><h2>Preserved batch results</h2><p id="metrics-note" class="saved-note">Awaiting saved metrics</p></div>
+ <div class="table-wrap"><table><thead><tr><th scope="col">Batch</th><th scope="col">Documents</th><th scope="col">TP</th><th scope="col">FP</th><th scope="col">FN</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead><tbody id="metrics"><tr><td colspan="7">Metrics have not loaded.</td></tr></tbody></table></div>
+ <div class="links"><a id="json-link" href="/evidence/repeatability.json" hidden>Download metrics JSON</a><a id="onepager-link" href="/evidence/one-pager.pdf" hidden>Read the results PDF</a></div>
+</section>
+
+<div class="two-cols">
+ <section class="panel"><h2>What is checked</h2><ul id="checks" class="checks"><li>Checks appear after a local run.</li></ul><details><summary>Inspect the latest API response</summary><pre id="response">No check has run in this server session.</pre></details></section>
+ <section class="panel"><h2>How to read these results</h2><p>TP requires a matching document/rule pair and an exact quotation in its cited Section. FP counts unmatched or unsupported returned findings; FN counts missed reference issues. Precision = TP/(TP+FP); recall = TP/(TP+FN). A zero denominator is undefined.</p><p id="consistency-note">Agreement measures repeatability, not correctness. A stable miss remains a miss.</p><p>These three independent agent batches reuse one synthetic set. Model snapshot and sampling settings were not exposed. This is not a controlled API study or a production integration.</p><p>Every review retains a human-review gate. Legal interpretation and authorization remain with the reviewer.</p></section>
+</div>
+<footer class="footer"><span>Ingrid Kao · Synthetic NDA evaluation</span><span>Browser → loopback HTTP → fixed Python CLI → saved evidence</span></footer>
+</main>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const errors = {check_timeout:"The fixed local check timed out. See the command-line check for details.",check_unavailable:"The local check could not start.",check_failed_without_json:"The CLI did not return a JSON result. Run the documented command to inspect the failure.",invalid_check_result:"The CLI returned an unexpected result format.",check_already_running:"A local check is already running.",check_failed:"The local check failed. Run the documented command for details."};
+const number = value => Number.isFinite(value) ? String(value) : "—";
+const percent = value => Number.isFinite(value) ? `${(100*value).toFixed(1)}%` : "undefined";
+function cell(value){const el=document.createElement("td");el.textContent=String(value);return el;}
+function renderMetrics(summary, fresh){
+ if(!summary || !Array.isArray(summary.runs)) return;
+ $("batches").textContent=number(summary.independent_agent_batches);
+ $("documents").textContent=number(summary.documents_per_batch);
+ const c=summary.consistency||{};
+ $("consistent").textContent=`${number(c.positive_issues_supported_in_every_run)}/${number(c.positive_reference_issues)}`;
+ $("metrics").replaceChildren(...summary.runs.map(run=>{const row=document.createElement("tr");[run.run_id,number(run.documents),number(run.tp),number(run.fp),number(run.fn),percent(run.precision),percent(run.recall)].forEach(v=>row.append(cell(v)));return row;}));
+ $("metrics-note").textContent=fresh ? "Recomputed from archived outputs in this session" : "Saved metrics · not yet checked in this session";
+ $("consistency-note").textContent=`${number(c.unstable_positive_issue_detections)} reference-positive detections changed across batches; ${number(c.positive_issues_missed_in_every_run)} were missed in every batch. Agreement measures repeatability, not correctness.`;
+}
+function renderCheck(data){
+ $("response").textContent=JSON.stringify(data,null,2);
+ const passed=data.status==="PASS";
+ $("status").textContent=passed ? "Checks passed" : data.status==="FAIL" ? "Checks reported differences" : "Check could not complete";
+ $("status-dot").className=`dot ${passed?"pass":"fail"}`;
+ $("status-detail").textContent=data.checked_at ? `Verified ${data.checked_at} · archived outputs only · no new model inference` : "No successful verification time recorded.";
+ $("error").hidden=!data.error;
+ $("error").textContent=data.error ? (errors[data.error]||"The local request failed.") : "";
+ if(data.result){renderMetrics(data.result.repeatability,true);const checks=Array.isArray(data.result.checks)?data.result.checks:[];$("checks").replaceChildren(...checks.map(text=>{const li=document.createElement("li");li.textContent=text;return li;}));}
+}
+async function loadStatus(){
+ const response=await fetch("/api/status",{cache:"no-store"});
+ if(!response.ok)throw new Error("server");
+ const data=await response.json();
+ renderMetrics(data.saved_repeatability,false);
+ if(data.last_check)renderCheck(data.last_check);else{$("status").textContent="Ready for a local check";$("status-detail").textContent="Saved metrics loaded. No check has run in this server session.";}
+ const links=data.evidence_links||{};$("json-link").hidden=!links.repeatability_json;$("onepager-link").hidden=!links.one_pager;
+ $("run").disabled=false;
+}
+$("run").addEventListener("click",async()=>{
+ $("run").disabled=true;$("run").textContent="Checking…";$("status").textContent="Running fixed local checks…";$("status-dot").className="dot running";$("error").hidden=true;
+ try{const response=await fetch("/api/check",{method:"POST",headers:{"Content-Type":"application/json"},body:"{}",cache:"no-store"});const data=await response.json();renderCheck(data);}
+ catch(error){$("status").textContent="Local server unavailable";$("status-dot").className="dot fail";$("error").hidden=false;$("error").textContent="Start scripts/web_lab.py and open its printed loopback URL.";}
+ finally{$("run").disabled=false;$("run").textContent="Run checks";}
+});
+loadStatus().catch(()=>{$("status").textContent="Local server required";$("status-dot").className="dot fail";$("status-detail").textContent="Start scripts/web_lab.py and open its printed loopback URL; opening this HTML file alone cannot run checks.";});
+</script>
+</body>
+</html>

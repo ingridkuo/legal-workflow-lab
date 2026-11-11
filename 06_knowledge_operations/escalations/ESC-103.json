@@ -1,0 +1,45 @@
+{
+  "id": "ESC-103",
+  "received": "2026-11-06",
+  "channel": "Email to the legal intake mailbox",
+  "source": {
+    "path": "sources/ESC-103.txt",
+    "sha256": "d8715a2a8965f4bb2cf8d4c1f0904d263bddbc09ebadd14967924f5e3d1d4680"
+  },
+  "quotes": [
+    "Recipient may use Residuals for any purpose, including the development of its products.",
+    "Their redline only touches the residuals clause, so it's basically our standard NDA. Can I sign it under the self-service NDA process today?"
+  ],
+  "known_facts": [
+    "The supplied Section 6 redline permits use of Residuals for any purpose, including product development.",
+    "The requester describes the document as a redline and asks to use the self-service process."
+  ],
+  "unknowns": [
+    "What information will be shared under the NDA.",
+    "Whether any business reason supports accepting residuals language."
+  ],
+  "owner": "Fictional Legal Intake Owner",
+  "owner_role": "legal_intake",
+  "next_action": "Route the NDA to Legal review and send Counsel the redline and a description of the planned disclosures.",
+  "named_reviewer": "Fictional Counsel",
+  "decision": "Not eligible for the self-service NDA process: the template has changed, and a residuals right is a RED issue in the sample NDA playbook. Hold for named review. KA-02 is still a draft and is not used.",
+  "guidance_used": [],
+  "authority_granted": {
+    "disclosure": false,
+    "export": false,
+    "approval_to_sign": false
+  },
+  "fact_support": [
+    {
+      "fact": "The supplied Section 6 redline permits use of Residuals for any purpose, including product development.",
+      "quote": "Recipient may use Residuals for any purpose, including the development of its products."
+    },
+    {
+      "fact": "The requester describes the document as a redline and asks to use the self-service process.",
+      "quote": "Their redline only touches the residuals clause, so it's basically our standard NDA. Can I sign it under the self-service NDA process today?"
+    }
+  ],
+  "interpretations": [
+    "The changed residuals language prevents treatment as an unchanged approved template under the fictional self-service policy."
+  ]
+}

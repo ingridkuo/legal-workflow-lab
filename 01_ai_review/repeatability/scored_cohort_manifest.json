@@ -1,0 +1,20 @@
+{
+  "scope": "Inputs and unmodified saved outputs used for this local scoring cohort.",
+  "hashes": {
+    "frozen_request": "ec3a4586f247de092ae28af8a10be710392a6f346b72263fd4bceb7c45dca4ae",
+    "reference_labels": "7225a4df397876b872ba41964d88ef6bc9c0f4a9eb423aeedf6d16bb60f8e345",
+    "policy": "b11abe7e7878506e6f467f43f7752c411338e4d1b3a124b404beec40a8f32c0d",
+    "schema": "476d7de46c196f6355ec7786f1fb3f8648002de89ff9276fb4c640209153cf05",
+    "prompt": "ee3379ff5de9e0b0b659a7583fbfa11b3f13edaf3013ddec8d444444a5259526",
+    "runs": {
+      "run_a": "e0dc36f77d761ad9f55e1cacc32827296553d09fbc09472765f2dc4e4815e681",
+      "run_b": "84f2b95388190d28a0f3f5f40b788cd61c9bc983723b1172ac7147c238842517",
+      "run_c": "704e151e18d414ad8a168c63a6a3eca21a193c9f35598d0c109e9a0f063ddca5"
+    }
+  },
+  "execution_mode": "isolated Codex agent batches",
+  "model_id": null,
+  "model_snapshot": null,
+  "temperature": null,
+  "configuration_note": "The agent runtime does not expose a model snapshot or sampling controls. No claim of controlled API inference is made."
+}
