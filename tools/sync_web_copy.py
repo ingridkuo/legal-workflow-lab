@@ -1,4 +1,4 @@
-"""Build the recruiter homepage from canonical case and demonstration evidence."""
+"""Build the portfolio homepage from canonical case and demonstration evidence."""
 from pathlib import Path
 import html
 import json
