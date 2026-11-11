@@ -2,12 +2,12 @@
 
 Ingrid Kao | Independent project | November 11, 2026
 
-## 先從這裡開始
+## Start here
 
-1. 開啟 `Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx`，先看 **Weekly Report**，再看 **Intake Register** 和 **Approval Rules**。
-2. 複製一份試算表練習：把 SC-001 的金額從 50,000 改成 50,000.01，觀察核准路徑增加 Finance；把 **Nonstandard terms** 改成 Yes，觀察 Senior Legal 升級。
-3. 查看到期日、保證到期提醒及每週件數。黃色欄位可調整，計算欄位使用公式。
-4. 閱讀四頁 workflow 規格及一頁業主方工程風險比較。後者引用 AIA A201-2017 與台灣工程會 1141230 版本。
+1. Open `Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx`. Start with **Weekly Report**, then review **Intake Register** and **Approval Rules**.
+2. Make a practice copy. Change SC-001's amount from 50,000 to 50,000.01 to add Finance to the approval route. Change **Nonstandard terms** to Yes to require Senior Legal review.
+3. Review due dates, guarantee expiry alerts and weekly counts. Yellow cells are editable; calculated fields use formulas.
+4. Read the four-page workflow specification and the one-page owner-side construction issues comparison. The comparison cites AIA A201-2017 and the Taiwan PCC construction contract template dated December 30, 2025.
 
 Excel contains editable demonstration records and live formulas. It does not authenticate approvers or create electronic signatures.
 
@@ -42,7 +42,7 @@ py workflow.py --db practice_events.jsonl report --as-of 2026-11-11 --out-dir pr
 
 Try a company signature before the subcontractor signature or use an unassigned reviewer. The engine rejects the transition. See `engine/README.md` for guided intake, document holds, reassignment, event history and tests.
 
-The supplied report uses the unchanged ten-case baseline: 2 received this week, 1 executed this week, 8 open, 3 overdue, and 3 guarantee alerts. Your practice report changes after you approve or sign a record.
+The supplied report uses the unchanged ten-case baseline: 2 received this week, 1 executed this week, 8 open, 3 overdue, 2 guarantees expiring within 30 days and 1 missing required guarantee. Your practice report changes after you approve or sign a record.
 
 ## What has been built
 
