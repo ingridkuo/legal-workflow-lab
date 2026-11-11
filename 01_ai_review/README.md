@@ -100,6 +100,6 @@ The first command validates the frozen cohort and scores the three new saved bat
 - [One-page repeated-generation results](repeatability/Repeatability_Results.pdf)
 - [Per-run metrics](repeatability/per_run_metrics.csv) and [issue consistency](repeatability/per_issue_consistency.csv)
 - [SALI crosswalk and DMS concepts](taxonomy/Taxonomy_and_DMS.md)
-- [Technical scope and interview walkthrough](Technical_Scope.md)
+- [Technical scope and demonstration walkthrough](Technical_Scope.md)
 
 The new study comprises three isolated agent batches using the same frozen request: 45 document reviews. Each batch returned 16 supported reference matches with no extra or missed reference issues. All 16 positive instances were found in every batch. Model snapshots and sampling settings were not exposed. These observations are separate from a controlled provider-version API benchmark; the reused synthetic partition does not establish performance on new agreements.

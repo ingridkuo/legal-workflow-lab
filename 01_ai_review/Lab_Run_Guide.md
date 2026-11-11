@@ -34,6 +34,6 @@ The main command checks the three frozen batches and preserves their input/outpu
 - [Per-run precision and recall](repeatability/per_run_metrics.csv)
 - [All 225 document/rule detection decisions](repeatability/per_issue_consistency.csv)
 - [SALI mapping and DMS design](taxonomy/Taxonomy_and_DMS.md)
-- [Technical scope and a short interview walkthrough](Technical_Scope.md)
+- [Technical scope and a short demonstration walkthrough](Technical_Scope.md)
 
 The 16 positive reference instances are distributed across 15 documents; the policy has 15 rule types. Three new isolated agent batches reviewed the same frozen sources without reference labels in their inputs. The runtime did not expose model snapshots or sampling settings. Treat the result as a repeated-generation work sample, not a fixed-provider benchmark or production-accuracy estimate.

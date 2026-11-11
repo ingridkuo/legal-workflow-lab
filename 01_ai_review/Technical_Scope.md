@@ -6,12 +6,6 @@ Ingrid Kao
 
 I turn legal review standards into executable checks. This lab combines a browser interface, a Python HTTP service, structured findings and a scoring harness. The controls verify source identity, output format, exact quotations, rule-family matches and escalation requirements.
 
-**Suggested resume wording**
-
-Built a local full-stack legal-review prototype with a browser interface, Python API and repeatable evaluation harness; tested structured findings against source contracts and reviewed reference labels, and mapped the review taxonomy to SALI identifiers with explicit coverage gaps.
-
-Use the wording only after running the demonstration and explaining the code and its boundaries. The prototype and portfolio describe a current work sample; they are separate from my historical Lawsnote implementation work.
-
 ## What the terms mean here
 
 | Term | Inspectable implementation | Scope |
@@ -23,7 +17,7 @@ Use the wording only after running the demonstration and explaining the code and
 | SALI crosswalk | Stable external concept identifiers are attached to local rules and document metadata, with mapping relationships and gaps recorded. | The local risk policy and approval requirements remain separate. |
 | DMS design | Document/version identity, content hash, matter link, source provenance, access classification, retention and legal hold fields are modeled. | Metadata examples do not implement an enterprise DMS or enforce permissions. |
 
-## A short interview walkthrough
+## A short demonstration walkthrough
 
 1. Start the local web Lab and select **Run checks**. Explain that this checks recorded generations; it does not contact a model.
 2. Open NDA-19. Show the source-contained approval instruction and the unlimited-liability clause, then the two findings.
