@@ -39,15 +39,15 @@ These are separate datasets. The eight-document exploratory review does not repl
 
 ## Files
 
-- [Application Work Samples](Ingrid_Kao_Work_Samples.pdf) — six self-contained pages, with internal page navigation and no relative-file links.
-- [Linked portfolio edition](Ingrid_Kao_Work_Samples_Web.pdf) — the same six-page content, with links to the companion exhibits. Keep this edition at this folder's top level.
-- [AI contract review method](01_ai_review/AI_Contract_Review_Method.pdf) — rubric, fixed tests, evidence checks and error analysis.
-- [Contract operations tracker](02_legal_ops/Contract_Operations_Tracker.xlsx) — contracts, obligations, milestones and a dashboard.
+- [Application Work Samples](Ingrid_Kao_Work_Samples.pdf): six self-contained pages, with internal page navigation and no relative-file links.
+- [Linked portfolio edition](Ingrid_Kao_Work_Samples_Web.pdf): the same six-page content, with links to the companion exhibits.
+- [AI contract review method](01_ai_review/AI_Contract_Review_Method.pdf): rubric, fixed tests, evidence checks and error analysis.
+- [Contract operations tracker](02_legal_ops/Contract_Operations_Tracker.xlsx): contracts, obligations, milestones and a dashboard.
 - [Commercial contracting handbook](02_legal_ops/Commercial_Contracting_Handbook.pdf) and [workflow guide](02_legal_ops/Legal_Operations_Workflow.pdf).
-- [Five selected case studies](04_case_studies/Selected_Case_Studies.pdf) — anonymized matters from my practice.
-- [Training and customer success](03_training/Training_and_Customer_Success.pdf) — an additional sample on adoption and product feedback.
-- [Migration and data quality](05_solution_delivery/index.html) — runnable XML-to-JSON mapping, four seeded defect groups, corrected results and 30 behavioral tests.
-- [Escalation and knowledge operations](06_knowledge_operations/index.html) — source-backed handoffs, maintained articles and 29 gate tests.
+- [Five selected case studies](04_case_studies/Selected_Case_Studies.pdf): anonymized matters from my practice.
+- [Training and customer success](03_training/Training_and_Customer_Success.pdf): an additional sample on adoption and product feedback.
+- [Migration and data quality](05_solution_delivery/index.html): runnable XML-to-JSON mapping, four seeded defect groups, corrected results and 30 behavioral tests.
+- [Escalation and knowledge operations](06_knowledge_operations/index.html): source-backed handoffs, maintained articles and 29 gate tests.
 
 ## A guided model demonstration
 
