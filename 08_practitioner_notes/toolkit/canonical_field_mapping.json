@@ -1,0 +1,14 @@
+{
+  "required": ["ticket_id", "subject", "case_kind", "impact", "assigned_coordinator", "revision", "reported_at", "evidence_scope", "source_ref"],
+  "external_to_canonical": {
+    "ticket_id": "external_key",
+    "subject": "summary",
+    "case_kind": "category",
+    "impact": "priority",
+    "assigned_coordinator": "coordinator",
+    "revision": "source_version",
+    "reported_at": "created_at",
+    "evidence_scope": "evidence_visibility",
+    "source_ref": "source_ref"
+  }
+}

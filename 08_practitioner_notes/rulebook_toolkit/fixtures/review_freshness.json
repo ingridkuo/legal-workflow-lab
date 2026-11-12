@@ -1,0 +1,74 @@
+[
+  {
+    "scenario_id": "F01",
+    "scenario": "Same policy and source",
+    "prior": {
+      "policy_version": "2.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "current": {
+      "policy_version": "2.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "expected": {
+      "status": "CURRENT",
+      "reason": "same_policy_and_pinned_source"
+    }
+  },
+  {
+    "scenario_id": "F02",
+    "scenario": "Policy version changed",
+    "prior": {
+      "policy_version": "1.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "current": {
+      "policy_version": "2.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "expected": {
+      "status": "RECHECK_REQUIRED",
+      "reason": "policy_version_changed"
+    }
+  },
+  {
+    "scenario_id": "F03",
+    "scenario": "Source version and digest changed",
+    "prior": {
+      "policy_version": "2.0",
+      "source_version": "0",
+      "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "current": {
+      "policy_version": "2.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "expected": {
+      "status": "RECHECK_REQUIRED",
+      "reason": "source_version_changed;source_sha256_changed"
+    }
+  },
+  {
+    "scenario_id": "F04",
+    "scenario": "Both policy and source changed",
+    "prior": {
+      "policy_version": "1.0",
+      "source_version": "0",
+      "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "current": {
+      "policy_version": "2.0",
+      "source_version": "1",
+      "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+    },
+    "expected": {
+      "status": "RECHECK_REQUIRED",
+      "reason": "policy_version_changed;source_version_changed;source_sha256_changed"
+    }
+  }
+]

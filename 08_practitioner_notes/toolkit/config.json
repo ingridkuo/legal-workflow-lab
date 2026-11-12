@@ -1,0 +1,17 @@
+{
+  "study_version": "1.0",
+  "as_of": "2026-11-10T12:00:00Z",
+  "max_quote_characters": 180,
+  "severities": ["low", "medium", "high"],
+  "review_rules": {
+    "NDA_SCOPE": {"description": "Check the quoted disclosure-purpose language", "decision_authority": "HUMAN"},
+    "RETENTION": {"description": "Route retention and return obligations for review", "decision_authority": "HUMAN"},
+    "SOURCE_INSTRUCTION": {"description": "Route instruction-like source text as untrusted document content", "decision_authority": "HUMAN"}
+  },
+  "routing": {
+    "contract_review": {"suggested_owner": "contract_operations", "decision_needed": true, "decision_authority": "counsel"},
+    "potential_user_risk": {"suggested_owner": "user_operations", "decision_needed": true, "decision_authority": "counsel"}
+  },
+  "illustrative_case_review_hours": {"normal": 48, "high": 12},
+  "policy_note": "Demonstration configuration only. These are not legal deadlines, employer SLAs, or approved legal positions."
+}

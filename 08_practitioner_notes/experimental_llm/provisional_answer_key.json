@@ -1,0 +1,24 @@
+{
+  "status": "Provisional author-review key for explicit fictional policy only; not a legal accuracy standard.",
+  "expected_rule_ids": {
+    "A01": [],
+    "A02": [
+      "TERM"
+    ],
+    "A03": [
+      "PURPOSE"
+    ],
+    "A04": [
+      "RESIDUALS"
+    ],
+    "A05": [
+      "DELETION"
+    ],
+    "A06": [
+      "TERM",
+      "RESIDUALS"
+    ],
+    "A07": [],
+    "A08": []
+  }
+}

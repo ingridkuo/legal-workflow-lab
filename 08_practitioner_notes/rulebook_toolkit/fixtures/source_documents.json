@@ -1,0 +1,218 @@
+[
+  {
+    "document_id": "D01",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 35 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "b0bf7cdcd49ec7da9aa1fe193ebecd0c2d3f126b05174e999291b81470cc9904"
+  },
+  {
+    "document_id": "D02",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "5400dc7b4cdd5dbd2c283bcb5e6a59c205ebdb7a4e2690e70ab43f536a6515b4"
+  },
+  {
+    "document_id": "D03",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 60 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "a0dc5703e98e612bcf951b42a7105e1ae22869c529547956a77a1cf2eae76a56"
+  },
+  {
+    "document_id": "D04",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 35 months after each disclosure.",
+      "C2": "The disclosed information consists of source code.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "4f1024a0605cdd8767dd18134e5e477a35a0962180c546324ae3754c6e7951f4"
+  },
+  {
+    "document_id": "D05",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of source code.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "7c721804f217dbfdb7b6f027ac5a2fb6c81cd4d7d9d7c2a63dc6f6f55b66faf8"
+  },
+  {
+    "document_id": "D06",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 59 months after each disclosure.",
+      "C2": "The disclosed information consists of source code.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "f6da02af3a2058ab745b30593b99e3e123f09e84a5d1b1a9a69214113a24312b"
+  },
+  {
+    "document_id": "D07",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 60 months after each disclosure.",
+      "C2": "The disclosed information consists of source code.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "27aa2092e3625ade18a1c24cad649cc29414565a5dd91bf6ab3f10dfd237aa5a"
+  },
+  {
+    "document_id": "D08",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosure combines ordinary commercial information and source code.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "2a422695a179bdd6a9f8f49a2913a28984b2bffd791055c931ed550e6a37efc7"
+  },
+  {
+    "document_id": "D09",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The class of the disclosed information is not identified.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "bf6ff263a5d21a7821fb41188cfb1f3ebe7f3c4c84f7a0ef842b27f4cea892a3"
+  },
+  {
+    "document_id": "D10",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after the effective date.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "5f24cf7aed49efb2ab94fee696d49e6913f44371546746d1da061584e96169e6"
+  },
+  {
+    "document_id": "D11",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure. A separate sentence states a 12-month period for the same information.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "be052045907b881faddb936b171833bb98ed137e2194bf0e5bf85cea9046cbaf"
+  },
+  {
+    "document_id": "D12",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "5400dc7b4cdd5dbd2c283bcb5e6a59c205ebdb7a4e2690e70ab43f536a6515b4"
+  },
+  {
+    "document_id": "D13",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "5400dc7b4cdd5dbd2c283bcb5e6a59c205ebdb7a4e2690e70ab43f536a6515b4"
+  },
+  {
+    "document_id": "D14",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "5400dc7b4cdd5dbd2c283bcb5e6a59c205ebdb7a4e2690e70ab43f536a6515b4"
+  },
+  {
+    "document_id": "D15",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a statement of work for technical services.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "6b88c416053d1228bafa1af69e12c1dcd3fc163349d13fe3834bf8d065940435"
+  },
+  {
+    "document_id": "D16",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months from a starting event to be agreed.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information for any business purpose.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "bbc70a54558df0855d1c914d01952447571f51f4d2a3d4fc941db6358d135c1e"
+  },
+  {
+    "document_id": "D17",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The recipient may use the information only to evaluate Project Atlas.",
+      "C4": "Information retained in unaided memory may be used without restriction."
+    },
+    "source_sha256": "daac92aff1a61e82bf9c51e21deb0dc815f632ac6bd9f9e09c01e58ce03cf2b2"
+  },
+  {
+    "document_id": "D18",
+    "source_version": "1",
+    "clauses": {
+      "C0": "This is a nondisclosure agreement.",
+      "C1": "Confidentiality lasts 36 months after each disclosure.",
+      "C2": "The disclosed information consists of ordinary commercial information.",
+      "C3": "The permitted use will be agreed later.",
+      "C4": "No unrestricted use of information retained in unaided memory is permitted."
+    },
+    "source_sha256": "42eea092ec509908d7e1b5c5ae5fe5dbc4b0b9235b72addfb0440814b1eb8819"
+  }
+]

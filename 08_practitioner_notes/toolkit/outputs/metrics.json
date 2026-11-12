@@ -1,0 +1,29 @@
+{
+  "active_preservation_cases_closed_with_followup": 1,
+  "as_of": "2026-11-10T12:00:00Z",
+  "audit_events": 62,
+  "case_states": {
+    "assigned": 3,
+    "blocked": 7,
+    "closed": 2
+  },
+  "data_status": "deliberately_authored_synthetic_fixtures",
+  "human_review_minutes": null,
+  "llm_accuracy": null,
+  "model_status": "NO_MODEL_CALLED",
+  "overdue_nonclosed_cases": 1,
+  "production_roi": null,
+  "semantic_controls_entering_human_queue": 1,
+  "semantic_negative_controls": 1,
+  "study_version": "1.0",
+  "total_cases_in_database": 12,
+  "validation_cases": 16,
+  "validation_checks_passed": 16,
+  "validation_gate_counts": {
+    "BLOCKED": 12,
+    "MANUAL_REVIEW": 1,
+    "READY_FOR_HUMAN_REVIEW": 3
+  },
+  "workflow_checks_passed": 12,
+  "workflow_scenarios": 12
+}

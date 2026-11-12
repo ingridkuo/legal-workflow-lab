@@ -6,7 +6,7 @@ I am a Taiwan-qualified attorney and Berkeley Law LL.M. graduate. I draft commer
 
 ## Start here
 
-[Read the six-page Work Samples](Ingrid_Kao_Work_Samples.pdf) · [Browse the portfolio](https://ingridkao.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
+[Read the six-page Work Samples](Ingrid_Kao_Work_Samples.pdf) · [Practitioner articles](08_practitioner_notes/README.md) · [Browse the portfolio](https://ingridkao.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
 The examples demonstrate legal rule design, contract judgment, workflow implementation, data reconciliation and evaluation. To run the browser/Python prototype locally:
 
@@ -15,6 +15,18 @@ python3 01_ai_review/scripts/web_lab.py
 ```
 
 Open the printed local URL and select **Run checks**. This validates preserved results; it does not call a model or require an API key.
+
+## Practitioner articles and companion demonstrations
+
+[Three practitioner notes](08_practitioner_notes/README.md) connect legal judgment to runnable, synthetic examples:
+
+| Article | Companion evidence |
+|---|---|
+| [Testing a Legal AI Review Workflow](08_practitioner_notes/articles/Ingrid_Kao_Testing_Legal_AI.pdf) | 16 output-gate fixtures; one saved eight-document review; eight adjudicated document–rule pairs grouped into six actionable issues |
+| [When a Legal Escalation Is Ready to Close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
+| [From Counsel Guidance to Executable Review Rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
+
+These are separate datasets. The eight-document exploratory review does not replace the original 20-document `01_ai_review` Lab; the 12 workflow scenarios are separate from the 29 tests in `06_knowledge_operations`. The [dataset map and run commands](08_practitioner_notes/README.md#dataset-map) identify each unit and result.
 
 ## Choose the work relevant to the role
 
@@ -53,7 +65,7 @@ The landing page also includes working intake routing. Both demonstrations run w
 
 The case studies describe my historical work. The workflow tools use fictional records and proposed policy thresholds. The training sample distinguishes historical experience from sample training scenarios.
 
-The AI test uses 20 synthetic NDAs: 5 development documents and 15 held-out documents. The saved v2 held-out review returned **16 findings for 16 reference issues**; all 16 quotes matched their stated Sections. I reviewed all 25 reference labels across the full 20-document set and changed none. The method explains the rule-family counting convention, including overlapping findings. Each pass is one archived review batch. Issues share contract and review context; these descriptive counts are not a population accuracy estimate. Source-quote checks, reference-label agreement and live approval controls are separate questions.
+The original AI Review Lab uses 20 synthetic NDAs: 5 development documents and 15 held-out documents. The saved v2 held-out review returned **16 findings for 16 reference issues**; all 16 quotes matched their stated Sections. I reviewed all 25 reference labels across the full 20-document set and changed none. The method explains the rule-family counting convention, including overlapping findings. Each pass is one archived review batch. Issues share contract and review context; these descriptive counts are not a population accuracy estimate. Source-quote checks, reference-label agreement and live approval controls are separate questions.
 
 Historical case summaries omit client identities and monetary terms. Proposed edits are distinguished from the verified signed outcome.
 
@@ -98,6 +110,7 @@ Then open `http://127.0.0.1:8000/` on that computer. Stop the server when finish
 | `05_solution_delivery` | XML/JSON mapping, migration exceptions, correction checks and a pilot decision |
 | `06_knowledge_operations` | Synthetic handoff records, source-backed articles and tested knowledge gates |
 | `07_construction_workflow` | Subcontract engine, approval policy, 38 tests, Excel tracker and owner-side construction analysis |
+| `08_practitioner_notes` | Three articles, output gates, an adjudicated exploratory review, escalation workflow and versioned policy rules |
 | `assets` | Bundled fonts and watercolor portrait |
 | `tools` | Portable current PDF builders and case-copy synchronization |
 
@@ -119,7 +132,7 @@ The [one-page repeatability report](01_ai_review/repeatability/Repeatability_Res
 
 The [SALI crosswalk](01_ai_review/taxonomy/sali_issue_crosswalk.json) maps 15 local rule types and all 16 held-out issue instances to verified source concepts where appropriate. [Mapping notes and DMS metadata](01_ai_review/taxonomy/Taxonomy_and_DMS.md) preserve the gaps and separate content classification from access, retention and approval authority.
 
-Use **local full-stack prototype** for the browser/API/harness artifact. Its working code does not establish a deployed production service or enterprise DMS implementation.
+The browser/API/harness artifact is a **local full-stack prototype**. It does not establish a deployed production service or enterprise DMS implementation.
 
 ## Controlled API study: prepared, not executed
 

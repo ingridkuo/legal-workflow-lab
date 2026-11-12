@@ -1,0 +1,134 @@
+[
+  {
+    "ticket_id": "external-W01",
+    "subject": "Fictional valid close scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W01"
+  },
+  {
+    "ticket_id": "external-W02",
+    "subject": "Fictional missing owner scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W02"
+  },
+  {
+    "ticket_id": "external-W03",
+    "subject": "Fictional unaccepted handoff scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W03"
+  },
+  {
+    "ticket_id": "external-W04",
+    "subject": "Fictional missing approval scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W04"
+  },
+  {
+    "ticket_id": "external-W05",
+    "subject": "Fictional missing receipt scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W05"
+  },
+  {
+    "ticket_id": "external-W06",
+    "subject": "Fictional pending preservation scenario",
+    "case_kind": "potential_user_risk",
+    "impact": "high",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-10T06:00:00Z",
+    "evidence_scope": "restricted",
+    "source_ref": "fixture://restricted/W06"
+  },
+  {
+    "ticket_id": "external-W07",
+    "subject": "Fictional active preservation missing custodian scenario",
+    "case_kind": "potential_user_risk",
+    "impact": "high",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-10T06:00:00Z",
+    "evidence_scope": "restricted",
+    "source_ref": "fixture://restricted/W07"
+  },
+  {
+    "ticket_id": "external-W08",
+    "subject": "Fictional active preservation accepted custodian close scenario",
+    "case_kind": "potential_user_risk",
+    "impact": "high",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-10T06:00:00Z",
+    "evidence_scope": "restricted",
+    "source_ref": "fixture://restricted/W08"
+  },
+  {
+    "ticket_id": "external-W09",
+    "subject": "Fictional duplicate idempotent scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W09"
+  },
+  {
+    "ticket_id": "external-W10",
+    "subject": "Fictional conflicting duplicate scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W10"
+  },
+  {
+    "ticket_id": "external-W11",
+    "subject": "Fictional source change invalidates approval scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-09T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W11"
+  },
+  {
+    "ticket_id": "external-W12",
+    "subject": "Fictional overdue reporting scenario",
+    "case_kind": "contract_review",
+    "impact": "normal",
+    "assigned_coordinator": "program_coordinator",
+    "revision": "v1",
+    "reported_at": "2026-11-05T10:00:00Z",
+    "evidence_scope": "sanitized",
+    "source_ref": "fixture://sanitized/W12"
+  }
+]

@@ -1,0 +1,5 @@
+scenario_id,scenario,status,reason,prior_decision_action
+F01,Same policy and source,CURRENT,same_policy_and_pinned_source,UNCHANGED_NO_AUTOMATIC_REVOCATION
+F02,Policy version changed,RECHECK_REQUIRED,policy_version_changed,UNCHANGED_NO_AUTOMATIC_REVOCATION
+F03,Source version and digest changed,RECHECK_REQUIRED,source_version_changed;source_sha256_changed,UNCHANGED_NO_AUTOMATIC_REVOCATION
+F04,Both policy and source changed,RECHECK_REQUIRED,policy_version_changed;source_version_changed;source_sha256_changed,UNCHANGED_NO_AUTOMATIC_REVOCATION

@@ -1,0 +1,60 @@
+{
+  "as_of": "2026-11-10T12:00:00Z",
+  "cases_by_owner": [
+    {
+      "action_owner": "UNASSIGNED",
+      "case_count": 1,
+      "open_count": 1
+    },
+    {
+      "action_owner": "contract_operations",
+      "case_count": 8,
+      "open_count": 7
+    },
+    {
+      "action_owner": "user_operations",
+      "case_count": 3,
+      "open_count": 2
+    }
+  ],
+  "overdue_cases": [
+    {
+      "action_owner": "contract_operations",
+      "case_id": "CASE-W12",
+      "due_at": "2026-11-07T10:00:00Z",
+      "synthetic_age_hours": 122.0
+    }
+  ],
+  "preservation_commitments": [
+    {
+      "case_id": "CASE-W06",
+      "preservation_accepted": 0,
+      "preservation_next_review": null,
+      "preservation_owner": null,
+      "preservation_status": "pending",
+      "state": "blocked"
+    },
+    {
+      "case_id": "CASE-W07",
+      "preservation_accepted": 0,
+      "preservation_next_review": "2026-11-17T12:00:00Z",
+      "preservation_owner": "records_custodian",
+      "preservation_status": "active",
+      "state": "blocked"
+    },
+    {
+      "case_id": "CASE-W08",
+      "preservation_accepted": 1,
+      "preservation_next_review": "2026-11-17T12:00:00Z",
+      "preservation_owner": "records_custodian",
+      "preservation_status": "active",
+      "state": "closed"
+    }
+  ],
+  "states": {
+    "assigned": 3,
+    "blocked": 7,
+    "closed": 2
+  },
+  "total_cases": 12
+}
