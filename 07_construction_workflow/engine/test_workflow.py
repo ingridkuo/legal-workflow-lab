@@ -220,9 +220,10 @@ class StoreAndReportTests(unittest.TestCase):
 
     def test_utf8_audit_round_trip_preserves_unicode_policy(self):
         data=json.loads((w.ROOT/'example_intakes.json').read_text(encoding='utf-8'))[0]
+        self.rules['policy_name']='Fictional USD subcontract policy: café UTF-8 test'
         self.store.import_intakes(data,self.rules,'demo_loader')
         self.assertEqual(self.store.read()[1][data['id']]['policy_name'],self.rules['policy_name'])
-        self.assertIn('—'.encode('utf-8'),self.path.read_bytes())
+        self.assertIn('café'.encode('utf-8'),self.path.read_bytes())
 
     def test_demo_matches_shared_final_fixture_exactly(self):
         records=w.build_demo(self.store,self.rules)

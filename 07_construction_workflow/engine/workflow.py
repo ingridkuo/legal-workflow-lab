@@ -432,7 +432,7 @@ def slack_text(result):
     alerts = [x['id']+' ('+x['status']+(', '+x['expiry_date'] if x['expiry_date'] else '')+')' for x in result['guarantee_status'] if x['status'] != 'Current']
     ages = '; '.join(k+': '+str(v)+'d' for k,v in sorted(result['ageing_days'].items()))
     return '\n'.join([
-      'FICTIONAL DEMO — Subcontract weekly report',
+      'FICTIONAL DEMO: Subcontract weekly report',
       'Period: '+result['week_start']+' to '+result['as_of']+' (UTC; Monday to as-of date)',
       f"Volume: {result['submitted_this_week']} submitted; {result['executed_this_week']} executed this week; {result['open_count']} open / {result['total_records']} total.",
       'Queue by stage: '+stage, 'Queue by owner: '+owners,

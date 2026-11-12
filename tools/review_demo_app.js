@@ -66,7 +66,7 @@ function renderChecks(){
  $('evidence-check').classList.toggle('blocked',!result.ok);
  $('check-title').textContent=result.ok?'Evidence checks passed. Legal review remains required.':'Challenge copy blocked from a clean handoff.';
  $('check-description').textContent=result.ok?`${r.issues.length} quoted ${r.issues.length===1?'finding matches':'findings match'} the stated Sections. Document, policy, rule IDs, route and human-review flag also pass local checks.`:'The temporary copy fails a mechanical control. Restore the unmodified saved output to continue with a checked packet.';
- $('check-errors').innerHTML=result.errors.map(e=>`<li><b>${esc(e.code)}</b> — ${esc(e.detail)}</li>`).join('');
+ $('check-errors').innerHTML=result.errors.map(e=>`<li><b>${esc(e.code)}</b>: ${esc(e.detail)}</li>`).join('');
  $('check-errors').hidden=!result.errors.length;
  $('challenge-quote').setAttribute('aria-pressed',String(state.challenge==='quote'));
  $('challenge-gate').setAttribute('aria-pressed',String(state.challenge==='gate'));

@@ -29,7 +29,7 @@ def inline(data):
 
 def shell(title, body, script):
     return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(title)} — inspect the working example and evidence by Ingrid Kao."><title>{html.escape(title)} | Ingrid Kao</title><style>{CSS}</style></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(title)}: inspect the working example and evidence by Ingrid Kao."><title>{html.escape(title)} | Ingrid Kao</title><style>{CSS}</style></head><body>
 <header><nav aria-label="Exhibit navigation"><a class="identity" href="../index.html">Ingrid Kao <span class="muted">/ Selected work</span></a><a class="back" href="../index.html#work">Back to work samples ↗</a></nav></header>
 <main>{body}<footer class="footer"><p>Ingrid Kao · Commercial contracts, legal operations and legal AI</p><p><a href="mailto:kuoingrid0118@gmail.com">Contact</a> · <a href="../Ingrid_Kao_Work_Samples.pdf">Application PDF</a></p></footer></main><script>{script}</script></body></html>
 '''
