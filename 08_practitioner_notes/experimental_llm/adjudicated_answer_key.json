@@ -1,7 +1,7 @@
 {
-  "key_version": "1.1",
+  "key_version": "1.2",
   "status": "adjudicated_for_this_synthetic_study",
-  "basis": "Counting convention adopted for this revision; a policy-based classification of the saved fictional source clauses. No independent human or attorney validation is asserted.",
+  "basis": "Author-supplied adjudication by Ingrid Kao after reviewing the saved response, recorded in adjudication_record.json. This is not independent adjudication or a legal accuracy standard.",
   "scoring_unit": "document_id + rule_id",
   "aggregation_unit": "independently actionable issue group",
   "expected_rule_ids": {
@@ -108,5 +108,7 @@
       ]
     }
   ],
-  "reference_update_timing": "Post-run adjudication after inspection of the saved response; the original pre-run key is retained."
+  "reference_update_timing": "Post-run adjudication after inspection of the saved response; the original pre-run key is retained.",
+  "author_adjudication_record": "adjudication_record.json",
+  "previous_counting_record": "adjudication_v1_1.json"
 }

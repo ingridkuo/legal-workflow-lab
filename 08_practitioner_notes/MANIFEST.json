@@ -1,62 +1,62 @@
 {
-  "collection_version": "3.0",
+  "collection_version": "3.1",
   "date": "2026-11-11",
   "author": "Ingrid Kao",
   "files": [
     {
       "path": "README.md",
-      "bytes": 5710,
-      "sha256": "d4d34671cd0705ea2abbd52bf2c73522605f408318d4e332e5eeae079d555d49"
+      "bytes": 5919,
+      "sha256": "9b181776f21569c2b2d3c5c26f992070f64dc94889b0fc722676ce72fbc0d7b6"
     },
     {
       "path": "articles/From_Counsel_Guidance_to_Executable_Review_Rules.md",
-      "bytes": 13883,
-      "sha256": "677a1f1ec8551f591de821a25d03ec8429698969142f7e24b7e9de7f8931d9dd"
+      "bytes": 14197,
+      "sha256": "ebddabd31f0c243013ac6a6986ba21d3821489d2a210e49c898c290278f9eacc"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.docx",
-      "bytes": 44639,
-      "sha256": "d9fe1625c85cbb949457c60b00680abf53579b04b585e1e5a3179f76941cfb4b"
+      "bytes": 44761,
+      "sha256": "c9846b817eafaf4322487fa495c780e43b9ed9b943ee4e9bc1e9b60a9df4bfa2"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.pdf",
-      "bytes": 97951,
-      "sha256": "3443d19c13f71212b64aae63214eb2d524f59cd2bb3729c5c4a5907f026a32ea"
+      "bytes": 179012,
+      "sha256": "24e0dffb41f4a407c9690076bc7e7689595267aec0f96a1cfeaf8aa914ea05a7"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.docx",
-      "bytes": 45144,
-      "sha256": "1c04ab28b2137c07b0195e6d529b0c915cddb05eec8e3a272c9f20b95ced7899"
+      "bytes": 45171,
+      "sha256": "58a989dae0055636651243ce66402751458dc8225326602b9a9614e4a4a3c1cf"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.pdf",
-      "bytes": 105075,
-      "sha256": "4463d31fe639462f4877554936af3cc8e5af35b7201950d0cc9b5f57433e4182"
+      "bytes": 185872,
+      "sha256": "a5c34d80a18287e11e69fe4d31411bf540c57f13b27473ef0dc4e4e996319bfb"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.docx",
-      "bytes": 44653,
-      "sha256": "857a97f1cd5b3248d90dbdab73f9500cd20504022ca3fcf5c729b488f2fe2ba3"
+      "bytes": 44986,
+      "sha256": "f0ff2aef1ac48e8c51d93553e695253d7a5936a5e86d2f0f5cc912ffbf18411e"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.pdf",
-      "bytes": 96862,
-      "sha256": "56ef0f0ea7c59f9ba5212ab14628d57698905d47a7c07d98c1f7a3485b169a6e"
+      "bytes": 180837,
+      "sha256": "a2f4799d79e6e44f09a1a2982ef1de1c03ebe74b0601bb87c0ec370686df11e4"
     },
     {
       "path": "articles/Testing_a_Legal_AI_Review_Workflow.md",
-      "bytes": 13017,
-      "sha256": "6b0ba6ed7cd595280932921fe38d24455792534c986bc3d8a1c9f3a268515193"
+      "bytes": 13895,
+      "sha256": "69034056aef24567872658c6539211585b0b0633727630d15a3ffbac0ff757dc"
     },
     {
       "path": "articles/When_a_Legal_Escalation_Is_Ready_to_Close.md",
-      "bytes": 14579,
-      "sha256": "c3e4c5cef96d1c02fd79701b724ed9fc104769622af1223bf87532663abd526e"
+      "bytes": 14546,
+      "sha256": "91c2db74cd26ff44b844f103e34c16cf915beaca29b9b9b7b5b69a53d624a818"
     },
     {
       "path": "experimental_llm/README.md",
-      "bytes": 4734,
-      "sha256": "1a4f96ff3a33a5a7e6edfa229137d59db9bc02784c383a6dd30986db6650ec4a"
+      "bytes": 5509,
+      "sha256": "ca9515c1d07816b01ddc0a70d9a9bf88fb7d321f680987ec1162d676dc3bd350"
     },
     {
       "path": "experimental_llm/actionable_issue_groups.json",
@@ -65,8 +65,13 @@
     },
     {
       "path": "experimental_llm/adjudicated_answer_key.json",
-      "bytes": 2298,
-      "sha256": "7775ce9372a004282e0cd9e6c45212b44cc9147041cedab11905adff201f8884"
+      "bytes": 2425,
+      "sha256": "52afd10d04f6c28ebfbdab36f1a832e09f5336ce307b4d7b5b5dfc2a2f89450e"
+    },
+    {
+      "path": "experimental_llm/adjudication_record.json",
+      "bytes": 2562,
+      "sha256": "470f47d4a8348b2af70c074b06235e72da83ad315c7741b1bda6b3de45123bdb"
     },
     {
       "path": "experimental_llm/adjudication_v1_1.json",
@@ -80,13 +85,13 @@
     },
     {
       "path": "experimental_llm/evaluate_exploration.py",
-      "bytes": 10951,
-      "sha256": "ff01e2e5297ea2d8ebf088927198b7343c1fcf8a1a3b7577a001284a93f31769"
+      "bytes": 13827,
+      "sha256": "0cba8630ec8e75b82ac28ca86c707af94f87d5329a243052335c784906a6229a"
     },
     {
       "path": "experimental_llm/exploration_metrics.json",
-      "bytes": 1589,
-      "sha256": "ba48c73f7dc125ed56b7968168f55228d92e431ea357bf2bc56045e4af2f966e"
+      "bytes": 2208,
+      "sha256": "671b4fde24c1aaa6620d81255346574aa94771dcc8a494fd44e31f96bbf85efd"
     },
     {
       "path": "experimental_llm/finding_evidence.csv",
@@ -110,8 +115,8 @@
     },
     {
       "path": "experimental_llm/test_exploration.py",
-      "bytes": 8787,
-      "sha256": "a6ce411c83eb78c7d587fb3b84b37d5df3d3d677f8525cab111377621c26d57f"
+      "bytes": 9945,
+      "sha256": "64c0d03e75e4ca2c8ba64a3ad9b01f3dc9f0677a9700ce6c81f479df093424af"
     },
     {
       "path": "experimental_llm/toy_policy.json",

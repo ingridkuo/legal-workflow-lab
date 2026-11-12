@@ -64,8 +64,42 @@ def validate_key(documents, provisional, adjudicated):
     return pairs
 
 
-def score_reviews(documents, provisional, adjudicated, response):
+
+def validate_author_adjudication(documents, provisional, adjudicated, author_record):
+    """Check supplied adjudication provenance and its source evidence, not identity."""
+    require(author_record.get('adjudicator') == 'Ingrid Kao (author)',
+            'Unexpected author-adjudication attribution')
+    require(author_record.get('independent') is False,
+            'Author adjudication must remain explicitly non-independent')
+    require(author_record.get('date') == '2026-11-11',
+            'Unexpected author-adjudication date')
+    source = {d['document_id']: d for d in documents}
+    original = {(d, rule) for d, rules in provisional['expected_rule_ids'].items() for rule in rules}
+    revised = {(d, rule) for d, rules in adjudicated['expected_rule_ids'].items() for rule in rules}
+    expected_additions = revised - original
+    recorded = set()
+    for decision in author_record.get('decisions', []):
+        pair = (decision.get('document_id'), decision.get('rule_id'))
+        require(pair in expected_additions and pair not in recorded,
+                'Author adjudication has an unknown or duplicate addition')
+        recorded.add(pair)
+        doc_id, rule_id = pair
+        locator = decision.get('clause_id')
+        require(locator == adjudicated['expected_clause_ids'][doc_id][rule_id],
+                'Author-adjudication locator differs from revised key')
+        quote = decision.get('quote')
+        require(isinstance(quote, str) and bool(quote)
+                and quote in source[doc_id]['clauses'][locator],
+                'Author-adjudication quote does not match its source clause')
+        require(bool(decision.get('reason')), 'Author-adjudication reason is missing')
+    require(recorded == expected_additions,
+            'Author adjudication must cover every added reference pair')
+
+
+def score_reviews(documents, provisional, adjudicated, response, author_record=None):
     expected = validate_key(documents, provisional, adjudicated)
+    if author_record is not None:
+        validate_author_adjudication(documents, provisional, adjudicated, author_record)
     source = {d['document_id']: d for d in documents}
     require(isinstance(response, dict) and set(response) == {'reviews'}, 'Invalid response envelope')
     require(isinstance(response['reviews'], list) and len(response['reviews']) == len(source),
@@ -143,10 +177,23 @@ def score_reviews(documents, provisional, adjudicated, response):
         'adjudicated_key_version': adjudicated['key_version'],
         'reference_key_timing': 'post-run adjudication of saved outputs',
         'adjudicated_scoring_unit': 'document_id + rule_id',
-        'adjudicated_key_pairs': len(expected), 'supported_true_positives': tp,
+        'adjudicated_key_pairs': len(expected),
+        'adjudicated_key_pairs_present': len(expected & actual),
+        'adjudicated_key_pairs_supported': tp,
+        'adjudicated_key_pairs_missing': len(expected - actual),
+        'response_pairs_outside_adjudicated_key': [{'document_id': d, 'rule_id': rule}
+            for d, rule in sorted(actual - expected)],
+        'distinct_flagged_clauses': len({(row['document_id'], row['clause_id']) for row in rows}),
+        'supported_true_positives': tp,
         'false_positives': fp, 'false_negatives': fn,
-        'adjudicated_precision': tp / len(actual) if actual else None,
-        'adjudicated_recall': tp / len(expected) if expected else None,
+        'adjudicated_precision': None,
+        'adjudicated_recall': None,
+        'rate_reporting': 'Not reported: the reference key was adjudicated after inspecting this saved response.',
+        'adjudication': ({'adjudicator': author_record['adjudicator'],
+            'date': author_record['date'], 'independent': False,
+            'record': 'adjudication_record.json',
+            'provenance': 'Author-supplied record; identity is not authenticated by this scorer.'}
+            if author_record is not None else None),
         'actionable_issue_groups': len(groups),
         'supported_actionable_issue_groups': sum(g['group_supported'] for g in groups),
         'issue_groups_with_all_labels_supported': sum(g['all_rule_labels_supported'] for g in groups),
@@ -156,8 +203,8 @@ def score_reviews(documents, provisional, adjudicated, response):
                  'The adopted document-and-rule convention retains both PURPOSE labels; '
                  'the actionable-issue convention groups each with RESIDUALS under the specific rule. '
                  'This post-run reference revision changes the counting convention, not the saved model behavior. '
-                 'Precision and recall describe supported agreement with this revised toy key only, '
-                 'not independent human validation or population legal accuracy. '
+                 'The supplied author adjudication was made after inspecting the response and is not independent. '
+                 'Agreement counts describe this batch only; precision, recall and population legal accuracy are not reported. '
                  'The original provisional key and raw response remain unchanged. '
                  'Re-running this scorer does not rerun inference.')}
     return metrics, rows, groups
@@ -168,7 +215,7 @@ def main():
     decision = read('adjudication_v1_1.json')
     check_frozen_inputs(ROOT, decision)
     metrics, rows, groups = score_reviews(read('documents.json'), read('provisional_answer_key.json'),
-        read('adjudicated_answer_key.json'), read('raw_model_response.json'))
+        read('adjudicated_answer_key.json'), read('raw_model_response.json'), read('adjudication_record.json'))
     (ROOT / 'exploration_metrics.json').write_text(json.dumps(metrics, indent=2) + '\n')
     (ROOT / 'actionable_issue_groups.json').write_text(json.dumps(groups, indent=2) + '\n')
     with (ROOT / 'finding_evidence.csv').open('w', newline='') as handle:

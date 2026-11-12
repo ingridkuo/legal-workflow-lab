@@ -2,19 +2,16 @@
 
 Ingrid Kao  
 Independent practitioner note  
-November 11, 2026
+November 11 2026  
+Companion files: [github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes](https://github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes)
 
-[Companion files · GitHub](https://github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes/rulebook_toolkit)
+**At a glance**
 
-### At a glance
+- **Built:** A versioned rulebook for fictional NDA review instructions, with a Python prototype that applies two policy versions to the same 18 synthetic scenarios.
+- **Found:** All 36 policy evaluations matched their authored expectations. Under the revised policy, four scenarios changed outcome and two more kept their outcome but changed their reason.
+- **Why it matters:** A review rule is a legal decision that needs an owner, defined facts, and tests. Running both versions on the same cases shows what a policy change actually moves.
 
-**Built:** A versioned NDA policy engine evaluating source-linked annotations.
-
-**Observed (synthetic):** 18 scenarios produced 36 evaluations, exposing four outcome changes and six reason changes.
-
-**Meaning:** Policy changes remain separate from contract facts, with review freshness checked independently.
-
-At Lawsnote, I turned an enterprise client’s NDA review standards into rules that engineers built into an AI contract-review product. A legal review instruction can sound precise until someone tries to implement it. Require three years of confidentiality. Count from which event? Does the instruction cover source code? What should happen when two clauses describe different survival periods? A developer who supplies those answers has changed the review policy, even if the resulting software runs without errors.
+A legal review instruction can sound precise until someone tries to implement it. Require three years of confidentiality. Count from which event? Does the instruction cover source code? What should happen when two clauses describe different survival periods? A developer who supplies those answers has changed the review policy, even if the resulting software runs without errors. I worked on that boundary at Lawsnote, a legal technology company, where I turned an enterprise client's NDA review standards into rules that engineers built into an AI contract-review product.
 
 I propose treating each review rule as a maintained legal decision: it needs a defined scope, evidence requirements, an outcome, and a person authorized to change it. The companion prototype demonstrates this approach through two fictional policy versions and an inspectable set of contract annotations. The most useful result is a change report that explains which decisions move, which remain stable, and which cannot be resolved from the supplied facts.
 
@@ -32,7 +29,7 @@ Before implementation, counsel should approve the scope and exception treatment 
 
 A contract states an obligation. A review policy states what the sponsor wants to do about it. Those records should remain separate. Otherwise, changing a preferred position can silently alter the apparent contents of the agreement.
 
-The companion sources contain short fictional clauses with deliberately authored annotations. Each annotation supplies a value and a reference to its supporting clause and source version. Annotations must identify unresolved or conflicting facts; the engine does not discover those conflicts by interpreting the clauses. The program evaluates the supplied annotations. It does not read an arbitrary NDA and establish its meaning, infer that source code will be disclosed, or decide whether a quoted clause is enforceable.
+The companion sources contain short fictional clauses with deliberately authored annotations. Each annotation supplies a value and a reference to its supporting clause and source version. Annotations must identify unresolved or conflicting facts; the engine does not discover those conflicts by interpreting the clauses. The program evaluates the supplied annotations.
 
 The same separation matters when a model produces the annotations. A model-generated value is a proposed interpretation until the chosen review process accepts it. Exact quotation checks can establish that words occur in a cited clause; they cannot establish that those words support the normalized value. An accepted extraction layer and the policy engine need separate evaluation.
 
@@ -47,7 +44,7 @@ The rule record should make the implementing team's remaining choices visible:
 | Version and application date | Which instruction applied to this review, and when should a replacement be used? |
 | Source and examples | What approved instruction and boundary cases explain the intended behavior? |
 
-The prototype implements the maintenance record’s versioned settings, source-linked annotations, decisions, reasons, and comparison reports.
+This is a proposed maintenance record. The prototype implements versioned policy settings, source-linked annotations, decisions, reasons, and comparison reports.
 
 ## Give uncertainty a useful destination
 
@@ -64,7 +61,7 @@ The demonstration uses four outcomes:
 
 The aggregation rule also needs a decision. Here, a confirmed policy departure produces ESCALATE even if another rule needs more information. The report retains the unresolved rule instead of hiding it behind the aggregate result. With no confirmed policy departure, an unresolved required fact produces NEEDS_REVIEW. Only the evaluated, in-scope instructions can produce POLICY_MATCH.
 
-This design prevents an absent classification from becoming ordinary information by accident. It also preserves useful work: a confirmed overbroad purpose can reach counsel while the reviewer investigates an uncertain duration. A production team would need a queue, accepted receiving owners, and handling instructions for those outcomes. The prototype generates records for inspection rather than sending notifications or resolving the matters.
+This design prevents an absent classification from becoming ordinary information by accident. It also preserves useful work: a confirmed overbroad purpose can reach counsel while the reviewer investigates an uncertain duration. A production team would need a queue, accepted receiving owners, and handling instructions for those outcomes.
 
 ## Compare a policy change against the same cases
 
@@ -86,9 +83,9 @@ The run evaluated 18 synthetic scenarios under both policies, producing 36 polic
 
 Four cases changed aggregate outcome: the 36- and 59-month source-code cases became policy departures, while mixed and unknown information categories at 36 months required review. Six cases changed rule reasons. That count includes two cases with unchanged outcomes: source code at 35 months remained a departure, and source code at 60 months still matched, but their explanations identified the revised threshold.
 
-Four separate freshness checks produced one CURRENT result and three RECHECK_REQUIRED results for changed source, changed policy, or both. A repeatability check ran twice in fresh directories and compared all seven generated output files byte for byte in the same runtime. These are fixture-level software observations, with review freshness reported separately from the policy evaluations.
+Four separate freshness checks produced one CURRENT result and three RECHECK_REQUIRED results for changed source, changed policy, or both. A repeatability check ran twice in fresh directories and compared all seven generated output files byte for byte in the same runtime.
 
-These observations establish the configured decision logic on the supplied fixtures, with extraction and substantive review evaluated separately.
+These are fixture-level observations of the configured decision logic. The prototype evaluates supplied annotations: it does not read an NDA and establish its meaning, infer that source code will be disclosed, decide whether a clause is enforceable, authenticate a counsel approver, or send notifications and resolve the matters it flags. No model is called, and the run does not measure legal accuracy, reviewer time, or production adoption.
 
 Policy-testing documentation from Open Policy Agent illustrates the value of executable examples when rules change.[2] The companion uses Python rather than OPA or Rego. The transferable practice is to retain tests that explain a rule, including cases that should remain unchanged after a revision. Altering an expected answer to match new code still requires a reason and an authorized policy decision where substance changes.
 
@@ -104,7 +101,7 @@ The maintained rulebook gives legal judgment a form that a product team can impl
 
 ## Method and references
 
-This independent practitioner study uses original fictional NDA clauses, authored annotations, and illustrative sponsor policies. Its 18 scenarios are a separate deterministic dataset. The engine evaluates annotations rather than interpreting arbitrary agreements; it makes no model calls and does not establish extraction accuracy, legal correctness, enterprise approval authority, reviewer-time savings, or production adoption. Policy comparisons, review-freshness checks, and operational release decisions remain separate.
+This independent practitioner study uses original fictional NDA clauses, authored annotations, and illustrative sponsor policies. It contains no employer or client records. The results distinguish executable policy comparisons from proposed operational controls and substantive legal review. The prototype and its results are at [github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes](https://github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes), separate from the AI review materials in the repository's 01_ai_review folder.
 
 [1] NIST. Guide for Security-Focused Configuration Management of Information Systems. SP 800-128, August 2011, updated October 2019. Sections on configuration change control and impact analysis. https://doi.org/10.6028/NIST.SP.800-128
 

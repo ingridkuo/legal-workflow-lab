@@ -18,20 +18,33 @@
       "rule_id": "PURPOSE"
     }
   ],
-  "adjudicated_key_version": "1.1",
+  "adjudicated_key_version": "1.2",
   "reference_key_timing": "post-run adjudication of saved outputs",
   "adjudicated_scoring_unit": "document_id + rule_id",
   "adjudicated_key_pairs": 8,
+  "adjudicated_key_pairs_present": 8,
+  "adjudicated_key_pairs_supported": 8,
+  "adjudicated_key_pairs_missing": 0,
+  "response_pairs_outside_adjudicated_key": [],
+  "distinct_flagged_clauses": 6,
   "supported_true_positives": 8,
   "false_positives": 0,
   "false_negatives": 0,
-  "adjudicated_precision": 1.0,
-  "adjudicated_recall": 1.0,
+  "adjudicated_precision": null,
+  "adjudicated_recall": null,
+  "rate_reporting": "Not reported: the reference key was adjudicated after inspecting this saved response.",
+  "adjudication": {
+    "adjudicator": "Ingrid Kao (author)",
+    "date": "2026-11-11",
+    "independent": false,
+    "record": "adjudication_record.json",
+    "provenance": "Author-supplied record; identity is not authenticated by this scorer."
+  },
   "actionable_issue_groups": 6,
   "supported_actionable_issue_groups": 6,
   "issue_groups_with_all_labels_supported": 6,
   "unresolved_label_adjudications": 0,
   "human_review_time_minutes": null,
   "model_accuracy": null,
-  "note": "One saved Codex delegated-agent batch on eight synthetic fragments. The adopted document-and-rule convention retains both PURPOSE labels; the actionable-issue convention groups each with RESIDUALS under the specific rule. This post-run reference revision changes the counting convention, not the saved model behavior. Precision and recall describe supported agreement with this revised toy key only, not independent human validation or population legal accuracy. The original provisional key and raw response remain unchanged. Re-running this scorer does not rerun inference."
+  "note": "One saved Codex delegated-agent batch on eight synthetic fragments. The adopted document-and-rule convention retains both PURPOSE labels; the actionable-issue convention groups each with RESIDUALS under the specific rule. This post-run reference revision changes the counting convention, not the saved model behavior. The supplied author adjudication was made after inspecting the response and is not independent. Agreement counts describe this batch only; precision, recall and population legal accuracy are not reported. The original provisional key and raw response remain unchanged. Re-running this scorer does not rerun inference."
 }
