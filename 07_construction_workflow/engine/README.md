@@ -1,4 +1,4 @@
-# Subcontract Workflow — Local Prototype
+# Subcontract Workflow: Local Prototype
 
 Independent legal-operations work sample. All projects, companies, people, amounts and decisions are fictional. The policy is a configurable example and does not establish company approval authority or an operating policy.
 

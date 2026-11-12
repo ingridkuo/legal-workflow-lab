@@ -23,9 +23,9 @@
 </section>
 
 <section class="cards" aria-label="Archived study scope">
- <div class="card"><div id="batches" class="value">—</div><div class="label">Archived agent batches</div></div>
- <div class="card"><div id="documents" class="value">—</div><div class="label">Documents per batch</div></div>
- <div class="card"><div id="consistent" class="value">—</div><div class="label">Reference issues supported in all batches</div></div>
+ <div class="card"><div id="batches" class="value">N/A</div><div class="label">Archived agent batches</div></div>
+ <div class="card"><div id="documents" class="value">N/A</div><div class="label">Documents per batch</div></div>
+ <div class="card"><div id="consistent" class="value">N/A</div><div class="label">Reference issues supported in all batches</div></div>
  <div class="card"><div class="value">0</div><div class="label">New model calls from this app</div></div>
 </section>
 
@@ -45,7 +45,7 @@
 "use strict";
 const $ = id => document.getElementById(id);
 const errors = {check_timeout:"The fixed local check timed out. See the command-line check for details.",check_unavailable:"The local check could not start.",check_failed_without_json:"The CLI did not return a JSON result. Run the documented command to inspect the failure.",invalid_check_result:"The CLI returned an unexpected result format.",check_already_running:"A local check is already running.",check_failed:"The local check failed. Run the documented command for details."};
-const number = value => Number.isFinite(value) ? String(value) : "—";
+const number = value => Number.isFinite(value) ? String(value) : "N/A";
 const percent = value => Number.isFinite(value) ? `${(100*value).toFixed(1)}%` : "undefined";
 function cell(value){const el=document.createElement("td");el.textContent=String(value);return el;}
 function renderMetrics(summary, fresh){

@@ -1,5 +1,5 @@
 {
-  "policy_name": "Fictional USD subcontract policy — independent demonstration",
+  "policy_name": "Fictional USD subcontract policy: independent demonstration",
   "currency": "USD",
   "base_review_roles": ["legal"],
   "exception_review_role": "senior_legal",

@@ -1,4 +1,4 @@
-FICTIONAL DEMO — Subcontract weekly report
+FICTIONAL DEMO: Subcontract weekly report
 Period: 2026-11-09 to 2026-11-11 (UTC; Monday to as-of date)
 Volume: 2 submitted; 1 executed this week; 8 open / 10 total.
 Queue by stage: Business Approval: 2; Counterparty Signed: 1; Hold: 1; Intake: 1; Legal Review: 2; Ready for Signature: 1

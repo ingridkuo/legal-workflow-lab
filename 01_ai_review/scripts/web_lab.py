@@ -277,7 +277,7 @@ def main():
     if not 0 <= args.port <= 65535:
         parser.error("port must be between 0 and 65535")
     with LabServer(args.port) as server:
-        print(f"NDA Review Lab — full-stack local prototype: {server.origin}", flush=True)
+        print(f"NDA Review Lab (full-stack local prototype): {server.origin}", flush=True)
         print("Archived outputs only; deterministic verification; no new model calls. Ctrl+C stops the server.", flush=True)
         try:
             server.serve_forever()
