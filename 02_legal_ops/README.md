@@ -4,6 +4,10 @@ I built this sample to connect contract intake with risk routing, delivery, acce
 
 My platform experience includes DocuSign CLM and work with Ironclad workflows, approval logic and templates, including test workflows. This collection makes the underlying process decisions inspectable through local examples.
 
+## Legal intake implementation case
+
+Read [Legal Intake Implementation](Ingrid_Kao_Legal_Intake_Implementation_Case.pdf) for my work administering Jira Service Management intake and maintaining Confluence guidance. The second page provides illustrative configuration and acceptance checks.
+
 ## Explore the tracker
 
 Open **Contract_Operations_Tracker.xlsx** and start with the Dashboard. Blue text marks editable inputs. Dark text marks calculated results. In Controls, change the As-of date, the review thresholds or the near-term window. Maintain the Contracts, Obligations and Compliance tables as work progresses.
