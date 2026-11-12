@@ -1,0 +1,51 @@
+{
+  "record_version": "1.0",
+  "date": "2026-11-11",
+  "status": "resolved_under_adopted_counting_convention",
+  "decision_basis": "Adopted counting convention for this revision, applied against the supplied synthetic policy and source clauses.",
+  "preserved_inputs_sha256": {
+    "provisional_answer_key.json": "1f6ab18d6d20f9810bc24dd1be2543f495939638a6e2675af5a2dd89c3bea6c4",
+    "raw_model_response.json": "7726316b42f0918888ea798d8460516999e85ed523764fa38f3b7a6cc61afb9d",
+    "documents.json": "490c317da17f1999cc4d8e92fdd5e1b8ddf70016ee8e96a5655e8609c48544b8",
+    "toy_policy.json": "100ca21fa91c0c584ba6f22a0e72cb929bcdfb7962a13c0524860567a0f35b25",
+    "prompt.txt": "96817f68d60a830bf10a9a8b967a098945e49416b711fbf85ab6842f2ff283ec"
+  },
+  "provisional_reference_pairs": 6,
+  "adjudicated_reference_pairs": 8,
+  "actionable_issue_groups": 6,
+  "rule_priority": [
+    "RESIDUALS",
+    "PURPOSE"
+  ],
+  "priority_scope": "Only the aggregation of residual-memory clauses triggering both rules. Priority does not suppress a source-supported document-and-rule label.",
+  "decisions": [
+    {
+      "document_id": "A04",
+      "clause_id": "2",
+      "source_text": "Information retained in unaided memory may be used by the Recipient without restriction.",
+      "accepted_rule_ids": [
+        "PURPOSE",
+        "RESIDUALS"
+      ],
+      "primary_rule_id": "RESIDUALS",
+      "document_rule_disposition": "Retain both supported labels; add PURPOSE to the revised reference key.",
+      "issue_group_disposition": "Merge the two labels into one residual-use issue for an action-oriented summary.",
+      "rationale": "The operative residual-memory permission permits use without restriction and therefore extends beyond evaluating Project Atlas under PURPOSE. The same permission directly satisfies the more specific RESIDUALS rule. Both policy concerns are supported, but they describe one source clause and one requested resolution rather than two independently actionable problems."
+    },
+    {
+      "document_id": "A06",
+      "clause_id": "2",
+      "source_text": "Information retained in unaided memory may be used for any purpose without restriction.",
+      "accepted_rule_ids": [
+        "PURPOSE",
+        "RESIDUALS"
+      ],
+      "primary_rule_id": "RESIDUALS",
+      "document_rule_disposition": "Retain both supported labels; add PURPOSE to the revised reference key.",
+      "issue_group_disposition": "Merge the two labels into one residual-use issue for an action-oriented summary.",
+      "rationale": "The operative residual-memory permission permits use without restriction and therefore extends beyond evaluating Project Atlas under PURPOSE. The same permission directly satisfies the more specific RESIDUALS rule. Both policy concerns are supported, but they describe one source clause and one requested resolution rather than two independently actionable problems."
+    }
+  ],
+  "scope": "This is a policy-specific adjudication of one saved synthetic batch. It is not a new model run, independent human validation, or a population legal-accuracy estimate.",
+  "reference_update_timing": "Post-run adjudication after inspection of the saved response; the original pre-run key is retained."
+}

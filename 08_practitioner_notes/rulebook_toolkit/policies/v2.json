@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "policy_status": "fictional_sponsor_instruction",
+  "effective_date": "2026-11-11",
+  "policy_owner_role": "designated_counsel",
+  "approval_reference": "FICTIONAL-POLICY-2.0",
+  "scope": "NDA",
+  "duration": {
+    "minimum_months": 36,
+    "required_start": "each_disclosure",
+    "class_minimum_months": {
+      "source_code": 60
+    },
+    "mixed_class_outcome": "NEEDS_REVIEW"
+  },
+  "permitted_purpose": "project_atlas",
+  "allow_unrestricted_residuals": false,
+  "scope_note": "Illustrative instructions, not law or market-standard terms. Mixed information classes require an approved mapping under version 2.0."
+}

@@ -1,0 +1,1137 @@
+[
+  {
+    "case_id": "S01",
+    "scenario": "Ordinary information at 35 months",
+    "document_id": "D01",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 35,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 35 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 35 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S02",
+    "scenario": "Ordinary information at 36 months",
+    "document_id": "D02",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S03",
+    "scenario": "Ordinary information at 60 months",
+    "document_id": "D03",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 60,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 60 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 60 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S04",
+    "scenario": "Source code at 35 months",
+    "document_id": "D04",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 35,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 35 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 35 months after each disclosure."
+      },
+      "information_class": {
+        "value": "source_code",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of source code."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S05",
+    "scenario": "Source code at 36 months",
+    "document_id": "D05",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "source_code",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of source code."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S06",
+    "scenario": "Source code at 59 months",
+    "document_id": "D06",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 59,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 59 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 59 months after each disclosure."
+      },
+      "information_class": {
+        "value": "source_code",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of source code."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "ESCALATE",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S07",
+    "scenario": "Source code at 60 months",
+    "document_id": "D07",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 60,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 60 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 60 months after each disclosure."
+      },
+      "information_class": {
+        "value": "source_code",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of source code."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S08",
+    "scenario": "Mixed information without approved mapping",
+    "document_id": "D08",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "mixed",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosure combines ordinary commercial information and source code."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S09",
+    "scenario": "Unknown information class",
+    "document_id": "D09",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": null,
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The class of the disclosed information is not identified."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "POLICY_MATCH",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S10",
+    "scenario": "Different term start requires interpretation",
+    "document_id": "D10",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after the effective date."
+      },
+      "term_start": {
+        "value": "effective_date",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after the effective date."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S11",
+    "scenario": "Conflicting durations",
+    "document_id": "D11",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": null,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure. A separate sentence states a 12-month period for the same information.",
+        "conflicting": true
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure. A separate sentence states a 12-month period for the same information."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S12",
+    "scenario": "Missing duration quotation",
+    "document_id": "D12",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": ""
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S13",
+    "scenario": "Incorrect duration clause locator",
+    "document_id": "D13",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C99",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S14",
+    "scenario": "Stale duration source version",
+    "document_id": "D14",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "0",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S15",
+    "scenario": "Statement of work outside NDA scope",
+    "document_id": "D15",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "SOW",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a statement of work for technical services."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "OUT_OF_SCOPE",
+        "rules": {
+          "TERM": "OUT_OF_SCOPE",
+          "PURPOSE": "OUT_OF_SCOPE",
+          "RESIDUALS": "OUT_OF_SCOPE"
+        }
+      },
+      "2.0": {
+        "aggregate": "OUT_OF_SCOPE",
+        "rules": {
+          "TERM": "OUT_OF_SCOPE",
+          "PURPOSE": "OUT_OF_SCOPE",
+          "RESIDUALS": "OUT_OF_SCOPE"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S16",
+    "scenario": "Broad purpose remains an exception despite uncertain term start",
+    "document_id": "D16",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months from a starting event to be agreed."
+      },
+      "term_start": {
+        "value": null,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months from a starting event to be agreed."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "any_business",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information for any business purpose."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "ESCALATE",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "ESCALATE",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S17",
+    "scenario": "Unrestricted residuals",
+    "document_id": "D17",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": 36,
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": "project_atlas",
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The recipient may use the information only to evaluate Project Atlas."
+      },
+      "unrestricted_residuals": {
+        "value": true,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "Information retained in unaided memory may be used without restriction."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "ESCALATE"
+        }
+      },
+      "2.0": {
+        "aggregate": "ESCALATE",
+        "rules": {
+          "TERM": "POLICY_MATCH",
+          "PURPOSE": "POLICY_MATCH",
+          "RESIDUALS": "ESCALATE"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S18",
+    "scenario": "String duration and unresolved purpose",
+    "document_id": "D18",
+    "source_version": "1",
+    "annotation_status": "deliberately_authored_test_input",
+    "facts": {
+      "agreement_type": {
+        "value": "NDA",
+        "source_version": "1",
+        "clause_id": "C0",
+        "quote": "This is a nondisclosure agreement."
+      },
+      "duration_months": {
+        "value": "36",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "term_start": {
+        "value": "each_disclosure",
+        "source_version": "1",
+        "clause_id": "C1",
+        "quote": "Confidentiality lasts 36 months after each disclosure."
+      },
+      "information_class": {
+        "value": "ordinary",
+        "source_version": "1",
+        "clause_id": "C2",
+        "quote": "The disclosed information consists of ordinary commercial information."
+      },
+      "purpose": {
+        "value": null,
+        "source_version": "1",
+        "clause_id": "C3",
+        "quote": "The permitted use will be agreed later."
+      },
+      "unrestricted_residuals": {
+        "value": false,
+        "source_version": "1",
+        "clause_id": "C4",
+        "quote": "No unrestricted use of information retained in unaided memory is permitted."
+      }
+    },
+    "expected": {
+      "1.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "NEEDS_REVIEW",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      },
+      "2.0": {
+        "aggregate": "NEEDS_REVIEW",
+        "rules": {
+          "TERM": "NEEDS_REVIEW",
+          "PURPOSE": "NEEDS_REVIEW",
+          "RESIDUALS": "POLICY_MATCH"
+        }
+      }
+    }
+  }
+]

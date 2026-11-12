@@ -1,0 +1,112 @@
+{
+  "key_version": "1.1",
+  "status": "adjudicated_for_this_synthetic_study",
+  "basis": "Counting convention adopted for this revision; a policy-based classification of the saved fictional source clauses. No independent human or attorney validation is asserted.",
+  "scoring_unit": "document_id + rule_id",
+  "aggregation_unit": "independently actionable issue group",
+  "expected_rule_ids": {
+    "A01": [],
+    "A02": [
+      "TERM"
+    ],
+    "A03": [
+      "PURPOSE"
+    ],
+    "A04": [
+      "PURPOSE",
+      "RESIDUALS"
+    ],
+    "A05": [
+      "DELETION"
+    ],
+    "A06": [
+      "PURPOSE",
+      "RESIDUALS",
+      "TERM"
+    ],
+    "A07": [],
+    "A08": []
+  },
+  "expected_clause_ids": {
+    "A01": {},
+    "A02": {
+      "TERM": "2"
+    },
+    "A03": {
+      "PURPOSE": "1"
+    },
+    "A04": {
+      "PURPOSE": "2",
+      "RESIDUALS": "2"
+    },
+    "A05": {
+      "DELETION": "2"
+    },
+    "A06": {
+      "TERM": "1",
+      "PURPOSE": "2",
+      "RESIDUALS": "2"
+    },
+    "A07": {},
+    "A08": {}
+  },
+  "issue_groups": [
+    {
+      "issue_id": "A02-TERM",
+      "document_id": "A02",
+      "clause_id": "2",
+      "primary_rule_id": "TERM",
+      "rule_ids": [
+        "TERM"
+      ]
+    },
+    {
+      "issue_id": "A03-PURPOSE",
+      "document_id": "A03",
+      "clause_id": "1",
+      "primary_rule_id": "PURPOSE",
+      "rule_ids": [
+        "PURPOSE"
+      ]
+    },
+    {
+      "issue_id": "A04-RESIDUAL-USE",
+      "document_id": "A04",
+      "clause_id": "2",
+      "primary_rule_id": "RESIDUALS",
+      "rule_ids": [
+        "PURPOSE",
+        "RESIDUALS"
+      ]
+    },
+    {
+      "issue_id": "A05-DELETION",
+      "document_id": "A05",
+      "clause_id": "2",
+      "primary_rule_id": "DELETION",
+      "rule_ids": [
+        "DELETION"
+      ]
+    },
+    {
+      "issue_id": "A06-TERM",
+      "document_id": "A06",
+      "clause_id": "1",
+      "primary_rule_id": "TERM",
+      "rule_ids": [
+        "TERM"
+      ]
+    },
+    {
+      "issue_id": "A06-RESIDUAL-USE",
+      "document_id": "A06",
+      "clause_id": "2",
+      "primary_rule_id": "RESIDUALS",
+      "rule_ids": [
+        "PURPOSE",
+        "RESIDUALS"
+      ]
+    }
+  ],
+  "reference_update_timing": "Post-run adjudication after inspection of the saved response; the original pre-run key is retained."
+}

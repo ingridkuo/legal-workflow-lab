@@ -1,0 +1,287 @@
+{
+  "collection_version": "3.0",
+  "date": "2026-11-11",
+  "author": "Ingrid Kao",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5710,
+      "sha256": "d4d34671cd0705ea2abbd52bf2c73522605f408318d4e332e5eeae079d555d49"
+    },
+    {
+      "path": "articles/From_Counsel_Guidance_to_Executable_Review_Rules.md",
+      "bytes": 13883,
+      "sha256": "677a1f1ec8551f591de821a25d03ec8429698969142f7e24b7e9de7f8931d9dd"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Executable_Review_Rules.docx",
+      "bytes": 44639,
+      "sha256": "d9fe1625c85cbb949457c60b00680abf53579b04b585e1e5a3179f76941cfb4b"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Executable_Review_Rules.pdf",
+      "bytes": 97951,
+      "sha256": "3443d19c13f71212b64aae63214eb2d524f59cd2bb3729c5c4a5907f026a32ea"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.docx",
+      "bytes": 45144,
+      "sha256": "1c04ab28b2137c07b0195e6d529b0c915cddb05eec8e3a272c9f20b95ced7899"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.pdf",
+      "bytes": 105075,
+      "sha256": "4463d31fe639462f4877554936af3cc8e5af35b7201950d0cc9b5f57433e4182"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Testing_Legal_AI.docx",
+      "bytes": 44653,
+      "sha256": "857a97f1cd5b3248d90dbdab73f9500cd20504022ca3fcf5c729b488f2fe2ba3"
+    },
+    {
+      "path": "articles/Ingrid_Kao_Testing_Legal_AI.pdf",
+      "bytes": 96862,
+      "sha256": "56ef0f0ea7c59f9ba5212ab14628d57698905d47a7c07d98c1f7a3485b169a6e"
+    },
+    {
+      "path": "articles/Testing_a_Legal_AI_Review_Workflow.md",
+      "bytes": 13017,
+      "sha256": "6b0ba6ed7cd595280932921fe38d24455792534c986bc3d8a1c9f3a268515193"
+    },
+    {
+      "path": "articles/When_a_Legal_Escalation_Is_Ready_to_Close.md",
+      "bytes": 14579,
+      "sha256": "c3e4c5cef96d1c02fd79701b724ed9fc104769622af1223bf87532663abd526e"
+    },
+    {
+      "path": "experimental_llm/README.md",
+      "bytes": 4734,
+      "sha256": "1a4f96ff3a33a5a7e6edfa229137d59db9bc02784c383a6dd30986db6650ec4a"
+    },
+    {
+      "path": "experimental_llm/actionable_issue_groups.json",
+      "bytes": 1849,
+      "sha256": "5901a2297e9900dcb6b97aa9d518c2872eaeeab411d9739b180f0c0e39af3494"
+    },
+    {
+      "path": "experimental_llm/adjudicated_answer_key.json",
+      "bytes": 2298,
+      "sha256": "7775ce9372a004282e0cd9e6c45212b44cc9147041cedab11905adff201f8884"
+    },
+    {
+      "path": "experimental_llm/adjudication_v1_1.json",
+      "bytes": 3227,
+      "sha256": "9c3ea763fd5cda9f384ab4a64ecd2615945498f86d3d8b111da7cc10aa3d08eb"
+    },
+    {
+      "path": "experimental_llm/documents.json",
+      "bytes": 3577,
+      "sha256": "490c317da17f1999cc4d8e92fdd5e1b8ddf70016ee8e96a5655e8609c48544b8"
+    },
+    {
+      "path": "experimental_llm/evaluate_exploration.py",
+      "bytes": 10951,
+      "sha256": "ff01e2e5297ea2d8ebf088927198b7343c1fcf8a1a3b7577a001284a93f31769"
+    },
+    {
+      "path": "experimental_llm/exploration_metrics.json",
+      "bytes": 1589,
+      "sha256": "ba48c73f7dc125ed56b7968168f55228d92e431ea357bf2bc56045e4af2f966e"
+    },
+    {
+      "path": "experimental_llm/finding_evidence.csv",
+      "bytes": 2351,
+      "sha256": "d77e6d066b90e331c535da2729e8fbd3cc64662f496f0709741d8d0e3723b18c"
+    },
+    {
+      "path": "experimental_llm/prompt.txt",
+      "bytes": 1614,
+      "sha256": "96817f68d60a830bf10a9a8b967a098945e49416b711fbf85ab6842f2ff283ec"
+    },
+    {
+      "path": "experimental_llm/provisional_answer_key.json",
+      "bytes": 384,
+      "sha256": "1f6ab18d6d20f9810bc24dd1be2543f495939638a6e2675af5a2dd89c3bea6c4"
+    },
+    {
+      "path": "experimental_llm/raw_model_response.json",
+      "bytes": 3400,
+      "sha256": "7726316b42f0918888ea798d8460516999e85ed523764fa38f3b7a6cc61afb9d"
+    },
+    {
+      "path": "experimental_llm/test_exploration.py",
+      "bytes": 8787,
+      "sha256": "a6ce411c83eb78c7d587fb3b84b37d5df3d3d677f8525cab111377621c26d57f"
+    },
+    {
+      "path": "experimental_llm/toy_policy.json",
+      "bytes": 552,
+      "sha256": "100ca21fa91c0c584ba6f22a0e72cb929bcdfb7962a13c0524860567a0f35b25"
+    },
+    {
+      "path": "rulebook_toolkit/README.md",
+      "bytes": 7868,
+      "sha256": "78f7fa3d011e05aaa3805a6a2c7a58f493a1e911537b9ecd7ed51b3345f0776a"
+    },
+    {
+      "path": "rulebook_toolkit/fixtures/annotated_scenarios.json",
+      "bytes": 33092,
+      "sha256": "80f59b079c4643c052a516b410499adeb7dba1e911c9954555f77f74c9250a22"
+    },
+    {
+      "path": "rulebook_toolkit/fixtures/review_freshness.json",
+      "bytes": 2183,
+      "sha256": "6da1dc3f78370ec40a671d6165feb0cabcb29f2e187e86ddfd39bffbe37dc93e"
+    },
+    {
+      "path": "rulebook_toolkit/fixtures/source_documents.json",
+      "bytes": 9966,
+      "sha256": "2cbc3f8802b318e1559f724d1dbdf2cb3b3e6389f1dd4d2a9005a15b7a3d438b"
+    },
+    {
+      "path": "rulebook_toolkit/make_fixtures.py",
+      "bytes": 9194,
+      "sha256": "ccbc262fe4719bcb816810ccd02f2c3e432e1d9560869c24c6f3e76aba2c9523"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/case_evaluations.csv",
+      "bytes": 3623,
+      "sha256": "f6351b57f38a5acaad195fa4c40774f6dd83968c3d2b77bf551a90a907b5e164"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/change_impact.csv",
+      "bytes": 2769,
+      "sha256": "2c9a4a01f3c7861fad1c4f0fb5fcc6ff8ce3bb48197d1cce43d4b37f71b8aae9"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/input_manifest.json",
+      "bytes": 578,
+      "sha256": "746cc4e89c32422950afd0084ccb4f0baaa01a14bf141d20dab77343b14a071b"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/metrics.json",
+      "bytes": 959,
+      "sha256": "fc48cb7c490b80e6a7f861b824b366978d9f10c28404c6f5555085b4dd38fab5"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/report.md",
+      "bytes": 1524,
+      "sha256": "871cf294963a99056c7b2f68d1f5d3a558c47ef01c6cc15ee424edc921071512"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/review_freshness.csv",
+      "bytes": 545,
+      "sha256": "7bbd51c2d4b0eda7071e84ef9134cf78a87bbb27711f591236c24b4971f5b831"
+    },
+    {
+      "path": "rulebook_toolkit/outputs/rule_evaluations.csv",
+      "bytes": 6942,
+      "sha256": "7ae01f56a021be609c7ce268fdd3495aaf0dbf24c56cde550947480c568f990d"
+    },
+    {
+      "path": "rulebook_toolkit/policies/v1.json",
+      "bytes": 606,
+      "sha256": "a9f257bd96bbf78b009415369afd2b3c63bc686423147464e8d420bf14ae4863"
+    },
+    {
+      "path": "rulebook_toolkit/policies/v2.json",
+      "bytes": 645,
+      "sha256": "496c0eeaf1b72ea5a5c932b16870f6f96ce30483bdedacc32c6ad2e1c804c371"
+    },
+    {
+      "path": "rulebook_toolkit/run.py",
+      "bytes": 14888,
+      "sha256": "4edba171db1f226c2b917249f52ba7a1464d523fe10d2b3cc4d9265e95cf0fbc"
+    },
+    {
+      "path": "toolkit/README.md",
+      "bytes": 12608,
+      "sha256": "2899fbd5c10cf3f728af02a80d11e8a1d54802dedf23c5f849e57bb51023e98b"
+    },
+    {
+      "path": "toolkit/canonical_field_mapping.json",
+      "bytes": 483,
+      "sha256": "1b6bd9e7938afdfef220ecf27324678e2293bb59b4dbf92e12d8ce186fffd665"
+    },
+    {
+      "path": "toolkit/config.json",
+      "bytes": 997,
+      "sha256": "1311b61d1ecc11116b6814f3a766e219c9f45e5b734b32865d76149987488d37"
+    },
+    {
+      "path": "toolkit/fixtures/external_intake.json",
+      "bytes": 4301,
+      "sha256": "3b6084e4ff03facbe5cd22236e53330c13c13b18a61fcf1087e1fba1cee8c587"
+    },
+    {
+      "path": "toolkit/fixtures/output_cases.json",
+      "bytes": 10258,
+      "sha256": "9496c32074119440f554c39d5d631e8abb010484176b781a3fd0ee7a5512e901"
+    },
+    {
+      "path": "toolkit/fixtures/source_documents.json",
+      "bytes": 1748,
+      "sha256": "7f5ab479868d3428f68b2a76e4bf98ca9f5dddf85d208825381b5144612c4623"
+    },
+    {
+      "path": "toolkit/fixtures/workflow_scenarios.json",
+      "bytes": 1301,
+      "sha256": "51961bf0634223490927f5c9a9ceceb91a58e2310eab46250f22d70d267b9f45"
+    },
+    {
+      "path": "toolkit/make_fixtures.py",
+      "bytes": 5780,
+      "sha256": "8009470e8155d52da2b52525fe82ce64083db7924952b3d87550c427959205f0"
+    },
+    {
+      "path": "toolkit/outputs/execution_manifest.json",
+      "bytes": 265,
+      "sha256": "d0b915ed843bd59f89e09279c59c6141410f3cc2a3ecf16c91da25d7f9aabce9"
+    },
+    {
+      "path": "toolkit/outputs/fixture_manifest.json",
+      "bytes": 603,
+      "sha256": "a644eec0390608cce52deab0f658ae975fbdfbb79530f65c83d17404628a8954"
+    },
+    {
+      "path": "toolkit/outputs/metrics.json",
+      "bytes": 775,
+      "sha256": "01e5536fbf7b54c449468f4f8ff097a41dfe7a3724e59c634bfb8a87dea8f49a"
+    },
+    {
+      "path": "toolkit/outputs/operations.db",
+      "bytes": 40960,
+      "sha256": "c3d17e34fc7266072d2717b7b5bc061dd059bfa312f06b6b60c0a0f9678947da"
+    },
+    {
+      "path": "toolkit/outputs/operations_report.json",
+      "bytes": 1384,
+      "sha256": "9698f8a86034f7bc5c222c9411d753fe0469c314e6a1bb598afeb2d0169d8d1a"
+    },
+    {
+      "path": "toolkit/outputs/report.md",
+      "bytes": 2142,
+      "sha256": "f37e0312f03f3e6e0d1eedf86e666495192b918ab211a38acc65ba92724b245c"
+    },
+    {
+      "path": "toolkit/outputs/validation_results.csv",
+      "bytes": 1714,
+      "sha256": "97aaee2d8ddfda62bf2dbf88838d12f244e8b7c9eaff38d10b6447c982f444c9"
+    },
+    {
+      "path": "toolkit/outputs/workflow_results.csv",
+      "bytes": 1302,
+      "sha256": "ea6a0dc7ea68959aa34a8fdb48bd7b460610c821f73b3a2453eb695b7c5c1c87"
+    },
+    {
+      "path": "toolkit/reporting.sql",
+      "bytes": 804,
+      "sha256": "eeb94791d1b8a5ca105cf6535b5aa526aa33a09161556f3b2e90824cb269b613"
+    },
+    {
+      "path": "toolkit/run.py",
+      "bytes": 31363,
+      "sha256": "976d5db1986262ea15f84a4984d4bedaad4484b43dbabb91bad4c8152efe4046"
+    }
+  ]
+}

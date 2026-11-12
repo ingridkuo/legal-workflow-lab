@@ -1,0 +1,8 @@
+{
+  "canonical_field_mapping.json": "1b6bd9e7938afdfef220ecf27324678e2293bb59b4dbf92e12d8ce186fffd665",
+  "config.json": "1311b61d1ecc11116b6814f3a766e219c9f45e5b734b32865d76149987488d37",
+  "fixtures/external_intake.json": "3b6084e4ff03facbe5cd22236e53330c13c13b18a61fcf1087e1fba1cee8c587",
+  "fixtures/output_cases.json": "9496c32074119440f554c39d5d631e8abb010484176b781a3fd0ee7a5512e901",
+  "fixtures/source_documents.json": "7f5ab479868d3428f68b2a76e4bf98ca9f5dddf85d208825381b5144612c4623",
+  "fixtures/workflow_scenarios.json": "51961bf0634223490927f5c9a9ceceb91a58e2310eab46250f22d70d267b9f45"
+}

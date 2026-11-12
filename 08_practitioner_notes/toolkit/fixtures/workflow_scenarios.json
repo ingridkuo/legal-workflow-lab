@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "W01",
+    "scenario": "valid_close",
+    "external_key": "external-W01"
+  },
+  {
+    "case_id": "W02",
+    "scenario": "missing_owner",
+    "external_key": "external-W02"
+  },
+  {
+    "case_id": "W03",
+    "scenario": "unaccepted_handoff",
+    "external_key": "external-W03"
+  },
+  {
+    "case_id": "W04",
+    "scenario": "missing_approval",
+    "external_key": "external-W04"
+  },
+  {
+    "case_id": "W05",
+    "scenario": "missing_receipt",
+    "external_key": "external-W05"
+  },
+  {
+    "case_id": "W06",
+    "scenario": "pending_preservation",
+    "external_key": "external-W06"
+  },
+  {
+    "case_id": "W07",
+    "scenario": "active_preservation_missing_custodian",
+    "external_key": "external-W07"
+  },
+  {
+    "case_id": "W08",
+    "scenario": "active_preservation_accepted_custodian_close",
+    "external_key": "external-W08"
+  },
+  {
+    "case_id": "W09",
+    "scenario": "duplicate_idempotent",
+    "external_key": "external-W09"
+  },
+  {
+    "case_id": "W10",
+    "scenario": "conflicting_duplicate",
+    "external_key": "external-W10"
+  },
+  {
+    "case_id": "W11",
+    "scenario": "source_change_invalidates_approval",
+    "external_key": "external-W11"
+  },
+  {
+    "case_id": "W12",
+    "scenario": "overdue_reporting",
+    "external_key": "external-W12"
+  }
+]

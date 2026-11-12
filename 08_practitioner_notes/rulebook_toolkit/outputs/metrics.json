@@ -1,0 +1,37 @@
+{
+  "aggregate_counts_by_policy": {
+    "1.0": {
+      "ESCALATE": 4,
+      "NEEDS_REVIEW": 6,
+      "OUT_OF_SCOPE": 1,
+      "POLICY_MATCH": 7
+    },
+    "2.0": {
+      "ESCALATE": 6,
+      "NEEDS_REVIEW": 8,
+      "OUT_OF_SCOPE": 1,
+      "POLICY_MATCH": 3
+    }
+  },
+  "automated_legal_extraction": false,
+  "data_status": "authored_synthetic_sources_and_annotations",
+  "freshness_checks_matching_authored_expectations": 4,
+  "freshness_scenarios": 4,
+  "freshness_status_counts": {
+    "CURRENT": 1,
+    "RECHECK_REQUIRED": 3
+  },
+  "human_review_minutes": null,
+  "legal_accuracy": null,
+  "model_calls": 0,
+  "per_rule_evaluations": 108,
+  "policy_evaluations": 36,
+  "policy_evaluations_matching_authored_expectations": 36,
+  "policy_versions": 2,
+  "production_roi": null,
+  "scenarios": 18,
+  "scenarios_with_changed_aggregate": 4,
+  "scenarios_with_changed_rule_reason": 6,
+  "scenarios_with_changed_rule_status": 4,
+  "study_date": "2026-11-11"
+}

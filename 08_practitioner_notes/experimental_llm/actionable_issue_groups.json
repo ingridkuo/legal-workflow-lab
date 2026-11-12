@@ -1,0 +1,90 @@
+[
+  {
+    "issue_group_id": "A02-TERM",
+    "document_id": "A02",
+    "clause_id": "2",
+    "primary_rule_id": "TERM",
+    "expected_rule_ids": [
+      "TERM"
+    ],
+    "supported_rule_ids": [
+      "TERM"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  },
+  {
+    "issue_group_id": "A03-PURPOSE",
+    "document_id": "A03",
+    "clause_id": "1",
+    "primary_rule_id": "PURPOSE",
+    "expected_rule_ids": [
+      "PURPOSE"
+    ],
+    "supported_rule_ids": [
+      "PURPOSE"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  },
+  {
+    "issue_group_id": "A04-RESIDUAL-USE",
+    "document_id": "A04",
+    "clause_id": "2",
+    "primary_rule_id": "RESIDUALS",
+    "expected_rule_ids": [
+      "PURPOSE",
+      "RESIDUALS"
+    ],
+    "supported_rule_ids": [
+      "PURPOSE",
+      "RESIDUALS"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  },
+  {
+    "issue_group_id": "A05-DELETION",
+    "document_id": "A05",
+    "clause_id": "2",
+    "primary_rule_id": "DELETION",
+    "expected_rule_ids": [
+      "DELETION"
+    ],
+    "supported_rule_ids": [
+      "DELETION"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  },
+  {
+    "issue_group_id": "A06-TERM",
+    "document_id": "A06",
+    "clause_id": "1",
+    "primary_rule_id": "TERM",
+    "expected_rule_ids": [
+      "TERM"
+    ],
+    "supported_rule_ids": [
+      "TERM"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  },
+  {
+    "issue_group_id": "A06-RESIDUAL-USE",
+    "document_id": "A06",
+    "clause_id": "2",
+    "primary_rule_id": "RESIDUALS",
+    "expected_rule_ids": [
+      "PURPOSE",
+      "RESIDUALS"
+    ],
+    "supported_rule_ids": [
+      "PURPOSE",
+      "RESIDUALS"
+    ],
+    "group_supported": true,
+    "all_rule_labels_supported": true
+  }
+]

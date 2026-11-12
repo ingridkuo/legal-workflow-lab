@@ -1,0 +1,8 @@
+{
+  "fixtures/annotated_scenarios.json": "80f59b079c4643c052a516b410499adeb7dba1e911c9954555f77f74c9250a22",
+  "fixtures/review_freshness.json": "6da1dc3f78370ec40a671d6165feb0cabcb29f2e187e86ddfd39bffbe37dc93e",
+  "fixtures/source_documents.json": "2cbc3f8802b318e1559f724d1dbdf2cb3b3e6389f1dd4d2a9005a15b7a3d438b",
+  "policies/v1.json": "a9f257bd96bbf78b009415369afd2b3c63bc686423147464e8d420bf14ae4863",
+  "policies/v2.json": "496c0eeaf1b72ea5a5c932b16870f6f96ce30483bdedacc32c6ad2e1c804c371",
+  "run.py": "4edba171db1f226c2b917249f52ba7a1464d523fe10d2b3cc4d9265e95cf0fbc"
+}
