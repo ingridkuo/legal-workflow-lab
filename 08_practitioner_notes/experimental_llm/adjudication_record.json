@@ -1,0 +1,34 @@
+{
+  "adjudicator": "Ingrid Kao (author)",
+  "date": "2026-11-11",
+  "independent": false,
+  "timing": "After reviewing the saved response. The provisional key and the raw response are retained unchanged.",
+  "policy_version": "toy_policy.json as written (version 1)",
+  "unit_of_evaluation": "document-and-rule pair, as counted by evaluate_exploration.py",
+  "decisions": [
+    {
+      "document_id": "A04",
+      "rule_id": "PURPOSE",
+      "clause_id": "2",
+      "quote": "Information retained in unaided memory may be used by the Recipient without restriction.",
+      "model_reason": "The unrestricted memory-use permission extends operative use rights beyond evaluating Project Atlas.",
+      "provisional_key_status": "not listed",
+      "decision": "Supported under the policy as written; added to the adjudicated key.",
+      "reason": "PURPOSE escalates any operative use right that extends beyond evaluating Project Atlas. Clause 2 permits use of information retained in unaided memory without restriction, which is such a use right. RESIDUALS, the more specific rule, also applies to the same clause.",
+      "issue_level_treatment": "Same clause and same risk as the RESIDUALS finding; counted as one issue at the clause level."
+    },
+    {
+      "document_id": "A06",
+      "rule_id": "PURPOSE",
+      "clause_id": "2",
+      "quote": "Information retained in unaided memory may be used for any purpose without restriction.",
+      "model_reason": "Operative use rights expressly extend to purposes beyond evaluating Project Atlas.",
+      "provisional_key_status": "not listed",
+      "decision": "Supported under the policy as written; added to the adjudicated key.",
+      "reason": "Clause 2 expressly permits use for any purpose, which extends operative use rights beyond evaluating Project Atlas. RESIDUALS, the more specific rule, also applies to the same clause.",
+      "issue_level_treatment": "Same clause and same risk as the RESIDUALS finding; counted as one issue at the clause level."
+    }
+  ],
+  "root_cause": "The overlap comes from the rules, not the model: the general PURPOSE rule and the specific RESIDUALS rule both reach a permission to use information retained in unaided memory.",
+  "policy_follow_up": "The next version of the toy policy should state that RESIDUALS governs permissions to use information retained in unaided memory and that PURPOSE covers other use rights. Under that wording, PURPOSE would not apply to these clauses. The saved response was produced under version 1 and is scored against version 1."
+}

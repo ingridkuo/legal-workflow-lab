@@ -16,10 +16,10 @@ The [article](articles/Ingrid_Kao_Testing_Legal_AI.pdf) separates authored softw
 
 - **Software gate:** 16 authored output fixtures; 12 blocked, one refusal routed to manual review, and three outputs routed to human review.
 - **Recorded model exercise:** eight synthetic NDA fragments (A01–A08), one saved Codex agent batch, and eight source-supported document–rule findings.
-- **Adjudication:** the original six-pair provisional key is retained. A documented post-run revision accepts PURPOSE for A04 and A06 alongside RESIDUALS, producing eight reference pairs. Grouping those overlaps under the more specific RESIDUALS rule yields six actionable issue groups.
-- **Result:** the saved response matches all eight revised reference pairs and six issue groups. This resolves classification and counting; the model response is unchanged. The small, post-run-adjudicated set is not an independent population benchmark.
+- **Adjudication:** the original six-pair provisional key is retained. The supplied post-run author adjudication accepts PURPOSE for A04 and A06 alongside RESIDUALS, producing eight reference pairs. The author reviewed the saved response; the decision is not independent. Grouping those overlaps under the more specific RESIDUALS rule yields six actionable issue groups.
+- **Result:** the saved response matches all eight revised reference pairs and six issue groups. This resolves classification and counting; the model response is unchanged. The report presents agreement counts rather than a precision, recall, or population accuracy estimate from this small post-run-adjudicated set.
 
-Inspect the [sources](experimental_llm/documents.json), [policy](experimental_llm/toy_policy.json), [original key](experimental_llm/provisional_answer_key.json), [raw response](experimental_llm/raw_model_response.json), [adjudication ledger](experimental_llm/adjudication_v1_1.json), [revised key](experimental_llm/adjudicated_answer_key.json), and [scorer](experimental_llm/evaluate_exploration.py).
+Inspect the [sources](experimental_llm/documents.json), [policy](experimental_llm/toy_policy.json), [original key](experimental_llm/provisional_answer_key.json), [raw response](experimental_llm/raw_model_response.json), [author adjudication](experimental_llm/adjudication_record.json), [scoring ledger](experimental_llm/adjudication_v1_1.json), [revised key](experimental_llm/adjudicated_answer_key.json), and [scorer](experimental_llm/evaluate_exploration.py).
 
 ## When a Legal Escalation Is Ready to Close
 

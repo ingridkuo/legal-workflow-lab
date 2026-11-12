@@ -21,15 +21,20 @@ class SavedReviewScoringTests(unittest.TestCase):
         self.original = load('provisional_answer_key.json')
         self.key = load('adjudicated_answer_key.json')
         self.response = load('raw_model_response.json')
+        self.author_record = load('adjudication_record.json')
 
     def score(self):
-        return evaluation.score_reviews(self.documents, self.original, self.key, self.response)
+        return evaluation.score_reviews(self.documents, self.original, self.key, self.response, self.author_record)
 
     def test_saved_batch_has_eight_supported_pairs_and_six_issue_groups(self):
         metrics, rows, groups = self.score()
         self.assertEqual((metrics['review_documents'], metrics['finding_rows']), (8, 8))
         self.assertEqual((metrics['supported_true_positives'], metrics['false_positives'], metrics['false_negatives']), (8, 0, 0))
-        self.assertEqual((metrics['adjudicated_precision'], metrics['adjudicated_recall']), (1.0, 1.0))
+        self.assertIsNone(metrics['adjudicated_precision'])
+        self.assertIsNone(metrics['adjudicated_recall'])
+        self.assertEqual(metrics['adjudicated_key_pairs_supported'], 8)
+        self.assertEqual(metrics['distinct_flagged_clauses'], 6)
+        self.assertFalse(metrics['adjudication']['independent'])
         self.assertEqual((metrics['actionable_issue_groups'], metrics['supported_actionable_issue_groups']), (6, 6))
         self.assertEqual(metrics['issue_groups_with_all_labels_supported'], 6)
         self.assertTrue(all(row['source_metadata_matches'] and row['quote_matches_cited_clause'] for row in rows))
@@ -76,7 +81,9 @@ class SavedReviewScoringTests(unittest.TestCase):
         self.response['reviews'][1]['findings'][0]['quote'] = 'This quotation is not in the source.'
         metrics, _, _ = self.score()
         self.assertEqual((metrics['supported_true_positives'], metrics['false_positives'], metrics['false_negatives']), (7, 1, 1))
-        self.assertEqual((metrics['adjudicated_precision'], metrics['adjudicated_recall']), (7 / 8, 7 / 8))
+        self.assertEqual(metrics['adjudicated_key_pairs_supported'], 7)
+        self.assertIsNone(metrics['adjudicated_precision'])
+        self.assertIsNone(metrics['adjudicated_recall'])
 
     def test_real_quote_in_wrong_clause_does_not_match_reference(self):
         finding = self.response['reviews'][1]['findings'][0]
@@ -94,7 +101,7 @@ class SavedReviewScoringTests(unittest.TestCase):
         self.assertEqual(metrics['source_metadata_matches'], 7)
         self.assertEqual((metrics['supported_true_positives'], metrics['false_positives'], metrics['false_negatives']), (5, 3, 3))
 
-    def test_missing_one_overlap_label_preserves_group_but_reduces_rule_recall(self):
+    def test_missing_one_overlap_label_preserves_group_but_misses_reference_pair(self):
         self.response['reviews'][3]['findings'] = [f for f in self.response['reviews'][3]['findings'] if f['rule_id'] != 'RESIDUALS']
         metrics, _, _ = self.score()
         self.assertEqual((metrics['supported_true_positives'], metrics['false_positives'], metrics['false_negatives']), (7, 0, 1))
@@ -129,12 +136,13 @@ class SavedReviewScoringTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Invalid finding fields'):
             self.score()
 
-    def test_no_predictions_has_undefined_precision_and_zero_recall(self):
+    def test_no_predictions_reports_all_missed_reference_pairs_without_rates(self):
         for review in self.response['reviews']:
             review['findings'] = []
         metrics, rows, _ = self.score()
         self.assertIsNone(metrics['adjudicated_precision'])
-        self.assertEqual(metrics['adjudicated_recall'], 0.0)
+        self.assertIsNone(metrics['adjudicated_recall'])
+        self.assertEqual(metrics['adjudicated_key_pairs_missing'], 8)
         self.assertEqual(metrics['false_negatives'], 8)
         self.assertEqual(metrics['supported_actionable_issue_groups'], 0)
         self.assertEqual(rows, [])
@@ -153,6 +161,22 @@ class SavedReviewScoringTests(unittest.TestCase):
     def test_reference_locator_must_exist_in_source(self):
         self.key['expected_clause_ids']['A02']['TERM'] = 'missing'
         with self.assertRaisesRegex(ValueError, 'does not exist in source'):
+            self.score()
+
+
+    def test_author_record_must_cover_both_added_reference_pairs(self):
+        self.author_record['decisions'].pop()
+        with self.assertRaisesRegex(ValueError, 'cover every added reference pair'):
+            self.score()
+
+    def test_author_record_requires_matching_source_evidence(self):
+        self.author_record['decisions'][0]['quote'] = 'No such source quotation.'
+        with self.assertRaisesRegex(ValueError, 'quote does not match'):
+            self.score()
+
+    def test_author_record_cannot_be_relabelled_as_independent(self):
+        self.author_record['independent'] = True
+        with self.assertRaisesRegex(ValueError, 'explicitly non-independent'):
             self.score()
 
 
