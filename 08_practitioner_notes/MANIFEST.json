@@ -1,6 +1,6 @@
 {
-  "collection_version": "3.1",
-  "date": "2026-11-11",
+  "collection_version": "3.2",
+  "date": "2026-11-15",
   "author": "Ingrid Kao",
   "files": [
     {
@@ -15,33 +15,33 @@
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.docx",
-      "bytes": 44761,
-      "sha256": "c9846b817eafaf4322487fa495c780e43b9ed9b943ee4e9bc1e9b60a9df4bfa2"
+      "bytes": 44621,
+      "sha256": "5acc68a2f461af1e000130e9f285f608de4349afb5727fd61441d6700bba4e2e"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.pdf",
-      "bytes": 179012,
-      "sha256": "24e0dffb41f4a407c9690076bc7e7689595267aec0f96a1cfeaf8aa914ea05a7"
+      "bytes": 86245,
+      "sha256": "4d47cccf7e7866ace8a62003254464835601c917cb066571a7c230d64cdabe0f"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.docx",
-      "bytes": 45171,
-      "sha256": "58a989dae0055636651243ce66402751458dc8225326602b9a9614e4a4a3c1cf"
+      "bytes": 44987,
+      "sha256": "8dab36fc9c57966c6b9f693535909f3f45ae87578a0e97503ce7de0a2478f822"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.pdf",
-      "bytes": 185872,
-      "sha256": "a5c34d80a18287e11e69fe4d31411bf540c57f13b27473ef0dc4e4e996319bfb"
+      "bytes": 92710,
+      "sha256": "0665d08845c95a5eab2458625b98f6588b424da7d47d0be2008db7f1129b636d"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.docx",
-      "bytes": 44986,
-      "sha256": "f0ff2aef1ac48e8c51d93553e695253d7a5936a5e86d2f0f5cc912ffbf18411e"
+      "bytes": 44827,
+      "sha256": "b3ee49415e02e14531d881316ae9133e86f5cb9c0590d4530010f6e30112fb7e"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.pdf",
-      "bytes": 180837,
-      "sha256": "a2f4799d79e6e44f09a1a2982ef1de1c03ebe74b0601bb87c0ec370686df11e4"
+      "bytes": 88056,
+      "sha256": "ce98f1109024f3e27d8f3a202bd37751ae3c149c802b2d26500c4b501a3a10b4"
     },
     {
       "path": "articles/Testing_a_Legal_AI_Review_Workflow.md",
