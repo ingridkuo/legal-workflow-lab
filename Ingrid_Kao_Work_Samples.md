@@ -5,7 +5,7 @@ Ingrid Kao
 
 ## Selected work
 
-Taiwan-qualified attorney  |  UC Berkeley Law, Master of Laws (2026)
+Taiwan-qualified attorney  |  UC Berkeley Master of Laws (2026)
 
 I turn legal requirements into contract positions, review rules and working processes. My experience spans law-firm practice, sole in-house counsel work and a legal-tech company.
 
