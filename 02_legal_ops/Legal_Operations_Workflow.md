@@ -2,7 +2,7 @@
 
 Ingrid Kao | 10 November 2026 (Pacific)
 
-## Page 1 - A contract process people can use.
+## Page 1: A contract process people can use.
 
 Legal Operations Workflow | Sample operating model | 10 November 2026
 
@@ -27,7 +27,7 @@ A complete request enters review. A documented decision releases a specific vers
 
 The process design and example thresholds are illustrative. They are a framework for an organization's own policies, delegations, systems and governing contracts.
 
-## Page 2 - Collect the facts. Route the decision.
+## Page 2: Collect the facts. Route the decision.
 
 Evaluate all risk and value inputs together; preserve missing information.
 
@@ -38,7 +38,7 @@ Evaluate all risk and value inputs together; preserve missing information.
 | Risk facts | Personal data; controlled technology; shared-model training; unlimited liability; exclusivity/noncompete; NDA residuals; sanctions/export alert; other critical concern. |
 | NDA eligibility | Unchanged approved mutual template; routine evaluation purpose; no extra commercial duties; established approval policy and delegation. |
 
-### Sample routing rules - highest severity wins
+### Sample routing rules: highest severity wins
 
 | Priority | Rule and next step |
 | --- | --- |
@@ -51,7 +51,7 @@ Evaluate all risk and value inputs together; preserve missing information.
 
 Critical triggers include personal data (Privacy/Security), controlled technology and export alerts (trade compliance), shared-model training, residuals, unlimited liability and commercial exclusivity. Ask every risk question before calculating a route.
 
-## Page 3 - Release the exact version.
+## Page 3: Release the exact version.
 
 Approval evidence belongs beside the document that will be signed.
 
@@ -73,7 +73,7 @@ I treat execution quality as a release gate. The reviewing owner reconciles the 
 
 For each open issue, retain the source clause, business consequence, proposed position, decision owner, deadline and resolution. Keep the signing step on hold until the authorized reviewer closes the release conditions.
 
-## Page 4 - The signature is the handoff.
+## Page 4: The signature is the handoff.
 
 Make the obligation, owner and evidence visible together.
 
@@ -95,7 +95,7 @@ Check the contract's acceptance trigger before treating delivery as acceptance. 
 
 A COI does not expand the underlying policy or substitute for a required endorsement. The Texas Department of Insurance FAQ is a jurisdiction-specific reference; the applicable contract and insurance requirements govern. [OPS-01]
 
-## Page 5 - Keep exceptions visible and owned.
+## Page 5: Keep exceptions visible and owned.
 
 A focused reporting rhythm turns the register into a working queue.
 
@@ -118,7 +118,7 @@ Separate turnaround on a complete request from time waiting for information. Tra
 
 A named owner maintains templates, thresholds, delegations and instructions. Review exceptions with the relevant teams, test boundary and missing-data cases when rules change, train the people using the process, and record the decision before expanding its scope.
 
-**[OPS-01] Texas Department of Insurance - Certificates of Insurance FAQs**  
+**[OPS-01] Texas Department of Insurance, Certificates of Insurance FAQs**  
 https://www.tdi.texas.gov/certificates/faq.html  
 Source checked 10 November 2026 (Pacific).  
 Texas-specific reference on certificate limitations; verify the relevant jurisdiction and actual policy/endorsements.  

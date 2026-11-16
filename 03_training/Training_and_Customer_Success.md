@@ -69,7 +69,7 @@ The sample rules classify shared-model training permission as RED. Send the sour
 
 ### Source passage
 
-"The recipient may use the disclosed information to train shared machine-learning models without further consent."
+“The recipient may use the disclosed information to train shared machine-learning models without further consent.”
 
 training_excerpt.txt | clause 3
 

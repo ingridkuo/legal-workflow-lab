@@ -120,11 +120,11 @@ Measure handling time and user-task completion only when baseline and pilot reco
 
 ### Primary references
 
-[1] [ABA Formal Opinion 512 (July 29, 2024)](https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf) - Model Rules guidance. Competence pp. 2-4; confidentiality pp. 6-7; communication pp. 8-9; supervision pp. 10-11.
+[1] [ABA Formal Opinion 512 (July 29, 2024)](https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf): Model Rules guidance. Competence pp. 2-4; confidentiality pp. 6-7; communication pp. 8-9; supervision pp. 10-11.
 
-[2] [OWASP LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) - Indirect injection through external source content and layered mitigation strategies.
+[2] [OWASP LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/): Indirect injection through external source content and layered mitigation strategies.
 
-[3] [NIST Technical Note 2119 (2020)](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2119.pdf) - Independent binary trials and binomial inference, sections 1.1 and 3.1. The portfolio's designed, shared-context set supports descriptive counts.
+[3] [NIST Technical Note 2119 (2020)](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2119.pdf): Independent binary trials and binomial inference, sections 1.1 and 3.1. The portfolio's designed, shared-context set supports descriptive counts.
 
 ## Same request. Three observed batches.
 

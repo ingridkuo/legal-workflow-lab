@@ -14,7 +14,7 @@ I use a policy-based first pass to turn NDA issues into checkable findings: the 
 - [Review policy](policy/nda_demo_policy.md) and [v2 prompt](prompts/review_v2.md)
 - [Implementation control design](Controls_Design.md) and [primary references](AI_Method_Primary_Sources.csv)
 
-On 15 held-out synthetic NDAs, the saved v2 review returned **16 findings for 16 reference issues**. All 16 quotations appeared in their stated Sections; none of the 9 RED reference issues was missed. **Reference labels reviewed by Ingrid Kao** - scope: all 25 reference issue labels across 20 synthetic NDAs; no labels changed. See the [review record](evaluation/review_record.json).
+On 15 held-out synthetic NDAs, the saved v2 review returned **16 findings for 16 reference issues**. All 16 quotations appeared in their stated Sections; none of the 9 RED reference issues was missed. **Reference labels reviewed by Ingrid Kao.** Scope: all 25 reference issue labels across 20 synthetic NDAs; no labels changed. See the [review record](evaluation/review_record.json).
 
 ## How I structure the work
 
