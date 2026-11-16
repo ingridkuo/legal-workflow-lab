@@ -128,7 +128,7 @@ Decision: settle ownership, use, sublicensing and payment as four linked questio
 
 ## Construction subcontract checklist
 
-- Define site, scope, drawings, specification revision and programme.
+- Define site, scope, drawings, specification revision and schedule.
 - Align prime-contract flow-downs; identify terms the subcontractor cannot perform.
 - Separate variations, change orders, rates and authorized instructions.
 - Tie progress/acceptance payment to stated evidence and sign-off.
@@ -141,9 +141,9 @@ Decision: settle ownership, use, sublicensing and payment as four linked questio
 
 ## Sources and boundaries
 
-- S1 [18 USC 1839 definitions](https://uscode.house.gov/us/usc/119-118/t18/s1839/) - U.S. federal trade-secret definition. The sample five-year period is a contract-policy choice, not a duration stated by this section. Checked 10 November 2026.
-- S2 [ICC Incoterms 2020 and commercial contracts](https://library.iccwbo.org/clp/clp-incoterms-qa-2020.htm?AGENT=ICC_HQ) - Trade-term scope and how to name a point and version. Incoterms allocate delivery/risk/cost responsibilities; they do not determine title or acceptance remedies. Checked 10 November 2026.
-- S3 [Texas Department of Insurance COI FAQ](https://www.tdi.texas.gov/certificates/faq.html) - Texas-specific example: certificate information cannot expand underlying policy terms. Verify the applicable jurisdiction and actual policy/endorsements. Checked 10 November 2026.
+- S1 [18 USC 1839 definitions](https://uscode.house.gov/us/usc/119-118/t18/s1839/): U.S. federal trade-secret definition. The sample five-year period is a contract-policy choice, not a duration stated by this section. Checked 10 November 2026.
+- S2 [ICC Incoterms 2020 and commercial contracts](https://library.iccwbo.org/clp/clp-incoterms-qa-2020.htm?AGENT=ICC_HQ): Trade-term scope and how to name a point and version. Incoterms allocate delivery/risk/cost responsibilities; they do not determine title or acceptance remedies. Checked 10 November 2026.
+- S3 [Texas Department of Insurance COI FAQ](https://www.tdi.texas.gov/certificates/faq.html): Texas-specific example: certificate information cannot expand underlying policy terms. Verify the applicable jurisdiction and actual policy/endorsements. Checked 10 November 2026.
 
 Contract positions depend on the transaction, applicable law and allocation of risk. The Texas COI source addresses Texas requirements; confirm the rules and coverage evidence applicable to the transaction.
 
