@@ -93,7 +93,7 @@ def markdown(data):
                 text.extend('| '+' | '.join(str(x)for x in row)+' |'for row in b['rows']);text.append('')
             elif kind=='quote':text.extend(['> '+b['text'],'','Source: '+b['label'],''])
             elif kind=='code':text.extend(['```sh',b['text'],'```',''])
-            elif kind=='reference':text.extend([f'[{b["id"]}] [{b["title"]}]({b["url"]}) - '+b['text'],''])
+            elif kind=='reference':text.extend([f'[{b["id"]}] [{b["title"]}]({b["url"]}): '+b['text'],''])
             else:text.extend([b['text'],''])
     return '\n'.join(text)
 

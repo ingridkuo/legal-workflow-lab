@@ -84,7 +84,7 @@ class PDF:
     def save(self):self.c.save()
 
 doc=PDF(PUB/('Ingrid_Kao_Work_Samples_Web.pdf' if WEB else 'Ingrid_Kao_Work_Samples.pdf'),'Skills in Practice | Ingrid Kao','Commercial judgment, workflow design, migration validation, legal AI evaluation and knowledge operations',6)
-doc.start('Commercial contracts / Legal operations / Legal AI','Selected work','Taiwan-qualified attorney  |  UC Berkeley Law, Master of Laws (2026)')
+doc.start('Commercial contracts / Legal operations / Legal AI','Selected work','Taiwan-qualified attorney  |  UC Berkeley Master of Laws (2026)')
 doc.body('I turn legal requirements into contract positions, review rules and working processes. My experience spans law-firm practice, sole in-house counsel work and a legal-tech company.')
 doc.section('Choose the evidence relevant to the role')
 doc.table(['Capability','Work to inspect','Page'],[
