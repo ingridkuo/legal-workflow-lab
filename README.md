@@ -2,7 +2,7 @@
 
 **Commercial contracts · Legal operations · Legal AI**
 
-I am a Taiwan-qualified attorney and Berkeley Law LL.M. graduate. I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. These are selected matters from my practice and working examples of those methods.
+I am a Taiwan-qualified attorney with a UC Berkeley Master of Laws. I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. These are selected matters from my practice and working examples of those methods.
 
 ## Start here
 
