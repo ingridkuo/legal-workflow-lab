@@ -60,7 +60,7 @@ The original NDA Lab uses 20 synthetic NDAs: five development documents and 15 h
 
 The migration example checks deliberately flawed and corrected fixtures, and the knowledge example tests proposed access and approval gates. A clean migration report still leaves record-owner signoff and destination-system checks outstanding. Enforcing real system permissions needs separate checks.
 
-The legal content, judgments and review decisions here are mine. Since November 2026, changes to this repository have been drafted with an AI coding assistant (Claude), and each change is reviewed before it is merged.
+The legal analysis and review decisions are my own, and I use an AI coding assistant to help draft code changes.
 
 ## Files
 
