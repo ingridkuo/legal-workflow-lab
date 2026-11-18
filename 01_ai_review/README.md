@@ -10,7 +10,7 @@ I use a policy-based first pass to turn NDA issues into checkable findings: the 
 
 - [Six-page method brief](AI_Contract_Review_Method.pdf)
 - [Editable method brief](AI_Contract_Review_Method.md)
-- [Interactive model demonstration](replay.html): inspect three saved scenarios, source quotes, policy rules and a local evidence challenge.
+- [Interactive model demonstration](https://ingridkao.netlify.app/lab/01_ai_review/replay.html): inspect three saved scenarios, source quotes, policy rules and a local evidence challenge.
 - [Review policy](policy/nda_demo_policy.md) and [v2 prompt](prompts/review_v2.md)
 - [Implementation control design](Controls_Design.md) and [primary references](AI_Method_Primary_Sources.csv)
 
@@ -51,6 +51,18 @@ python3 scripts/score_saved_results.py
 The standard-library script reads the supplied contracts, reference labels and saved reviews. It reproduces rule-family counts, fixed-reference-key precision/recall ratios, exact-quote and Section checks, severity/routing comparisons and the required human-review flag. It writes `evaluation/results_summary.json`, `evaluation/document_scores.csv` and `evaluation/evidence_checks.csv`. The compatible field `human_gate_errors` checks a missing or false output flag, not live approval enforcement. Legal interpretation remains with the reviewer.
 
 The script rescores saved outputs. The replay displays those same saved outputs locally. Neither operation calls a model. For a new review, use the versioned policy and prompt in an authorized tool, save a new result file, then verify the evidence and obtain the required legal decision.
+
+## The replay page: source and tests
+
+The [replay](replay.html) is one static page built from the saved files above. Its source is in `tools/`: the [page template](../tools/review_demo_template.html), the [evidence checks](../tools/review_demo_core.cjs), the [link state](../tools/review_demo_view.cjs) and the [page script](../tools/review_demo_app.js). From the public collection root:
+
+```sh
+python3 tools/build_review_demo.py
+node tools/test_review_demo.cjs
+node tools/test_review_view.cjs
+```
+
+The builder embeds the 20 source agreements, the three saved batches, the policy and both prompts, with a SHA-256 fingerprint for each file. The 20 evidence tests check the page's mechanical rules: document and policy identity, the human-review flag, exact quotes in their stated Sections, rule families, routing and source status. The 6 link tests check that a copied link reopens the same document, tab and finding.
 
 ## Operational controls
 
