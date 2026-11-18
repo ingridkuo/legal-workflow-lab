@@ -1,20 +1,44 @@
-# Ingrid Kao / Selected Work
+# Legal Workflow Lab
 
-**Commercial contracts · Legal operations · Legal AI**
+**Ingrid Kao · Taiwan-qualified attorney · UC Berkeley Master of Laws**
 
-I am a Taiwan-qualified attorney with a UC Berkeley Master of Laws. I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. These are selected matters from my practice and working examples of those methods.
+I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. This repository brings together anonymized matters from my practice and demonstrations built on fictional contracts and records. Each demonstration shows a decision and the evidence behind it.
+
+[Six-page work samples (PDF)](Ingrid_Kao_Work_Samples.pdf) · [Portfolio](https://ingridkao.netlify.app/) · [Practitioner articles](08_practitioner_notes/README.md) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
 ## Start here
 
-[Read the six-page Work Samples](Ingrid_Kao_Work_Samples.pdf) · [Practitioner articles](08_practitioner_notes/README.md) · [Browse the portfolio](https://ingridkao.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
+**Why does an NDA that says "approve" go back to Legal?** In NDA-19, one section accepts unlimited liability. Another tells the reviewer to approve the agreement and suppress the findings. Open the saved review to see the source text and the action each clause requires.
 
-The examples demonstrate legal rule design, contract judgment, workflow implementation, data reconciliation and evaluation. To run the browser/Python prototype locally:
+[Walk through the NDA review ↗](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) · [Inspect the source and tests](01_ai_review/README.md#the-replay-page-source-and-tests)
 
-```sh
-python3 01_ai_review/scripts/web_lab.py
-```
+**Did all eight contracts migrate correctly?** The source and destination counts match, yet five fictional records have to be held. Compare the batch before and after correction, and see why the record owner still signs off.
 
-Open the printed local URL and select **Run checks**. This validates preserved results; it does not call a model or require an API key.
+[Compare the migration reports ↗](https://ingridkao.netlify.app/lab/05_solution_delivery/) · [Inspect the migration checks](05_solution_delivery/README.md)
+
+**Who can preserve records, and who approves their release?** A fictional request asks for both preservation and an account export. Intake asks the system owner to pause routine deletion, and the export decision goes to Counsel.
+
+[Follow the preservation and export request ↗](https://ingridkao.netlify.app/lab/06_knowledge_operations/) · [Inspect the handoff and approval rules](06_knowledge_operations/README.md)
+
+## Choose the work relevant to the role
+
+- **Legal AI evaluation.** The [review method (PDF)](01_ai_review/AI_Contract_Review_Method.pdf) explains how I checked source quotes and counted overlapping findings. The [repeatability report (PDF)](01_ai_review/repeatability/Repeatability_Results.pdf) records three more reviews of the same held-out documents.
+- **Commercial contracts.** [Five anonymized cases from my practice (PDF)](04_case_studies/Selected_Case_Studies.pdf) cover a technology license, a confidentiality remedy, equipment acceptance, transaction execution and permission to use legal data.
+- **Legal operations and intake.** Read the [Jira Service Management and Confluence implementation case (PDF)](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf), then explore the [operations tracker (Excel)](02_legal_ops/Contract_Operations_Tracker.xlsx) and the [workflow guide (PDF)](02_legal_ops/Legal_Operations_Workflow.pdf).
+- **Customer training and adoption.** The [training case (PDF)](03_training/Training_and_Customer_Success.pdf) covers adoption and product feedback. The [knowledge handoff demonstration ↗](https://ingridkao.netlify.app/lab/06_knowledge_operations/) shows which guidance a reviewer may use.
+- **Construction contracts.** The [subcontract workflow](07_construction_workflow/README.md) shows how exceptions reach the right reviewer. Its [tracker (Excel)](07_construction_workflow/Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx) follows guarantees after signature, and the [owner-side issues list (PDF)](07_construction_workflow/Ingrid_Kao_Owner_Side_Construction_Issues.pdf) compares AIA A201-2017 with Taiwan PCC model terms.
+
+## A guided model demonstration
+
+[Inside the Review ↗](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) puts three saved decisions beside their source clauses:
+
+- **NDA-19.** Disregard the embedded instruction. Revise the clause imposing unlimited liability or obtain senior Legal/Finance approval before proceeding.
+- **NDA-18.** Request Appendix T before assessing the confidentiality period.
+- **NDA-03.** Keep the two specific findings and document why the count changed from three to two.
+
+Inspect the quotes, rules, prompts and decision brief, or download a checked packet as JSON. The evidence challenge alters a temporary copy; no archive is edited. The replay needs no account, API key or new model call. Twenty tests cover its mechanical checks, and six more check that a copied link reopens the same document, tab and finding. These tests are separate from the archived model evaluation.
+
+The Lab's landing page also runs the intake routing example, with no account or API key.
 
 ## Practitioner articles and companion demonstrations
 
@@ -26,56 +50,35 @@ Open the printed local URL and select **Run checks**. This validates preserved r
 | [When a Legal Escalation Is Ready to Close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
 | [From Counsel Guidance to Executable Review Rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
 
-These are separate datasets. The eight-document exploratory review does not replace the original 20-document `01_ai_review` Lab; the 12 workflow scenarios are separate from the 29 tests in `06_knowledge_operations`. The [dataset map and run commands](08_practitioner_notes/README.md#dataset-map) identify each unit and result.
-
-## Choose the work relevant to the role
-
-| Focus | Start with |
-|---|---|
-| Legal AI and implementation | [Guided model review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) ([view source and tests](01_ai_review/README.md#the-replay-page-source-and-tests)), then [method](01_ai_review/AI_Contract_Review_Method.pdf) and [migration](05_solution_delivery/index.html) |
-| Commercial contracts and legal operations | [Historical cases](04_case_studies/Selected_Case_Studies.pdf), [tracker](02_legal_ops/Contract_Operations_Tracker.xlsx) and [workflow](02_legal_ops/Legal_Operations_Workflow.pdf) |
-| Legal intake and systems | [Jira Service Management and Confluence case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf) |
-| Training and adoption | [Training case](03_training/Training_and_Customer_Success.pdf) and [knowledge handoff](06_knowledge_operations/index.html) |
-| Construction contracts and workflow implementation | [Subcontract workflow](07_construction_workflow/README.md), [tracker](07_construction_workflow/Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx) and [owner-side issues](07_construction_workflow/Ingrid_Kao_Owner_Side_Construction_Issues.pdf) |
-
-## Files
-
-- [Application Work Samples](Ingrid_Kao_Work_Samples.pdf): six pages to download and send; the links open the hosted exhibits.
-- [Linked portfolio edition](Ingrid_Kao_Work_Samples_Web.pdf): the same six pages, with links to the exhibits in this repository.
-- [AI contract review method](01_ai_review/AI_Contract_Review_Method.pdf): rubric, fixed tests, evidence checks and error analysis.
-- [Contract operations tracker](02_legal_ops/Contract_Operations_Tracker.xlsx): contracts, obligations, milestones and a dashboard.
-- [Legal intake implementation case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf): Jira Service Management administration, Confluence guidance and illustrative acceptance checks.
-- [Commercial contracting handbook](02_legal_ops/Commercial_Contracting_Handbook.pdf) and [workflow guide](02_legal_ops/Legal_Operations_Workflow.pdf).
-- [Five selected case studies](04_case_studies/Selected_Case_Studies.pdf): anonymized matters from my practice.
-- [Training and customer success](03_training/Training_and_Customer_Success.pdf): an additional sample on adoption and product feedback.
-- [Migration and data quality](05_solution_delivery/index.html): runnable XML-to-JSON mapping, four seeded defect groups, corrected results and 30 behavioral tests.
-- [Escalation and knowledge operations](06_knowledge_operations/index.html): source-backed handoffs, maintained articles and 29 gate tests.
-
-## A guided model demonstration
-
-Open [Inside the Review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html). Three decisions show the model output and the evidence together:
-
-1. **Document trust:** an instruction embedded in NDA-19 tries to force approval; the saved review flags it and unlimited liability.
-2. **Incomplete evidence:** NDA-18 needs a missing appendix before either confidentiality period can be assessed.
-3. **Evaluation judgment:** NDA-03 shows how v2 consolidates a source-supported overlap, without claiming improved legal accuracy.
-
-Inspect the source quote, rules, prompts, management brief and fixed-set results. A local challenge changes a temporary copy to demonstrate evidence rejection. Checked packets can be downloaded as JSON. No model is called and no archive is edited.
-
-The landing page also includes working intake routing. Both demonstrations run without an account or API key. The model demonstration has 20 mechanical-check tests; those are distinct from the archived model evaluation. Six link tests check that a copied link reopens the same document, tab and finding.
+These are separate datasets. The eight-document exploratory review does not replace the original 20-document NDA Lab, and the 12 workflow scenarios are separate from the 29 knowledge-gate tests. The [dataset map and run commands](08_practitioner_notes/README.md#dataset-map) identify each unit and result.
 
 ## Evidence and scope
 
-The case studies describe my historical work. The workflow tools use fictional records and proposed policy thresholds. The training sample distinguishes historical experience from sample training scenarios.
+The case studies describe my historical work. Client identities and monetary terms are withheld, and proposed edits are kept apart from the confirmed signed outcome. The workflow demonstrations use fictional records and proposed policy thresholds. The training sample separates historical experience from sample training scenarios.
 
-The original AI Review Lab uses 20 synthetic NDAs: 5 development documents and 15 held-out documents. The saved v2 held-out review returned **16 findings for 16 reference issues**; all 16 quotes matched their stated Sections. I reviewed all 25 reference labels across the full 20-document set and changed none. The method explains the rule-family counting convention, including overlapping findings. Each pass is one archived review batch. Issues share contract and review context; these descriptive counts are not a population accuracy estimate. Source-quote checks, reference-label agreement and live approval controls are separate questions.
+The original NDA Lab uses 20 synthetic NDAs: five development documents and 15 held-out documents. The saved v2 held-out review returned **16 findings for 16 reference issues**; all 16 quotes matched their stated sections. I reviewed all 25 reference labels across the 20 documents and changed none. The method explains how overlapping findings are counted. Each pass is one archived review batch, and the issues share contract and review context, so these counts describe the fixed set; they are not a population accuracy estimate. Source-quote checks, reference-label agreement and live approval controls are separate questions.
 
-Historical case summaries omit client identities and monetary terms. Proposed edits are distinguished from the verified signed outcome.
+The migration example checks deliberately flawed and corrected fixtures, and the knowledge example tests proposed access and approval gates. A clean migration report still leaves record-owner signoff and destination-system checks outstanding. Enforcing real system permissions needs separate checks.
 
-The migration example checks deliberately flawed and corrected fixtures; the knowledge example tests proposed access and approval gates. The results describe those fixed fictional scenarios. Deployment and enforcement of actual system permissions require separate checks.
+The legal content, judgments and review decisions here are mine. Since November 2026, changes to this repository have been drafted with an AI coding assistant (Claude), and each change is reviewed before it is merged.
+
+## Files
+
+- [Work samples for sharing (PDF)](Ingrid_Kao_Work_Samples.pdf): six pages to download and send; the links open the hosted exhibits. The [repository edition (PDF)](Ingrid_Kao_Work_Samples_Web.pdf) links to the same exhibits on GitHub.
+- **Contracting and operations.** [Commercial contracting handbook](02_legal_ops/Commercial_Contracting_Handbook.pdf) · [Workflow guide](02_legal_ops/Legal_Operations_Workflow.pdf) · [Contract tracker (Excel)](02_legal_ops/Contract_Operations_Tracker.xlsx)
+- **Implementation and adoption.** [Legal intake implementation case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf) · [Training and customer success](03_training/Training_and_Customer_Success.pdf)
+- **Practice and evaluation.** [Five selected case studies](04_case_studies/Selected_Case_Studies.pdf) · [NDA evaluation method](01_ai_review/AI_Contract_Review_Method.pdf)
+- **Working demonstrations.** [Migration and data quality](05_solution_delivery/README.md), with 30 behavioral tests · [Escalation and knowledge operations](06_knowledge_operations/README.md), with 29 gate tests · [Subcontract workflow](07_construction_workflow/README.md), with 38 tests
 
 ## Run the reproducible examples
 
-No package installation is required. Use Python 3.10+ for the scorer and SQLite example; Node.js 18+ for intake routing.
+For the local NDA prototype, run this command from the repository root, open the printed address and select **Run checks**. It validates the saved results; it does not call a model or need an API key.
+
+```sh
+python3 01_ai_review/scripts/web_lab.py
+```
+
+The other examples need no package installation. Use Python 3.10+ for the scorer and SQLite example; Node.js 18+ for intake routing.
 
 ```sh
 python3 01_ai_review/scripts/run_lab.py check --require-repeats --json
@@ -102,6 +105,28 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Then open `http://127.0.0.1:8000/` on that computer. Stop the server when finished.
 
+## Executable review Lab and legal taxonomy
+
+The [local Lab](01_ai_review/Lab_Run_Guide.md) connects a browser interface to a Python API and validation harness. Its **Run checks** action validates preserved outputs; it does not generate a new model response.
+
+The [one-page repeatability report](01_ai_review/repeatability/Repeatability_Results.pdf) records three new isolated agent batches on the same 15 synthetic NDAs: 45 document reviews, with 16 supported reference matches per batch. Exact model settings were not exposed; the original held-out partition was reused. These observations describe the sample rather than production accuracy.
+
+The [SALI crosswalk](01_ai_review/taxonomy/sali_issue_crosswalk.json) maps 15 local rule types and all 16 held-out issue instances to verified source concepts where appropriate. [Mapping notes and DMS metadata](01_ai_review/taxonomy/Taxonomy_and_DMS.md) preserve the gaps and separate content classification from access, retention and approval authority.
+
+The browser/API/harness artifact is a **local full-stack prototype**. It does not establish a deployed production service or enterprise DMS implementation.
+
+## Controlled API study: prepared, not executed
+
+The [API study guide](01_ai_review/API_Study_Guide.md) and [runner](01_ai_review/scripts/api_study.py) define a separate protocol: 15 held-out synthetic NDAs, three requests per document, preserved raw responses and issue-level scoring. No live API responses or results are included in this release. The published three-batch agent results above remain a separate dataset.
+
+Inspect the request plan and offline transport tests without credentials:
+
+```sh
+cd 01_ai_review
+python3 scripts/api_study.py plan
+python3 scripts/test_api_study.py
+```
+
 ## Folder guide
 
 | Folder | Contents |
@@ -126,25 +151,3 @@ Copyright © 2026 Ingrid Kao. Provided for portfolio review. All rights reserved
 Contact: [kuoingrid0118@gmail.com](mailto:kuoingrid0118@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
 Selected professional work and synthetic demonstrations. For portfolio purposes only; not legal advice.
-
-## Executable review Lab and legal taxonomy
-
-The [local Lab](01_ai_review/Lab_Run_Guide.md) connects a browser interface to a Python API and validation harness. Its **Run checks** action validates preserved outputs; it does not generate a new model response.
-
-The [one-page repeatability report](01_ai_review/repeatability/Repeatability_Results.pdf) records three new isolated agent batches on the same 15 synthetic NDAs: 45 document reviews, with 16 supported reference matches per batch. Exact model settings were not exposed; the original held-out partition was reused. These observations describe the sample rather than production accuracy.
-
-The [SALI crosswalk](01_ai_review/taxonomy/sali_issue_crosswalk.json) maps 15 local rule types and all 16 held-out issue instances to verified source concepts where appropriate. [Mapping notes and DMS metadata](01_ai_review/taxonomy/Taxonomy_and_DMS.md) preserve the gaps and separate content classification from access, retention and approval authority.
-
-The browser/API/harness artifact is a **local full-stack prototype**. It does not establish a deployed production service or enterprise DMS implementation.
-
-## Controlled API study: prepared, not executed
-
-The [API study guide](01_ai_review/API_Study_Guide.md) and [runner](01_ai_review/scripts/api_study.py) define a separate protocol: 15 held-out synthetic NDAs, three requests per document, preserved raw responses and issue-level scoring. No live API responses or results are included in this release. The published three-batch agent results above remain a separate dataset.
-
-Inspect the request plan and offline transport tests without credentials:
-
-```sh
-cd 01_ai_review
-python3 scripts/api_study.py plan
-python3 scripts/test_api_study.py
-```
