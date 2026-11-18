@@ -4,7 +4,7 @@ Run after tools/build_portfolio.py. This performs no deployment or model call.
 """
 from pathlib import Path
 from html.parser import HTMLParser
-from urllib.parse import urlsplit, unquote
+from urllib.parse import urlsplit, unquote, parse_qs
 import re
 import json
 import ast
@@ -64,7 +64,12 @@ def main():
             target=target.resolve()
             if target.is_dir(): target=target/'index.html'
             if not target.is_file(): errors.append(f'{p.relative_to(ROOT)}: missing {ref}');continue
-            if u.fragment and target in pages and u.fragment not in pages[target].ids:
+            if '=' in u.fragment:
+                # a view the replay restores (#doc=NDA-18&run=v2_heldout), not an anchor: the document must be in the page
+                doc=parse_qs(u.fragment).get('doc',[''])[0]
+                if target.name!='replay.html' or not doc or f'"document_id":"{doc}"' not in target.read_text():
+                    errors.append(f'{p.relative_to(ROOT)}: unknown review view {ref}')
+            elif u.fragment and target in pages and u.fragment not in pages[target].ids:
                 errors.append(f'{p.relative_to(ROOT)}: missing anchor {ref}')
             checked += 1
     for name,web in [('Ingrid_Kao_Work_Samples.pdf',False),('Ingrid_Kao_Work_Samples_Web.pdf',True)]:

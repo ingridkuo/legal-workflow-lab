@@ -3,7 +3,7 @@
 Ingrid Kao  
 Independent practitioner note  
 November 11 2026  
-Companion files: [github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes](https://github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes)
+[See what changed under policy v2 →](../rulebook_toolkit/outputs/report.md)
 
 **At a glance**
 
