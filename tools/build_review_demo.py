@@ -26,7 +26,7 @@ def build(standalone=False):
     }
     template=(HERE/'review_demo_template.html').read_text()
     data_text=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
-    for key,value in [('@@DATA@@',data_text),('@@CORE@@',(HERE/'review_demo_core.cjs').read_text()),('@@APP@@',(HERE/'review_demo_app.js').read_text())]:
+    for key,value in [('@@DATA@@',data_text),('@@CORE@@',(HERE/'review_demo_core.cjs').read_text()),('@@VIEW@@',(HERE/'review_demo_view.cjs').read_text()),('@@APP@@',(HERE/'review_demo_app.js').read_text())]:
         assert template.count(key)==1,key
         template=template.replace(key,value)
     (LAB/'replay.html').write_text(template)
@@ -37,7 +37,7 @@ def build(standalone=False):
             encoded=base64.b64encode((ROOT/'assets'/font).read_bytes()).decode('ascii')
             single=single.replace("../assets/"+font, "data:font/woff2;base64,"+encoded)
         single=single.replace('href="../index.html" aria-label="Ingrid Kao portfolio"', 'href="#title" aria-label="Demonstration home"')
-        single=single.replace('<a class="back" href="../index.html">← Portfolio</a>', '<a class="back" href="#demo-about">About this demo</a>')
+        single=single.replace('<a class="back" href="../index.html">← Back to the lab</a>', '<a class="back" href="#demo-about">About this demo</a>')
         single=single.replace('<a href="AI_Contract_Review_Method.pdf">Read the method brief ↗</a>', '<a href="#review-workspace" data-open-tab="method">Inspect the rules &amp; prompts ↓</a>')
         single=re.sub(r'<div class="lower-links">.*?</div>', '<section id="demo-about" class="evaluation-note"><h3>About this demonstration</h3><p>This self-contained file displays preserved model outputs against fictional source documents. Select a scenario, inspect exact quotes, and test the local evidence checks. No account, upload or live model is involved.</p><p>The companion portfolio package contains the full method brief, reference-label review record, controls design, source files and reproducible builders. This file grants no legal approval or authority to sign.</p></section>',single)
         if re.search(r'(?:href|src)="(?:\.\.?/|AI_Contract_Review|Controls_)',single):

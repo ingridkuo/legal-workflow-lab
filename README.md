@@ -32,7 +32,7 @@ These are separate datasets. The eight-document exploratory review does not repl
 
 | Focus | Start with |
 |---|---|
-| Legal AI and implementation | [Guided model review](01_ai_review/replay.html), then [method](01_ai_review/AI_Contract_Review_Method.pdf) and [migration](05_solution_delivery/index.html) |
+| Legal AI and implementation | [Guided model review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) ([view source and tests](01_ai_review/README.md#the-replay-page-source-and-tests)), then [method](01_ai_review/AI_Contract_Review_Method.pdf) and [migration](05_solution_delivery/index.html) |
 | Commercial contracts and legal operations | [Historical cases](04_case_studies/Selected_Case_Studies.pdf), [tracker](02_legal_ops/Contract_Operations_Tracker.xlsx) and [workflow](02_legal_ops/Legal_Operations_Workflow.pdf) |
 | Legal intake and systems | [Jira Service Management and Confluence case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf) |
 | Training and adoption | [Training case](03_training/Training_and_Customer_Success.pdf) and [knowledge handoff](06_knowledge_operations/index.html) |
@@ -53,7 +53,7 @@ These are separate datasets. The eight-document exploratory review does not repl
 
 ## A guided model demonstration
 
-Open [Inside the Review](01_ai_review/replay.html). Three decisions show the model output and the evidence together:
+Open [Inside the Review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html). Three decisions show the model output and the evidence together:
 
 1. **Document trust:** an instruction embedded in NDA-19 tries to force approval; the saved review flags it and unlimited liability.
 2. **Incomplete evidence:** NDA-18 needs a missing appendix before either confidentiality period can be assessed.
@@ -61,7 +61,7 @@ Open [Inside the Review](01_ai_review/replay.html). Three decisions show the mod
 
 Inspect the source quote, rules, prompts, management brief and fixed-set results. A local challenge changes a temporary copy to demonstrate evidence rejection. Checked packets can be downloaded as JSON. No model is called and no archive is edited.
 
-The landing page also includes working intake routing. Both demonstrations run without an account or API key. The model demonstration has 20 mechanical-check tests; those are distinct from the archived model evaluation.
+The landing page also includes working intake routing. Both demonstrations run without an account or API key. The model demonstration has 20 mechanical-check tests; those are distinct from the archived model evaluation. Six link tests check that a copied link reopens the same document, tab and finding.
 
 ## Evidence and scope
 
@@ -89,6 +89,7 @@ python3 05_solution_delivery/test_migration.py
 python3 06_knowledge_operations/check_knowledge.py
 python3 -m unittest discover -s 06_knowledge_operations/tests -v
 node tools/test_review_demo.cjs
+node tools/test_review_view.cjs
 ```
 
 The scorer checks saved outputs; it does not start a new model review. The SQLite script rebuilds the fictional database and six CSV reports. The intake script returns a review route, missing facts and reviewer groups. Routing and approval to sign remain separate decisions.

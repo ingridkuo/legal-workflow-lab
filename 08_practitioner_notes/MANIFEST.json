@@ -1,6 +1,6 @@
 {
-  "collection_version": "3.2",
-  "date": "2026-11-15",
+  "collection_version": "3.3",
+  "date": "2026-11-17",
   "author": "Ingrid Kao",
   "files": [
     {
@@ -10,18 +10,18 @@
     },
     {
       "path": "articles/From_Counsel_Guidance_to_Executable_Review_Rules.md",
-      "bytes": 14197,
-      "sha256": "ebddabd31f0c243013ac6a6986ba21d3821489d2a210e49c898c290278f9eacc"
+      "bytes": 14118,
+      "sha256": "9415c66c66554a0245e9dfda60562c4f497287388a12c3d79ceaa44217b059f6"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.docx",
-      "bytes": 44621,
-      "sha256": "5acc68a2f461af1e000130e9f285f608de4349afb5727fd61441d6700bba4e2e"
+      "bytes": 44634,
+      "sha256": "4c8832f0c4ba259e8f6b2e1023cfcdbfa78334d8d8d3f16987f9d680c276f429"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.pdf",
-      "bytes": 86245,
-      "sha256": "4d47cccf7e7866ace8a62003254464835601c917cb066571a7c230d64cdabe0f"
+      "bytes": 95885,
+      "sha256": "25edf96d7a15d3853b520000ab2110dca71eb2b019f17f01fa2cbb6635fcaa97"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.docx",

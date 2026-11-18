@@ -28,5 +28,27 @@ function triage(r) {
 if (typeof module !== 'undefined') module.exports={triage,RED_FIELDS};
 })(routingModule,routingModule.exports);
 const {triage,RED_FIELDS}=routingModule.exports;const form=document.getElementById('triage-form');
-function renderRoute(){const raw=document.getElementById('value').value;const request={request_id:'REQ-WEB-01',business_owner:'Maya Chen',type:document.getElementById('type').value,value_usd:raw.trim()===''?null:Number(raw),entity_verified:!document.getElementById('identity').checked,signature_authority:true,template_unchanged:!document.getElementById('changed').checked,routine_purpose:true,legal_reference_policy_validated:true};for(const field of RED_FIELDS)request[field]=false;request.personal_data=document.getElementById('personal').checked;request.controlled_technology=document.getElementById('technology').checked;const result=triage(request);const badge=document.getElementById('route');badge.textContent=result.route;badge.className='route '+(result.route==='RED'?'red':result.route==='YELLOW'?'yellow':result.route==='NEEDS INPUT'?'unknown':'');document.getElementById('owners').textContent=result.owners.join(' · ');document.getElementById('reasons').replaceChildren(...result.reasons.map(reason=>{const li=document.createElement('li');li.textContent=reason.replaceAll('_',' ');return li}));document.getElementById('missing').textContent=result.missing_inputs.length?'Missing: '+result.missing_inputs.join(', ').replaceAll('_',' '):'';document.getElementById('instruction').textContent=result.instruction;return result;}
-form.addEventListener('submit',event=>{event.preventDefault();renderRoute()});renderRoute();
+/* The reason for the route, in a reader's words. The rule's own result keeps its codes. */
+function explain(request,result){
+ const out=[],value=request.value_usd,known=typeof value==='number'&&Number.isFinite(value)&&value>=0;
+ if(result.route==='RED'){
+  if(request.personal_data)out.push('Privacy/Security review required because personal data is involved.');
+  if(request.controlled_technology)out.push('Trade compliance review required because controlled technology is involved.');
+  if(known&&value>=250000)out.push('Senior Legal review required because the value is USD 250,000 or more.');
+ } else if(result.route==='NEEDS INPUT'){
+  if(!known)out.push('The request needs a valid contract value before it can be routed.');
+  if(!request.entity_verified)out.push('Entity verification is missing, so the request goes back to the requester and Legal intake.');
+ } else if(result.route==='YELLOW'){
+  if(known&&value>=100000)out.push('Legal and Finance review required because the value is USD 100,000 or more.');
+  if(request.type!=='NDA')out.push('Legal review required because the agreement is not an NDA.');
+  else if(!request.template_unchanged)out.push('Legal review required because the template has been changed.');
+ } else out.push('A routine, unchanged NDA under USD 100,000 can use the delegated self-service route.');
+ return out.length?out:result.reasons.map(reason=>reason.replaceAll('_',' '));
+}
+function renderRoute(){const raw=document.getElementById('value').value;const request={request_id:'REQ-WEB-01',business_owner:'Maya Chen',type:document.getElementById('type').value,value_usd:raw.trim()===''?null:Number(raw),entity_verified:!document.getElementById('identity').checked,signature_authority:true,template_unchanged:!document.getElementById('changed').checked,routine_purpose:true,legal_reference_policy_validated:true};for(const field of RED_FIELDS)request[field]=false;request.personal_data=document.getElementById('personal').checked;request.controlled_technology=document.getElementById('technology').checked;const result=triage(request);const badge=document.getElementById('route');badge.textContent=result.route;badge.className='route '+(result.route==='RED'?'red':result.route==='YELLOW'?'yellow':result.route==='NEEDS INPUT'?'unknown':'');document.getElementById('owners').textContent=result.owners.join(' · ');document.getElementById('reasons').replaceChildren(...explain(request,result).map(reason=>{const li=document.createElement('li');li.textContent=reason;return li}));document.getElementById('missing').textContent=result.missing_inputs.length?'Missing: '+result.missing_inputs.join(', ').replaceAll('_',' '):'';document.getElementById('instruction').textContent=result.instruction;return result;}
+/* Every change re-routes at once, so a changed fact never sits beside an old result. */
+let typing;
+form.addEventListener('submit',event=>{event.preventDefault();renderRoute()});
+form.addEventListener('change',renderRoute);
+form.addEventListener('input',event=>{if(event.target.type==='checkbox'||event.target.tagName==='SELECT')return;clearTimeout(typing);typing=setTimeout(renderRoute,200)});
+renderRoute();
