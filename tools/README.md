@@ -1,12 +1,12 @@
 # Current portfolio authoring tools
 
-The current builders keep the case PDF, Markdown, homepage summaries and featured evidence in the main Work Samples aligned. The public presentation uses bundled Inter fonts, dark ink, restrained indigo and pale neutral surfaces.
+The current builders keep the case PDF, Markdown, homepage summaries and featured evidence aligned. The public presentation uses bundled Inter fonts, dark ink, restrained indigo and pale neutral surfaces.
 
 ## Sources
 
-- `04_case_studies/case_studies.json` is the case narrative source, including the shorter featured summaries used in the main PDF.
+- `04_case_studies/case_studies.json` is the case narrative source, including the shorter featured summaries.
 - The AI method builder uses the current method content and saved evaluation data in `01_ai_review`.
-- `build_skills_portfolio.py` supplies the skills layout and links to the detailed exhibits.
+- The six-page Work Samples follow the portfolio site's edition, so the hosted and repository copies match. `Ingrid_Kao_Work_Samples.pdf` links to the hosted exhibits; `Ingrid_Kao_Work_Samples_Web.pdf` has the same pages and links to the exhibits in this repository; `Ingrid_Kao_Work_Samples.md` has the same text. They are built with the site's generator, not by `build_portfolio.py`. `build_skills_portfolio.py`, which produced the earlier edition, is kept for reference.
 - `homepage_template.html`, `homepage_triage.js` and `sync_web_copy.py` build the homepage from canonical cases, saved findings and module facts.
 - `build_exhibit_pages.py` creates readable migration and knowledge pages directly from preserved reports.
 - `assets/Inter-OFL.txt` and `assets/Inter_SOURCE.json` record the bundled font license and provenance.
@@ -21,7 +21,7 @@ python3 tools/build_portfolio.py
 python3 tools/preflight.py
 ```
 
-Run from the `public` folder, or give the full script path. No model, account or hosting service is called. The command rebuilds the current case, AI method, Work Samples PDFs, then synchronizes the case cards and tested demo facts. The overview sheet has been consolidated into page 1 of Work Samples. It does not modify the synthetic inputs, policies, prompts, saved model outputs or operational workbook.
+Run from the `public` folder, or give the full script path. No model, account or hosting service is called. The command rebuilds the current case and AI method PDFs, then synchronizes the case cards and tested demo facts. The overview sheet has been consolidated into page 1 of Work Samples. It does not modify the synthetic inputs, policies, prompts, saved model outputs or operational workbook.
 
 After a content change, inspect the rendered pages before distributing the new PDFs. A successful build checks layout bounds and file structure; it does not replace legal review of the text.
 

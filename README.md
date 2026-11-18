@@ -40,8 +40,8 @@ These are separate datasets. The eight-document exploratory review does not repl
 
 ## Files
 
-- [Application Work Samples](Ingrid_Kao_Work_Samples.pdf): six self-contained pages, with internal page navigation and no relative-file links.
-- [Linked portfolio edition](Ingrid_Kao_Work_Samples_Web.pdf): the same six-page content, with links to the companion exhibits.
+- [Application Work Samples](Ingrid_Kao_Work_Samples.pdf): six pages to download and send; the links open the hosted exhibits.
+- [Linked portfolio edition](Ingrid_Kao_Work_Samples_Web.pdf): the same six pages, with links to the exhibits in this repository.
 - [AI contract review method](01_ai_review/AI_Contract_Review_Method.pdf): rubric, fixed tests, evidence checks and error analysis.
 - [Contract operations tracker](02_legal_ops/Contract_Operations_Tracker.xlsx): contracts, obligations, milestones and a dashboard.
 - [Legal intake implementation case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf): Jira Service Management administration, Confluence guidance and illustrative acceptance checks.
