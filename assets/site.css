@@ -21,10 +21,11 @@
 /* Contract operations: the weekly scorecard as a thumbnail */
 .tool-figure{display:block;max-width:560px;margin-top:18px;color:var(--ink);text-decoration:none}
 .tool-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--white)}
-.tool-figure-go{display:inline-flex;gap:10px;align-items:center;min-height:40px;margin-top:4px;font-size:13px;font-weight:600;color:var(--indigo)}
+.tool-figure-go{display:block;padding:10px 0 8px;font-size:13px;font-weight:600;line-height:1.4;color:var(--indigo)}
 .tool-figure:hover img{border-color:#a9b2bf}
 .tool-figure:hover .tool-figure-go{text-decoration:underline;text-underline-offset:4px}
 .tool-figure:focus-visible{outline:3px solid var(--indigo);outline-offset:4px;border-radius:6px}
-.tool-row p.tool-figure-note{margin-top:2px;font-size:13px;line-height:1.65}
-.tool-figure-note a{display:inline;padding:6px 0;color:var(--indigo);font-weight:500;text-decoration:none;white-space:nowrap}
-.tool-figure-note a:hover{text-decoration:underline;text-underline-offset:4px}
+.tool-row p.tool-figure-note{display:flex;flex-direction:column;gap:2px;margin-top:2px;font-size:13px;line-height:1.55}
+.tool-figure-count{font-size:14px;font-weight:600;color:var(--ink)}
+.tool-figure-note .nw{white-space:nowrap}
+@media(max-width:760px){.tool-links{row-gap:2px}}
