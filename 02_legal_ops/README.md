@@ -2,7 +2,7 @@
 
 I built this sample to connect contract intake with risk routing, delivery, acceptance, invoicing and renewal work. The workbook, database and local intake script use fictional records and proposed thresholds.
 
-My platform experience includes DocuSign CLM and work with Ironclad workflows, approval logic and templates, including test workflows. This collection makes the underlying process decisions inspectable through local examples.
+For an Ironclad client implementation, I worked on launch forms, templates and conditional approvals. My contract platform experience also includes DocuSign CLM. This collection makes the underlying process decisions inspectable through local examples.
 
 ## Legal intake implementation case
 

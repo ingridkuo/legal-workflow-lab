@@ -85,7 +85,7 @@ The same rule runs in the command-line example (Node.js) and on the portfolio’
 
 **Inspectable sample:** 24 fictional contracts, 48 allocated obligations and 12 compliance-calendar tasks. The tracker shows risk, value, owners, acceptance evidence and payment status together.
 
-**Platform familiarity:** Ironclad workflows, approval logic and templates. At Lawsnote, I tracked a client’s contract expiry dates in DocuSign CLM. The included code demonstrates the underlying decisions locally.
+**Platform experience:** For an Ironclad client implementation, I worked on launch forms, templates and conditional approvals. At Lawsnote, I tracked a client’s contract expiry dates in DocuSign CLM. The included code demonstrates the underlying decisions locally.
 
 - [Open the Excel tracker](./02_legal_ops/Contract_Operations_Tracker.xlsx)
 - [Workflow guide and responsibility gates](./02_legal_ops/Legal_Operations_Workflow.pdf)
