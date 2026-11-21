@@ -197,7 +197,10 @@ function renderFindings(r){
  $('findings').innerHTML=r.issues.length?r.issues.map((i,n)=>`<article class="finding"><div class="rule">${esc(i.rule_id.replaceAll('_',' '))} / ${esc(i.severity)}</div><p>${esc(i.finding)}</p><button class="quote-button" data-finding="${n}" aria-pressed="${n===state.selected}">“${esc(i.source_quote)}”<span>${esc(i.source_locator)} · Highlight this quote</span></button><p><b>Proposed action:</b> ${esc(i.proposed_action)}</p><div class="owner">Review owner: ${esc(i.approval_owner)}</div></article>`).join(''):'<p class="empty">No policy issue was flagged in this complete synthetic control. The authorized reviewer retains the legal decision.</p>';
  $('raw').textContent=JSON.stringify(r,null,2);
  $('findings').querySelectorAll('[data-finding]').forEach(b=>b.addEventListener('click',()=>{
-  state.selected=Number(b.dataset.finding);renderSource();renderFindings(current());syncHash();revealSource(false);
+  // update the pressed state in place: re-drawing the list would drop the focus back to the page
+  state.selected=Number(b.dataset.finding);renderSource();
+  $('findings').querySelectorAll('[data-finding]').forEach(x=>x.setAttribute('aria-pressed',String(Number(x.dataset.finding)===state.selected)));
+  syncHash();revealSource(false);
  }));
 }
 function renderChecks(){
