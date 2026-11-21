@@ -5,6 +5,9 @@ from build_ai_method import MethodPDF, register_fonts, markdown
 
 PUB = Path(__file__).resolve().parents[1]
 LAB = PUB / '01_ai_review'
+# the evidence beside this brief, for a reader who has only the PDF (the outside audit of 21 November)
+REPO = 'https://github.com/ingridkuo/legal-workflow-lab/blob/main/01_ai_review/repeatability/'
+FOLDER = 'https://github.com/ingridkuo/legal-workflow-lab/tree/main/01_ai_review/repeatability'
 
 def make_page(summary):
     runs = summary['runs']
@@ -23,7 +26,8 @@ def make_page(summary):
             {'type':'p','text':'A true positive requires the expected document-rule pair and an exact quotation in its stated Section. All 48 finding occurrences passed source and locator checks. No severity, route or source-status differences were observed, and every result retained the required human-review flag. Zero denominators return undefined, rather than a perfect score.'},
             {'type':'section','text':'Execution boundary'},
             {'type':'p','text':'The runtime did not expose a model ID, snapshot or sampling settings. These are three isolated Codex agent batches, not 45 separately logged API requests or a fixed-version provider benchmark. The original held-out partition was reused; it is not a new unseen validation set. No population-accuracy estimate or confidence interval is inferred.'},
-            {'type':'note','text':'Decision: retain the result as a reproducible local demonstration. Before a production pilot, pre-register a fixed provider/model configuration, fresh representative agreements, error thresholds and reviewer decisions. Preserved responses, input hashes, per-run metrics and issue-level consistency are included beside this brief.'}
+            {'type':'note','text':'Decision: retain the result as a reproducible local demonstration. Before a production pilot, pre-register a fixed provider/model configuration, fresh representative agreements, error thresholds and reviewer decisions.'},
+            {'type':'links','text':'Beside this brief: ['+'per_run_metrics.csv]('+REPO+'per_run_metrics.csv), ['+'per_issue_consistency.csv]('+REPO+'per_issue_consistency.csv), and the preserved responses and input hashes in [github.com/ingridkuo/legal-workflow-lab/tree/main/01_ai_review/repeatability]('+FOLDER+').'}
         ]
     }
 
