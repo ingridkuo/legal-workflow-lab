@@ -224,7 +224,13 @@ def verify(connection: sqlite3.Connection, data: dict, results: dict, frozen_che
     check("overdue_rows_use_unconfirmed_actual_completion", all(
         row["actual_date"] is None and row["planned_date"] < as_of and row["milestone"] in {"Acceptance","Payment"}
         for row in overdue
-    ), len(overdue), "all selected rows have past due date and no recorded completion")
+    ), len(overdue), "all selected rows have past due date and no completion recorded by the report date")
+    # a milestone completed after the report date was still open on it
+    late = {row[0] for row in connection.execute(
+        "SELECT obligation_id FROM obligations WHERE milestone IN ('Acceptance','Payment') AND date(planned_date) < date(?) "
+        "AND actual_date IS NOT NULL AND date(actual_date) > date(?)", (as_of, as_of))}
+    listed = {row["obligation_id"] for row in overdue}
+    check("overdue_includes_milestones_completed_after_report_date", late <= listed, sorted(late - listed), "none missing")
     manual_rows = [row for row in results["q05_nonrenewal_notice_review"]["rows"] if row["notice_basis"] != "Calendar"]
     check("noncalendar_dates_not_automatically_subtracted", all(row["calculated_notice_date"] is None for row in manual_rows),
           [{"contract_id":row["contract_id"],"date":row["calculated_notice_date"]} for row in manual_rows], "all NULL")

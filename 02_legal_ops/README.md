@@ -39,7 +39,7 @@ This rebuilds `database/contracts_demo.sqlite` from `synthetic_data.json` and ex
 | q05 | Which notice dates need action or manual review? |
 | q06 | Which budgets, invoices, payments or acceptance records show exceptions? |
 
-Use `--as-of 2026-12-01` to change the reporting date. CSV exports use `\N` for SQL NULL; an empty field preserves an original empty string. Missing money remains unknown rather than becoming zero.
+Use `--as-of 2026-12-01` to change the reporting date. Reports read the data as it stood on that date: a milestone completed after it is still listed as open (q04), and each notice row shows the contract's stage, so a draft's estimated notice date is kept apart from a signed contract's notice obligation (q05). CSV exports use `\N` for SQL NULL; an empty field preserves an original empty string. Missing money remains unknown rather than becoming zero.
 
 ## Run the local intake example
 
