@@ -52,8 +52,9 @@ def safe_file(root, relative):
 
 
 def parse_date(value):
-    if not isinstance(value, str):
-        raise ValueError("date must be an ISO string")
+    # YYYY-MM-DD only (newer Pythons also read 20261110 and week dates), and a day that exists: 2026-11-31 fails
+    if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        raise ValueError("date must be YYYY-MM-DD")
     return date.fromisoformat(value)
 
 
@@ -142,13 +143,19 @@ def eligible_for(article_results, article_id, role):
     return any(r["id"] == article_id and r["eligible"] and role in r["access_roles"] for r in article_results)
 
 
-def check_escalations(escalations_dir, article_results):
+def check_escalations(escalations_dir, article_results, as_of=AS_OF):
     """Check packet integrity, source quotation and guidance; never grant authority."""
     folder = Path(escalations_dir)
     results = []
     for path in sorted(folder.glob("ESC-*.json")):
         record = load_json(path)
         problems = [f"missing {field}" for field in REQUIRED if not record.get(field)]
+        if record.get("received"):
+            try:
+                if parse_date(record["received"]) > as_of:
+                    problems.append("received after the evaluation date")
+            except ValueError:
+                problems.append("received is not a real date in YYYY-MM-DD form")
         source = record.get("source") or {}
         message = safe_file(folder, source.get("path"))
         text = ""
@@ -200,7 +207,7 @@ def check_escalations(escalations_dir, article_results):
 
 def run(root=HERE, as_of=AS_OF):
     articles = check_articles(Path(root) / "knowledge", as_of)
-    escalations = check_escalations(Path(root) / "escalations", articles)
+    escalations = check_escalations(Path(root) / "escalations", articles, as_of)
     summary = {"as_of": as_of.isoformat(), "articles_checked": len(articles),
                "eligible_articles": [a["id"] for a in articles if a["eligible"]],
                "blocked_articles": {a["id"]: a["reasons"] for a in articles if not a["eligible"]},

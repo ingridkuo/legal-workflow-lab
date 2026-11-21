@@ -42,6 +42,6 @@ python3 -m unittest discover -s tests -v
 
 Both commands work from another working directory when their script/folder paths are supplied. The default run rewrites `results/` with the fixed date. `--as-of YYYY-MM-DD` prints a different-date evaluation without overwriting the saved results.
 
-**Executed result:** 29 behavioral tests pass, with zero failures or errors. The fixed run selects one of three articles and validates all three escalation packets. Every packet retains named review; no result grants execution authority. Tests include changed evidence, unauthorized roles, stale and future dates, changed approval/source snapshots, path and symlink escape, unsupported facts, missing permission fields and a claimed preservation completion without acknowledgment.
+**Executed result:** 29 behavioral tests pass, with zero failures or errors. The fixed run selects one of three articles and validates all three escalation packets. Every packet retains named review; no result grants execution authority. Tests include changed evidence, unauthorized roles, stale and future review dates, an impossible or future received date, changed approval/source snapshots, path and symlink escape, unsupported facts, missing permission fields and a claimed preservation completion without acknowledgment.
 
 Inspect [demo facts](results/demo_facts.json), [article checks](results/article_checks.json), [escalation checks](results/escalation_checks.json) and [test results](results/test_results.json).

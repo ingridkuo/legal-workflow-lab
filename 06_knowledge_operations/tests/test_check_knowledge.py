@@ -159,10 +159,15 @@ class Escalations(unittest.TestCase):
             self.assertIn("relies on KA-03, which is not eligible for contract_manager",
                           case(w.run(), "ESC-102")["problems"])
 
-    def test_missing_required_field_is_flagged(self):
+    def test_missing_or_impossible_required_field_is_flagged(self):
         with Workspace() as w:
             w.edit_json("escalations/ESC-103.json", lambda r: r.update(next_action=""))
-            self.assertIn("missing next_action", case(w.run(), "ESC-103")["problems"])
+            w.edit_json("escalations/ESC-102.json", lambda r: r.update(received="2026-11-31"))
+            w.edit_json("escalations/ESC-101.json", lambda r: r.update(received="2026-11-11"))
+            result = w.run()
+            self.assertIn("missing next_action", case(result, "ESC-103")["problems"])
+            self.assertIn("received is not a real date in YYYY-MM-DD form", case(result, "ESC-102")["problems"])
+            self.assertIn("received after the evaluation date", case(result, "ESC-101")["problems"])
 
     def test_saved_results_match_a_fresh_run(self):
         with tempfile.TemporaryDirectory() as tmp:
