@@ -19,10 +19,19 @@ test('the finding number in a link is the finding shown', () => {
 });
 test('every view a page can show survives its own link', () => {
   for (const run of Object.keys(reviews)) for (const r of reviews[run]) for (const tab of view.TABS)
-    for (let selected = 0; selected < Math.max(1, r.issues.length); selected++) {
-      const back = view.parse(view.format({run, id: r.document_id, tab, selected}), reviews);
-      assert.deepEqual([back.run, back.id, back.tab, back.selected], [run, r.document_id, tab, selected]);
+    for (let selected = 0; selected < Math.max(1, r.issues.length); selected++) for (const prompt of view.PROMPTS) {
+      const back = view.parse(view.format({run, id: r.document_id, tab, selected, prompt}), reviews);
+      assert.deepEqual([back.run, back.id, back.tab, back.selected, back.prompt], [run, r.document_id, tab, selected, prompt]);
     }
+});
+test('the prompt on screen travels with the link', () => {
+  const shared = view.format({run: 'v2_heldout', id: 'NDA-19', tab: 'method', selected: 0, prompt: 'v1'});
+  assert.equal(shared, '#doc=NDA-19&run=v2_heldout&tab=method&prompt=v1');
+  assert.equal(view.parse(shared, reviews).prompt, 'v1');
+  assert.equal(view.format({run: 'v2_heldout', id: 'NDA-19', tab: 'brief', selected: 0, prompt: 'v2'}), '#doc=NDA-19&run=v2_heldout');
+  assert.equal(view.parse('#doc=NDA-19&run=v2_heldout', reviews).prompt, 'v2');
+  assert.equal(view.parse('#doc=NDA-01&run=v1_development', reviews).prompt, 'v1');
+  assert.equal(view.parse('#doc=NDA-19&run=v2_heldout&prompt=v9', reviews).prompt, 'v2');
 });
 test('a document without a batch opens in the batch that holds it', () => {
   assert.equal(view.parse('#doc=NDA-03', reviews).run, 'v2_development');

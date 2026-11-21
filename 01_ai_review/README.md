@@ -62,7 +62,7 @@ node tools/test_review_demo.cjs
 node tools/test_review_view.cjs
 ```
 
-The builder embeds the 20 source agreements, the three saved batches, the policy and both prompts, with a SHA-256 fingerprint for each file. The 20 evidence tests check the page's mechanical rules: document and policy identity, the human-review flag, exact quotes in their stated Sections, rule families, routing and source status. The 6 link tests check that a copied link reopens the same document, tab and finding.
+The builder embeds the 20 source agreements, the three saved batches, the policy and both prompts, with a SHA-256 fingerprint for each file. The 20 evidence tests check the page's mechanical rules: document and policy identity, the human-review flag, exact quotes in their stated Sections, rule families, routing and source status. The 7 link tests check that a copied link reopens the same document, tab, finding and prompt.
 
 ## Operational controls
 

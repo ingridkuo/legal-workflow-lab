@@ -31,7 +31,7 @@ function seeSection(key){
  state.selected=Math.max(n,0);state.challenge=null;setTab('evidence');render();syncHash();
  $('review-workspace').scrollIntoView({block:'start',behavior:motion(false)});revealSource(false);$('tab-evidence').focus({preventScroll:true});
 }
-function applyView(v){state.run=v.run;state.id=v.id;state.tab=v.tab;state.selected=v.selected;state.challenge=null;state.prompt=v.run.startsWith('v1')?'v1':'v2';$('run').value=state.run;populateDocuments();render();setTab(state.tab);}
+function applyView(v){state.run=v.run;state.id=v.id;state.tab=v.tab;state.selected=v.selected;state.challenge=null;state.prompt=v.prompt;$('run').value=state.run;populateDocuments();render();setTab(state.tab);}
 function revealView(v){
  if(v.tabGiven){$('review-workspace').scrollIntoView({block:'start',behavior:'instant'});if(state.tab==='evidence')revealSource(true);return;}
  const verdict=document.querySelector('[data-verdict]:not([hidden])');
@@ -116,7 +116,7 @@ function downloadPacket(){
  const packet={kind:'saved_review_evidence_packet',scope:'Synthetic portfolio example; not legal approval or a new model run.',document_id:state.id,saved_batch:state.run,source_file:sourcePath,source_sha256:DATA.provenance[sourcePath],saved_batch_file:outputPath,saved_batch_sha256:DATA.provenance[outputPath],policy_id:DATA.policy.policy_id,policy_sha256:DATA.provenance['policy/nda_demo_policy.json'],review:r,mechanical_evidence_checks:check,human_approval_granted:false};
  const blob=new Blob([JSON.stringify(packet,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`${state.id}_${state.run}_review_packet.json`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
-$('run').addEventListener('change',()=>{state.run=$('run').value;state.selected=0;state.challenge=null;state.prompt=state.run.startsWith('v1')?'v1':'v2';populateDocuments();render();syncHash();});
+$('run').addEventListener('change',()=>{state.run=$('run').value;state.selected=0;state.challenge=null;state.prompt=ReviewView.promptOf(state.run);populateDocuments();render();syncHash();});
 $('document').addEventListener('change',()=>{state.id=$('document').value;state.selected=0;state.challenge=null;render();syncHash();});
 document.querySelectorAll('[data-scenario]').forEach(b=>b.addEventListener('click',()=>chooseScenario(b.dataset.scenario)));
 document.querySelectorAll('[data-see]').forEach(b=>b.addEventListener('click',()=>seeSection(b.dataset.see)));
@@ -124,7 +124,7 @@ document.querySelectorAll('[data-tab]').forEach(b=>{
  b.addEventListener('click',()=>{setTab(b.dataset.tab);syncHash();});
  b.addEventListener('keydown',e=>{const tabs=[...document.querySelectorAll('[data-tab]')],i=tabs.indexOf(b);let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();setTab(tabs[n].dataset.tab,true);syncHash();});
 });
-document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>{state.prompt=b.dataset.prompt;renderMethod(current());}));
+document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>{state.prompt=b.dataset.prompt;renderMethod(current());syncHash();}));
 $('inspect-evidence').addEventListener('click',()=>{setTab('evidence',true);syncHash();});
 $('challenge-quote').addEventListener('click',()=>{state.challenge='quote';renderChecks();});
 $('challenge-gate').addEventListener('click',()=>{state.challenge='gate';renderChecks();});
