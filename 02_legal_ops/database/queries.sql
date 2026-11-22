@@ -53,8 +53,12 @@ ORDER BY c.coi_expiry IS NOT NULL, c.coi_expiry, c.contract_id;
 
 -- name: q04_overdue_acceptance_payment_milestones
 SELECT -- Read as of the report date: a milestone completed after that date was still open on it, so it is
-       -- listed and its later completion date is not shown. The contract's stage says whether it is in force.
-       o.obligation_id, o.contract_id, c.counterparty, c.stage AS contract_stage, o.milestone, o.owner,
+       -- listed and its later completion date is not shown. The contract's stage says whether it is in force;
+       -- a contract signed after the report date was not yet signed on it.
+       o.obligation_id, o.contract_id, c.counterparty,
+       CASE WHEN c.stage = 'Signed' AND (c.actual_signature IS NULL OR date(c.actual_signature) > date(s.as_of_date))
+            THEN 'Not yet signed on the report date' ELSE c.stage END AS contract_stage,
+       o.milestone, o.owner,
        o.planned_date,
        CASE WHEN date(o.actual_date) <= date(s.as_of_date) THEN o.actual_date END AS actual_date,
        CAST(julianday(s.as_of_date) - julianday(o.planned_date) AS INTEGER) AS days_past_due,
@@ -72,9 +76,13 @@ ORDER BY o.planned_date, o.obligation_id;
 
 -- name: q05_nonrenewal_notice_review
 SELECT -- A notice date on a contract not yet signed is a draft estimate, not an obligation in force: the
-       -- stage and the signature date are shown, and signed contracts are listed first.
-       n.contract_id, n.counterparty, n.business_owner, c.stage AS contract_stage, c.actual_signature,
-       CASE WHEN c.actual_signature IS NULL THEN 'DRAFT ESTIMATE - CONTRACT NOT SIGNED'
+       -- stage and the signature date are shown, and signed contracts are listed first. All of it is read as
+       -- of the report date: a contract signed after that date counts as not yet signed.
+       n.contract_id, n.counterparty, n.business_owner,
+       CASE WHEN c.stage = 'Signed' AND (c.actual_signature IS NULL OR date(c.actual_signature) > date(s.as_of_date))
+            THEN 'Not yet signed on the report date' ELSE c.stage END AS contract_stage,
+       CASE WHEN date(c.actual_signature) <= date(s.as_of_date) THEN c.actual_signature END AS actual_signature,
+       CASE WHEN c.actual_signature IS NULL OR date(c.actual_signature) > date(s.as_of_date) THEN 'DRAFT ESTIMATE - CONTRACT NOT SIGNED'
             ELSE 'IN FORCE - SIGNED CONTRACT' END AS notice_basis_status,
        n.renewal_date,
        n.notice_days, n.notice_basis, n.notice_method, n.notice_source_verified,
@@ -93,7 +101,8 @@ WHERE n.renewal_date IS NOT NULL
    OR ifnull(n.notice_basis, '') <> 'Calendar'
    OR n.notice_days IS NULL
    OR ifnull(n.notice_source_verified, '') <> 'Yes'
-ORDER BY c.actual_signature IS NULL, n.calculated_notice_date IS NULL, n.calculated_notice_date, n.contract_id;
+ORDER BY (c.actual_signature IS NULL OR date(c.actual_signature) > date(s.as_of_date)), n.calculated_notice_date IS NULL,
+         n.calculated_notice_date, n.contract_id;
 
 -- name: q06_budget_invoice_exceptions
 WITH exception_rows AS (
