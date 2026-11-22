@@ -49,7 +49,7 @@ Useful first task: find the shared-model training permission in clause 3, verify
 
 ### 1 Set the task
 
-Aster Vale Systems Inc. is disclosing information to Northbank Components Ltd. for a possible supply relationship. Open training_excerpt.txt for the source and sample review rules.
+Aster Vale Systems Inc. is disclosing information to Northbank Components Ltd. for a possible supply relationship. Open [training_excerpt.txt](training_excerpt.txt) for the source and sample review rules.
 
 
 ### 2 Ask for evidence
@@ -136,4 +136,4 @@ A reusable form and six fictional queue entries for practicing triage and follow
 
 The accompanying sample queue covers access, source completeness, missed review issues, quote locators, task completion, and unclear ownership. Each entry gives the next owner enough context to investigate and a concrete task to repeat before closure.
 
-Open feedback_form.md and sample_feedback_queue.csv.
+Open [feedback_form.md](feedback_form.md) and [sample_feedback_queue.csv](sample_feedback_queue.csv).

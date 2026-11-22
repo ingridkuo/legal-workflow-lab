@@ -1,57 +1,57 @@
 {
   "collection_version": "3.3",
-  "date": "2026-11-17",
+  "date": "2026-11-21",
   "author": "Ingrid Kao",
   "files": [
     {
       "path": "README.md",
       "bytes": 5919,
-      "sha256": "9b181776f21569c2b2d3c5c26f992070f64dc94889b0fc722676ce72fbc0d7b6"
+      "sha256": "94e7c31bb5c6fb6f28d3f83bd522a40217d1aac8a7356cab8ada7d42f871eae5"
     },
     {
       "path": "articles/From_Counsel_Guidance_to_Executable_Review_Rules.md",
-      "bytes": 14103,
-      "sha256": "60b55354625b4378bd27ef3eb4abaffbce01f6b3e1f27331c81384bf6ffff627"
+      "bytes": 14104,
+      "sha256": "e9b676ac7d2f0e5aad61b7bb5cad8a10361a71226b1da80eb8978764b4826538"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.docx",
-      "bytes": 44634,
-      "sha256": "156f5055c386d9fcaff01e96a9c8947550b56afaa5dea6443ae10b11912c7a66"
+      "bytes": 44628,
+      "sha256": "891291fbe0d48ffa67cdbef8aba87c7b94d4d73a46543454caab089a368b068f"
     },
     {
       "path": "articles/Ingrid_Kao_Executable_Review_Rules.pdf",
-      "bytes": 95593,
-      "sha256": "a2a5a6f2fcf2095bf3ad335f6d98349db0213deb363384e6bb544ae54d0cddc5"
+      "bytes": 60612,
+      "sha256": "5844e67c21df3a386bc05e210434e1340c5c7282cc4a666e4ab2669d7182d902"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.docx",
-      "bytes": 44987,
-      "sha256": "8dab36fc9c57966c6b9f693535909f3f45ae87578a0e97503ce7de0a2478f822"
+      "bytes": 44960,
+      "sha256": "c30244db6363176f791ed946eabd58b9585cbd2ad792829a63d385232c36402c"
     },
     {
       "path": "articles/Ingrid_Kao_Legal_Escalation_Closure.pdf",
-      "bytes": 92710,
-      "sha256": "0665d08845c95a5eab2458625b98f6588b424da7d47d0be2008db7f1129b636d"
+      "bytes": 67737,
+      "sha256": "b0bd5f108469bcbea08068126dc378cbb7cd85db16ceceb86ab918f8260e34f8"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.docx",
-      "bytes": 44827,
-      "sha256": "b3ee49415e02e14531d881316ae9133e86f5cb9c0590d4530010f6e30112fb7e"
+      "bytes": 44809,
+      "sha256": "f893a75fa78c51d27b623917f4fc4c77da381eb7b82ced24c0765bc0c00b7676"
     },
     {
       "path": "articles/Ingrid_Kao_Testing_Legal_AI.pdf",
-      "bytes": 88056,
-      "sha256": "ce98f1109024f3e27d8f3a202bd37751ae3c149c802b2d26500c4b501a3a10b4"
+      "bytes": 62682,
+      "sha256": "55056b02c735708e0d68dccd753455677f403c1cbc32852a105fb60bc1c436d1"
     },
     {
       "path": "articles/Testing_a_Legal_AI_Review_Workflow.md",
-      "bytes": 13895,
-      "sha256": "69034056aef24567872658c6539211585b0b0633727630d15a3ffbac0ff757dc"
+      "bytes": 13897,
+      "sha256": "74f955ae78362155e14b9eb9a8aff0ccf36a89fce152a19763d4cf151eca1b39"
     },
     {
       "path": "articles/When_a_Legal_Escalation_Is_Ready_to_Close.md",
-      "bytes": 14546,
-      "sha256": "91c2db74cd26ff44b844f103e34c16cf915beaca29b9b9b7b5b69a53d624a818"
+      "bytes": 14548,
+      "sha256": "b3870140eb90c1360fde8f2fe5e8924d7293e8ddf70d2ea8e1afceee8c046ae6"
     },
     {
       "path": "experimental_llm/README.md",
@@ -161,7 +161,7 @@
     {
       "path": "rulebook_toolkit/outputs/input_manifest.json",
       "bytes": 578,
-      "sha256": "746cc4e89c32422950afd0084ccb4f0baaa01a14bf141d20dab77343b14a071b"
+      "sha256": "60931e93044c88dcc776b16168d643b3daf1cdf7b89e8f2723c704a479db4459"
     },
     {
       "path": "rulebook_toolkit/outputs/metrics.json",
@@ -195,8 +195,8 @@
     },
     {
       "path": "rulebook_toolkit/run.py",
-      "bytes": 14888,
-      "sha256": "4edba171db1f226c2b917249f52ba7a1464d523fe10d2b3cc4d9265e95cf0fbc"
+      "bytes": 15450,
+      "sha256": "f290c352fc7342fae2083d17df138da73d3504237a2d88ba7f9e96889b61fccf"
     },
     {
       "path": "toolkit/README.md",

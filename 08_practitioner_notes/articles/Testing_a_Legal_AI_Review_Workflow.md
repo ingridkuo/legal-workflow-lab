@@ -1,9 +1,9 @@
-# Testing a Legal AI Review Workflow
+# Testing a legal AI review workflow
 
 Ingrid Kao  
 Independent practitioner note  
-November 10 2026  
-Revised November 11 2026  
+November 10, 2026  
+Revised November 11, 2026  
 Companion files: [github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes](https://github.com/ingridkuo/legal-workflow-lab/tree/main/08_practitioner_notes)
 
 **At a glance**

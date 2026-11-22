@@ -12,6 +12,30 @@ LAB = ROOT/'01_ai_review'
 REVIEWS = ('v1_development','v2_development','v2_heldout')
 def digest(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
+def noscript_sources(sources):
+    """The three scenarios each point at a section ('See Section 10'), which only the script can show. Without it, the
+    page shows the three fictional agreements here, with each cited section marked. The scenarios are read from the
+    app's own table, so the pairing cannot drift."""
+    app=(HERE/'review_demo_app.js').read_text()
+    cited=re.findall(r"id:'(NDA-\d+)',run:'[^']+'.*?see:'(Section \d+)'",app)
+    assert len(cited)==3,cited
+    esc=lambda s:s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
+    parts=['<noscript><section class="nojs-sources" aria-labelledby="nojs-title"><h2 id="nojs-title">The three agreements</h2>'
+           '<p>The walkthrough needs JavaScript. Here are the fictional agreements the three scenarios cite, with each cited section marked.</p>']
+    for n,(doc,section) in enumerate(cited,1):
+        paras=[p.strip() for p in sources[doc].split('\n\n') if p.strip()]
+        body=[]
+        for p in paras:
+            if p.startswith(section+'.'):
+                body.append(f'<p class="source-section active"><mark>{esc(p)}</mark></p>')
+            elif p.startswith('Section '):
+                body.append(f'<p class="source-section">{esc(p)}</p>')
+            else:
+                body.append(f'<p class="source-meta">{esc(p)}</p>')
+        assert sum('<mark>' in b for b in body)==1,(doc,section)
+        parts.append(f'<details{" open" if n==1 else ""}><summary>Scenario {n:02d}: {doc}, {section}</summary><div class="document-source">'+''.join(body)+'</div></details>')
+    return ''.join(parts)+'</section></noscript>'
+
 def build(standalone=False):
     reviews={k:json.loads((LAB/f'evaluation/saved_reviews/{k}.json').read_text()) for k in REVIEWS}
     source_paths=sorted((LAB/'inputs').rglob('NDA-*.txt'))
@@ -25,6 +49,7 @@ def build(standalone=False):
         'provenance':{str(p.relative_to(LAB)):digest(p) for p in paths},
     }
     template=(HERE/'review_demo_template.html').read_text()
+    template=template.replace('@@NOSCRIPT@@',noscript_sources(data['sources']),1)
     data_text=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
     for key,value in [('@@DATA@@',data_text),('@@CORE@@',(HERE/'review_demo_core.cjs').read_text()),('@@VIEW@@',(HERE/'review_demo_view.cjs').read_text()),('@@APP@@',(HERE/'review_demo_app.js').read_text())]:
         assert template.count(key)==1,key

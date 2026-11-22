@@ -107,7 +107,7 @@ Decision: make usage, pricing and remedy mechanics explicit, and align the Order
 
 ### Battery management technology license
 
-**Patent and technology license:** I negotiated a cross-border patent and technology license, separating ownership of improvements from use rights and addressing sublicensing and staged payments. Both parties signed.
+**Patent and technology license:** In a battery management system deal, I helped my client, the licensee, move negotiations forward by addressing ownership of future improvements separately from the right to use them.
 
 **Illustration:** Sample structure: Northbank retains background technology; Aster Vale owns its new improvements, with separately defined use rights. Affiliates and approved manufacturing partners receive bounded sublicenses. A fictional USD120,000 fee is split between signature and verified technology transfer.
 
@@ -141,7 +141,7 @@ Decision: settle ownership, use, sublicensing and payment as four linked questio
 
 ## Sources and boundaries
 
-- S1 [18 USC 1839 definitions](https://uscode.house.gov/us/usc/119-118/t18/s1839/): U.S. federal trade-secret definition. The sample five-year period is a contract-policy choice, not a duration stated by this section. Checked 10 November 2026.
+- S1 [18 USC 1839 definitions](https://uscode.house.gov/us/usc/t18/s1839/): U.S. federal trade-secret definition. The sample five-year period is a contract-policy choice, not a duration stated by this section. Checked 10 November 2026.
 - S2 [ICC Incoterms 2020 and commercial contracts](https://library.iccwbo.org/clp/clp-incoterms-qa-2020.htm?AGENT=ICC_HQ): Trade-term scope and how to name a point and version. Incoterms allocate delivery/risk/cost responsibilities; they do not determine title or acceptance remedies. Checked 10 November 2026.
 - S3 [Texas Department of Insurance COI FAQ](https://www.tdi.texas.gov/certificates/faq.html): Texas-specific example: certificate information cannot expand underlying policy terms. Verify the applicable jurisdiction and actual policy/endorsements. Checked 10 November 2026.
 

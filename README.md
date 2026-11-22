@@ -10,33 +10,33 @@ I draft commercial agreements, build contract workflows and translate legal revi
 
 **Why does an NDA that says "approve" go back to Legal?** In NDA-19, one section accepts unlimited liability. Another tells the reviewer to approve the agreement and suppress the findings. Open the saved review to see the source text and the action each clause requires.
 
-[Walk through the NDA review ↗](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) · [Inspect the source and tests](01_ai_review/README.md#the-replay-page-source-and-tests)
+[Walk through the NDA review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) · [Inspect the source and tests](01_ai_review/README.md#the-replay-page-source-and-tests)
 
 **Did all eight contracts migrate correctly?** The source and destination counts match, yet five fictional records have to be held. Compare the batch before and after correction, and see why the record owner still signs off.
 
-[Compare the migration reports ↗](https://ingridkao.netlify.app/lab/05_solution_delivery/) · [Inspect the migration checks](05_solution_delivery/README.md)
+[Compare the migration reports](https://ingridkao.netlify.app/lab/05_solution_delivery/) · [Inspect the migration checks](05_solution_delivery/README.md)
 
 **Who can preserve records, and who approves their release?** A fictional request asks for both preservation and an account export. Intake asks the system owner to pause routine deletion, and the export decision goes to Counsel.
 
-[Follow the preservation and export request ↗](https://ingridkao.netlify.app/lab/06_knowledge_operations/) · [Inspect the handoff and approval rules](06_knowledge_operations/README.md)
+[Follow the preservation and export request](https://ingridkao.netlify.app/lab/06_knowledge_operations/) · [Inspect the handoff and approval rules](06_knowledge_operations/README.md)
 
 ## Choose the work relevant to the role
 
 - **Legal AI evaluation.** The [review method (PDF)](01_ai_review/AI_Contract_Review_Method.pdf) explains how I checked source quotes and counted overlapping findings. The [repeatability report (PDF)](01_ai_review/repeatability/Repeatability_Results.pdf) records three more reviews of the same held-out documents.
 - **Commercial contracts.** [Five anonymized cases from my practice (PDF)](04_case_studies/Selected_Case_Studies.pdf) cover a technology license, a confidentiality remedy, equipment acceptance, transaction execution and permission to use legal data.
 - **Legal operations and intake.** Read the [Jira Service Management and Confluence implementation case (PDF)](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf), then explore the [operations tracker (Excel)](02_legal_ops/Contract_Operations_Tracker.xlsx) and the [workflow guide (PDF)](02_legal_ops/Legal_Operations_Workflow.pdf).
-- **Customer training and adoption.** The [training case (PDF)](03_training/Training_and_Customer_Success.pdf) covers adoption and product feedback. The [knowledge handoff demonstration ↗](https://ingridkao.netlify.app/lab/06_knowledge_operations/) shows which guidance a reviewer may use.
+- **Customer training and adoption.** The [training case (PDF)](03_training/Training_and_Customer_Success.pdf) covers adoption and product feedback. The [knowledge handoff demonstration](https://ingridkao.netlify.app/lab/06_knowledge_operations/) shows which guidance a reviewer may use.
 - **Construction contracts.** The [subcontract workflow](07_construction_workflow/README.md) shows how exceptions reach the right reviewer. Its [tracker (Excel)](07_construction_workflow/Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx) follows guarantees after signature, and the [owner-side issues list (PDF)](07_construction_workflow/Ingrid_Kao_Owner_Side_Construction_Issues.pdf) compares AIA A201-2017 with Taiwan PCC model terms.
 
 ## A guided model demonstration
 
-[Inside the Review ↗](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) puts three saved decisions beside their source clauses:
+[Inside the Review](https://ingridkao.netlify.app/lab/01_ai_review/replay.html) puts three saved decisions beside their source clauses:
 
 - **NDA-19.** Disregard the embedded instruction. Revise the clause imposing unlimited liability or obtain senior Legal/Finance approval before proceeding.
 - **NDA-18.** Request Appendix T before assessing the confidentiality period.
 - **NDA-03.** Keep the two specific findings and document why the count changed from three to two.
 
-Inspect the quotes, rules, prompts and decision brief, or download a checked packet as JSON. The evidence challenge alters a temporary copy; no archive is edited. The replay needs no account, API key or new model call. Twenty tests cover its mechanical checks, and six more check that a copied link reopens the same document, tab and finding. These tests are separate from the archived model evaluation.
+Inspect the quotes, rules, prompts and decision brief, or download a checked packet as JSON, with the addresses of the source agreement and of the view it came from. The evidence challenge alters a temporary copy; no archive is edited. The replay needs no account, API key or new model call. Twenty tests cover its mechanical checks, and seven more check that a copied link reopens the same document, tab, finding and prompt. These tests are separate from the archived model evaluation.
 
 The Lab's landing page also runs the intake routing example, with no account or API key.
 
@@ -46,9 +46,9 @@ The Lab's landing page also runs the intake routing example, with no account or 
 
 | Article | Companion evidence |
 |---|---|
-| [Testing a Legal AI Review Workflow](08_practitioner_notes/articles/Ingrid_Kao_Testing_Legal_AI.pdf) | 16 output-gate fixtures; one saved eight-document review; eight adjudicated document–rule pairs grouped into six actionable issues |
-| [When a Legal Escalation Is Ready to Close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
-| [From Counsel Guidance to Executable Review Rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
+| [Testing a legal AI review workflow](08_practitioner_notes/articles/Ingrid_Kao_Testing_Legal_AI.pdf) | 16 output-gate fixtures; one saved eight-document review; eight adjudicated document–rule pairs grouped into six actionable issues |
+| [When a legal escalation is ready to close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
+| [From counsel guidance to executable review rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
 
 These are separate datasets. The eight-document exploratory review does not replace the original 20-document NDA Lab, and the 12 workflow scenarios are separate from the 29 knowledge-gate tests. The [dataset map and run commands](08_practitioner_notes/README.md#dataset-map) identify each unit and result.
 

@@ -4,7 +4,7 @@ Ingrid Kao | Independent project | November 11, 2026
 
 ## Start here
 
-1. Open `Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx`. Start with **Weekly Report**, then review **Intake Register** and **Approval Rules**.
+1. Open `Ingrid_Kao_Subcontract_Workflow_Tracker.xlsx`. Start with **Weekly Report**, then review **Intake Register** and **Approval Rules**. Change the as-of date in B4 to see the week as it stood: the **Event Log** sheet holds the demonstration events, and the register reads each request's stage on that date. Approvals, signatures and next actions show the register as last updated. An execution entered in the register (Workflow stage Executed, with its Executed date) counts from that date, and the Event Log lists any stage change still to be added to the history.
 2. Make a practice copy. Change SC-001's amount from 50,000 to 50,000.01 to add Finance to the approval route. Change **Nonstandard terms** to Yes to require Senior Legal review.
 3. Review due dates, guarantee expiry alerts and weekly counts. Yellow cells are editable; calculated fields use formulas.
 4. Read the four-page workflow specification and the one-page owner-side construction issues comparison. The comparison cites AIA A201-2017 and the Taiwan PCC construction contract template dated December 30, 2025.

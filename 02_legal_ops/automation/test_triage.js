@@ -14,6 +14,10 @@ for(const field of['entity_verified','signature_authority','template_unchanged',
 expectRoute('changed NDA',{template_unchanged:false},'YELLOW');expectRoute('non-routine purpose',{routine_purpose:false},'YELLOW');expectRoute('policy not validated',{legal_reference_policy_validated:false},'YELLOW');expectRoute('high value and missing verification',{value_usd:250000,entity_verified:null},'RED');
 assert(triage({...base,personal_data:true}).owners.includes('Privacy/Security'));count++;
 assert(triage({...base,controlled_technology:true}).owners.includes('Trade compliance specialist'));count++;
+// the handbook (Clause clinic, purpose and AI use): shared-model training goes to Legal, Product and Privacy/Security
+for(const patch of[{template_unchanged:false,value_usd:8000},{type:'SaaS',value_usd:8000}]){const r=triage({...base,...patch,shared_model_training:true});assert.equal(r.route,'RED');assert.equal(r.hold,true);for(const o of['Senior Legal','Product','Privacy/Security'])assert(r.owners.includes(o),o);count++;}
+{const r=triage({...base,shared_model_training:true,personal_data:true});assert.equal(r.owners.filter(o=>o==='Privacy/Security').length,1);count++;}
+assert(!triage({...base,residuals:true}).owners.includes('Product'));count++;
 for(const amount of['$1,000','1,000','1 000','','-1','NaN','Infinity']){assert.equal(normalizeRequest({value_usd:amount}).value_usd,null,amount);count++;}
 for(const [amount,expected]of[['0',0],['100000',100000],['250000.25',250000.25],['.5',0.5]]){assert.equal(normalizeRequest({value_usd:amount}).value_usd,expected);count++;}
 for(const field of BOOL_KEYS){assert.equal(normalizeRequest({[field]:' Yes '})[field],true);assert.equal(normalizeRequest({[field]:'No'})[field],false);assert.equal(normalizeRequest({[field]:'Unknown'})[field],null);count++;}

@@ -31,6 +31,8 @@ Use this template with approved tools and synthetic or authorized public evidenc
 
 These are support priorities. NDA risk levels determine contract escalation separately.
 
+The update cadence in README.md sets how soon each severity's next update is due.
+
 ## Before closing
 
 Repeat the original useful task, retain the evidence, and record the user's confirmation or remaining limitation.

@@ -5,6 +5,7 @@ Run from any directory. The source contracts, policy and saved results are not e
 """
 from argparse import ArgumentParser
 from pathlib import Path
+import re
 from xml.sax.saxutils import escape
 import json
 from reportlab.pdfgen import canvas
@@ -14,6 +15,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import Paragraph, Table, TableStyle
 from pypdf import PdfReader, PdfWriter
+from pypdf.generic import NameObject, TextStringObject
 
 PUBLIC = Path(__file__).resolve().parents[1]
 W, H = 612, 792
@@ -67,6 +69,8 @@ class MethodPDF:
             self.paragraph('&ldquo;'+escape(b['text'])+'&rdquo;',10.9,15,'Body',color=INK,x=M+12,width=CW-24,gap=5)
             self.paragraph(escape(b['label']),9,12,color=BLUE,x=M+12,width=CW-24,gap=13)
         elif kind=='code':self.paragraph(escape(b['text']),10.3,14,'Semi',color=BLUE,gap=10)
+        elif kind=='links':  # a line of links for a reader who has only the PDF: [label](url) pairs in the text
+            self.paragraph(re.sub(r'\[([^\]]+)\]\(([^)]+)\)',lambda m:f'<link href="{escape(m.group(2))}" color="#4355db">{escape(m.group(1))}</link>',escape(b['text'])),9.7,13,color=MUTED,gap=11)
         elif kind=='reference':
             self.paragraph(f'[{b["id"]}] <link href="{escape(b["url"])}" color="#4355db">{escape(b["title"])}</link>',10,13.3,'Semi',gap=4)
             self.paragraph(escape(b['text']),9.5,12.6,color=MUTED,gap=10)
@@ -79,6 +83,7 @@ class MethodPDF:
     def save(self):
         self.c.save();reader=PdfReader(self.path);writer=PdfWriter();writer.clone_document_from_reader(reader);writer.metadata=None
         writer.add_metadata({'/Title':self.data['title'],'/Author':self.data['author'],'/Creator':self.data['author'],'/Subject':self.data['subject']})
+        writer._root_object[NameObject('/Lang')]=TextStringObject('en-US')  # the document's language, for screen readers
         tmp=self.path.with_suffix('.tmp.pdf');writer.write(tmp);tmp.replace(self.path)
 
 def markdown(data):
@@ -93,6 +98,7 @@ def markdown(data):
                 text.extend('| '+' | '.join(str(x)for x in row)+' |'for row in b['rows']);text.append('')
             elif kind=='quote':text.extend(['> '+b['text'],'','Source: '+b['label'],''])
             elif kind=='code':text.extend(['```sh',b['text'],'```',''])
+            elif kind=='links':text.extend([b['text'],''])
             elif kind=='reference':text.extend([f'[{b["id"]}] [{b["title"]}]({b["url"]}): '+b['text'],''])
             else:text.extend([b['text'],''])
     return '\n'.join(text)

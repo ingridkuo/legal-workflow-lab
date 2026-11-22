@@ -1,6 +1,6 @@
 # NDA demonstration review policy
 
-Policy NDA-DEMO-1.0 | November 10 2026 | Synthetic evaluation
+Policy NDA-DEMO-1.0 | November 10, 2026 | Synthetic evaluation
 
 Only supplied synthetic text and its stated context. This is clause triage, not legal approval. No web tools, communication, signature, upload or external processing.
 

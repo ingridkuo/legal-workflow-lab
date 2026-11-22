@@ -49,7 +49,7 @@ Evaluate all risk and value inputs together; preserve missing information.
 
 **RISK BAND IS NOT THE WORKFLOW ROUTE.** A low-value non-NDA can have a GREEN portfolio risk band while still requiring Legal review. No color or calculated result replaces human approval, specialist clearance or signature authority.
 
-Critical triggers include personal data (Privacy/Security), controlled technology and export alerts (trade compliance), shared-model training, residuals, unlimited liability and commercial exclusivity. Ask every risk question before calculating a route.
+Critical triggers include personal data (Privacy/Security), controlled technology and export alerts (trade compliance), shared-model training (Product and Privacy/Security), residuals, unlimited liability and commercial exclusivity. Ask every risk question before calculating a route.
 
 ## Page 3: Release the exact version.
 

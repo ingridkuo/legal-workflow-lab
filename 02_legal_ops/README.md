@@ -2,7 +2,7 @@
 
 I built this sample to connect contract intake with risk routing, delivery, acceptance, invoicing and renewal work. The workbook, database and local intake script use fictional records and proposed thresholds.
 
-My platform experience includes DocuSign CLM and work with Ironclad workflows, approval logic and templates, including test workflows. This collection makes the underlying process decisions inspectable through local examples.
+For an Ironclad client implementation, I worked on launch forms, templates and conditional approvals. My contract platform experience also includes DocuSign CLM. This collection makes the underlying process decisions inspectable through local examples.
 
 ## Legal intake implementation case
 
@@ -10,7 +10,9 @@ Read [Legal Intake Implementation](Ingrid_Kao_Legal_Intake_Implementation_Case.p
 
 ## Explore the tracker
 
-Open **Contract_Operations_Tracker.xlsx** and start with the Dashboard. Blue text marks editable inputs. Dark text marks calculated results. In Controls, change the As-of date, the review thresholds or the near-term window. Maintain the Contracts, Obligations and Compliance tables as work progresses.
+Open **Contract_Operations_Tracker.xlsx** and start with the Dashboard. Blue text marks editable inputs. Dark text marks calculated results. In Controls, change the As-of date, the review thresholds or the near-term window; the status words and Dashboard labels follow the window. A milestone or task completed after the As-of date shows as still open on it, as in the SQL reports. Each contract has a Budget check that compares its allocated obligation budget with its value, so an obligation filed under the wrong contract shows on both contracts even when the totals still agree. Each obligation line is checked on its own: a line paid above its invoice reads "Overpaid by $N: review", and the Dashboard check counts such lines. Notice days must be zero or more. Maintain the Contracts, Obligations and Compliance tables as work progresses.
+
+<img src="../assets/illustrations/case-budget-400-960.webp" width="440" alt="Two contract boxes, C001 and C002. A $400 slip sits in C002, circled in red: it belongs to C001.">
 
 The sample contains 24 contracts, 48 obligations and 12 illustrative calendar tasks. Known contract value totals **$2,141,498**; one contract value remains unknown. Two obligation rows allocate each contract budget 60% / 40%, so budget totals reconcile without double counting.
 
@@ -39,7 +41,7 @@ This rebuilds `database/contracts_demo.sqlite` from `synthetic_data.json` and ex
 | q05 | Which notice dates need action or manual review? |
 | q06 | Which budgets, invoices, payments or acceptance records show exceptions? |
 
-Use `--as-of 2026-12-01` to change the reporting date. CSV exports use `\N` for SQL NULL; an empty field preserves an original empty string. Missing money remains unknown rather than becoming zero.
+Use `--as-of 2026-12-01` to change the reporting date. Reports read the data as it stood on that date: a milestone completed after it is still listed as open (q04), and each notice row shows the contract's stage, so a draft's estimated notice date is kept apart from a signed contract's notice obligation (q05). CSV exports use `\N` for SQL NULL; an empty field preserves an original empty string. Missing money remains unknown rather than becoming zero.
 
 ## Run the local intake example
 
