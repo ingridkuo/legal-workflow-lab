@@ -56,8 +56,9 @@ function markTarget(){
  return row;
 }
 addEventListener('hashchange',()=>{
- if(location.hash==='#after-correction'&&active!=='corrected'){active='corrected';render();}
- else if(/^#exception-\d+$/.test(location.hash)&&active!=='flawed'){active='flawed';render();}
+ // the address decides the batch, whichever way it changed: a link, or Back to an address without #after-correction
+ const want=location.hash==='#after-correction'?'corrected':'flawed';
+ if(want!==active){active=want;render();}
  else markTarget();
 });
 document.querySelectorAll('[data-batch]').forEach(b=>b.addEventListener('click',()=>{
