@@ -233,7 +233,9 @@ def write_reports(report: dict, destination: Path) -> None:
         writer.writeheader()
         for issue in report["exceptions"]:
             writer.writerow({k: json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v for k, v in issue.items()})
-    lines = ["# Contract metadata migration check", "", "Synthetic demonstration", "",
+    # the batch is in the title, so the two summaries are told apart in a browser tab (the outside audit, 21 November)
+    batch = {"flawed": "flawed import", "corrected": "corrected import"}.get(stem, stem)
+    lines = [f"# Contract metadata migration check: {batch}", "", "Synthetic demonstration", "",
              f"Scenario: **{stem}**. Source: **{report['source_records']} records**. Destination: **{report['destination_records']} records**.",
              f"Clean: **{report['clean_records']}**. Held: **{report['held_records']}**. Source identities reconcile: **{report['source_identity_reconciled']}**.",
              f"Exception groups: **{report['exception_groups']}**. Release status: **{report['release_status']}**.",

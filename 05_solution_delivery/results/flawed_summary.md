@@ -1,4 +1,4 @@
-# Contract metadata migration check
+# Contract metadata migration check: flawed import
 
 Synthetic demonstration
 
