@@ -118,6 +118,16 @@ def evaluate(case, source, policy):
     return {'aggregate': aggregate, 'rules': outcomes}
 
 
+NUMBER_WORDS = ('no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten')
+
+
+def count_phrase(counts, total):
+    """The report's words for a status count, read from metrics.json's counts: 'one CURRENT and three RECHECK_REQUIRED'."""
+    assert sum(counts.values()) == total, (counts, total)
+    parts = [f"{NUMBER_WORDS[n] if n < len(NUMBER_WORDS) else n} {status}" for status, n in sorted(counts.items()) if n]
+    return parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1]
+
+
 def review_freshness(prior, current):
     """A comparison instruction; it never revokes or changes a prior decision."""
     reasons = []
@@ -229,7 +239,7 @@ The run matched authored expectations on {len(case_rows)} policy evaluations acr
     report += f'''
 {metrics['scenarios_with_changed_aggregate']} scenarios changed aggregate outcomes. {metrics['scenarios_with_changed_rule_reason']} scenarios had a changed rule reason, including threshold changes where the outcome remained the same. The change report identifies comparisons for a new review context. It does not apply a policy retroactively or revoke a prior decision.
 
-All {len(freshness_rows)} review-freshness scenarios matched authored expectations: one CURRENT and three RECHECK_REQUIRED. A changed version identifies a comparison task, without changing any earlier decision.
+All {len(freshness_rows)} review-freshness scenarios matched authored expectations: {count_phrase(metrics['freshness_status_counts'], len(freshness_rows))}. A changed version identifies a comparison task, without changing any earlier decision.
 
 The engine evaluates supplied annotations and exact source-linkage fields. It does not extract contractual meaning, verify annotation correctness, authenticate counsel, approve agreements, or resolve substantive uncertainty. The policy's 36- and 60-month thresholds are fictional sponsor instructions. Missing, stale, conflicting or incorrectly typed material facts produce NEEDS_REVIEW for the affected rule. A confirmed policy departure remains ESCALATE even if another rule needs review.
 
