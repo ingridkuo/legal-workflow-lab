@@ -15,6 +15,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import Paragraph, Table, TableStyle
 from pypdf import PdfReader, PdfWriter
+from pypdf.generic import NameObject, TextStringObject
 
 PUBLIC = Path(__file__).resolve().parents[1]
 W, H = 612, 792
@@ -82,6 +83,7 @@ class MethodPDF:
     def save(self):
         self.c.save();reader=PdfReader(self.path);writer=PdfWriter();writer.clone_document_from_reader(reader);writer.metadata=None
         writer.add_metadata({'/Title':self.data['title'],'/Author':self.data['author'],'/Creator':self.data['author'],'/Subject':self.data['subject']})
+        writer._root_object[NameObject('/Lang')]=TextStringObject('en-US')  # the document's language, for screen readers
         tmp=self.path.with_suffix('.tmp.pdf');writer.write(tmp);tmp.replace(self.path)
 
 def markdown(data):

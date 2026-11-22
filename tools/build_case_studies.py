@@ -17,6 +17,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 from pypdf import PdfReader, PdfWriter
+from pypdf.generic import NameObject, TextStringObject
 
 
 PUBLIC = Path(__file__).resolve().parent.parent
@@ -139,6 +140,7 @@ class CasePDF:
             "/Creator": "Ingrid Kao",
             "/Subject": "Representative matters in licensing, commercial remedies, equipment procurement, transactions and legal data",
         })
+        writer._root_object[NameObject("/Lang")] = TextStringObject("en-US")  # the document's language
         with PDF_FILE.open("wb") as output:
             writer.write(output)
 
