@@ -36,7 +36,7 @@ I draft commercial agreements, build contract workflows and translate legal revi
 - **NDA-18.** Request Appendix T before assessing the confidentiality period.
 - **NDA-03.** Keep the two specific findings and document why the count changed from three to two.
 
-Inspect the quotes, rules, prompts and decision brief, or download a checked packet as JSON. The evidence challenge alters a temporary copy; no archive is edited. The replay needs no account, API key or new model call. Twenty tests cover its mechanical checks, and six more check that a copied link reopens the same document, tab and finding. These tests are separate from the archived model evaluation.
+Inspect the quotes, rules, prompts and decision brief, or download a checked packet as JSON, with the addresses of the source agreement and of the view it came from. The evidence challenge alters a temporary copy; no archive is edited. The replay needs no account, API key or new model call. Twenty tests cover its mechanical checks, and seven more check that a copied link reopens the same document, tab, finding and prompt. These tests are separate from the archived model evaluation.
 
 The Lab's landing page also runs the intake routing example, with no account or API key.
 

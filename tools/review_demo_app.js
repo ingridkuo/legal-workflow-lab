@@ -116,7 +116,7 @@ function downloadPacket(){
  if(!check.ok)return;
  const sourcePath=Object.keys(DATA.provenance).find(x=>x.endsWith('/'+state.id+'.txt'));
  const outputPath=`evaluation/saved_reviews/${state.run}.json`;
- const packet={kind:'saved_review_evidence_packet',scope:'Synthetic portfolio example; not legal approval or a new model run.',document_id:state.id,saved_batch:state.run,source_file:sourcePath,source_sha256:DATA.provenance[sourcePath],saved_batch_file:outputPath,saved_batch_sha256:DATA.provenance[outputPath],policy_id:DATA.policy.policy_id,policy_sha256:DATA.provenance['policy/nda_demo_policy.json'],review:r,mechanical_evidence_checks:check,human_approval_granted:false};
+ const packet={kind:'saved_review_evidence_packet',scope:'Synthetic portfolio example; not legal approval or a new model run.',document_id:state.id,saved_batch:state.run,review_view_url:location.href.split('#')[0]+ReviewView.format(state),source_file:sourcePath,source_url:new URL(sourcePath,location.href).href,source_sha256:DATA.provenance[sourcePath],saved_batch_file:outputPath,saved_batch_sha256:DATA.provenance[outputPath],policy_id:DATA.policy.policy_id,policy_sha256:DATA.provenance['policy/nda_demo_policy.json'],review:r,mechanical_evidence_checks:check,human_approval_granted:false};
  const blob=new Blob([JSON.stringify(packet,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`${state.id}_${state.run}_review_packet.json`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 $('run').addEventListener('change',()=>{state.run=$('run').value;state.selected=0;state.challenge=null;state.prompt=ReviewView.promptOf(state.run);populateDocuments();render();syncHash();});
