@@ -36,9 +36,9 @@ Skills: commercial drafting, negotiation, risk allocation, bilingual clauses and
 
 I reviewed a client’s cloud-hosting and managed-services agreement. The provider’s liability cap, set at 30% of the contract price, came to about a quarter of the contractual penalty that a separate clause set for confidentiality breaches. Taiwan law allows such a penalty, subject to reduction by a court, so the cap could have limited what the client recovered under that clause. I proposed carving the clause out of the cap and widening its trigger from disclosure to any breach of the confidentiality obligations. **The signed agreement raised the cap** and included a six-hour repair commitment and service credits.
 
-### A technology license that reached signature
+### Battery management system licensing
 
-I drafted and negotiated an exclusive cross-border patent and technology license for a battery-management system. The negotiation stalled over improvements. I separated ownership of improvements from the right to use them, so the parties could settle each question on its own terms. **The impasse broke, and both parties signed.**
+I represented the licensee in a cross-border deal for an exclusive patent and technology license covering a battery management system. When talks stalled over future improvements, I separated two questions. Who would own the improvements, and who could use them? I drafted and negotiated the agreement on that basis, and **both parties signed**.
 
 ### Acceptance, from both sides
 

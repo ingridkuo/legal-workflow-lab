@@ -4,13 +4,15 @@ Ingrid Kao
 
 Client identities and monetary terms are withheld.
 
-## BMS licensing: resolve ownership without losing use rights
+## Who owns the next improvement?
 
 PATENT AND TECHNOLOGY LICENSE
 
-The negotiation had stalled over ownership of improvements to a battery-management system. I separated ownership of new improvements from the rights needed to use them, then aligned those rights with sublicensing and technology-transfer obligations. I drafted and negotiated the cross-border patent and technology license, including staged payments linked to the agreed transfer milestones.
+My client was the licensee in a cross-border deal for an exclusive patent and technology license covering a battery management system. The licensor wanted to own all future improvements. My client planned to do its own R&D and wanted to keep the rights to its work.
 
-**Outcome:** The parties resolved the impasse, and both signed.
+I separated ownership of the improvements from the rights each side needed to use them. We also agreed that my client could sublicense the technology to its affiliates and manufacturing partners. Under the agreement, the second installment was due only after written confirmation that the technology transfer was complete.
+
+**Outcome:** Both parties signed.
 
 ## Cloud services: make the confidentiality remedy work
 

@@ -23,7 +23,7 @@ for n,label,title in [('01','Technology license','Resolved the ownership impasse
     outcomes.append(f'<article class="outcome-card"><p class="kicker">{esc(label)}</p><h3>{esc(title)}</h3><p>{esc(contribution)}</p><div class="outcome-result"><span aria-hidden="true"></span><strong>{esc(c["outcome"])}</strong></div></article>')
 details=[]
 for c in cases:
-    details.append(f'<details class="case-detail"><summary><span class="case-number">{esc(c["n"])}</span><span>{esc(c["title"])}</span><span class="plus" aria-hidden="true">+</span></summary><div class="case-body"><p class="kicker">{esc(c["context"])}</p><p>{esc(c["body"])}</p><p class="case-outcome"><strong>{esc(c.get("result_label","Outcome"))}:</strong> {esc(c["outcome"])}</p></div></details>')
+    details.append(f'<details class="case-detail"><summary><span class="case-number">{esc(c["n"])}</span><span>{esc(c["title"])}</span><span class="plus" aria-hidden="true">+</span></summary><div class="case-body"><p class="kicker">{esc(c["context"])}</p>{"".join("<p>" + esc(part) + "</p>" for part in c["body"].split(chr(10) * 2))}<p class="case-outcome"><strong>{esc(c.get("result_label","Outcome"))}:</strong> {esc(c["outcome"])}</p></div></details>')
 values={'@@OUTCOME_CARDS@@':''.join(outcomes),'@@CASE_DETAILS@@':''.join(details),'@@SOURCE_QUOTE@@':esc(finding['source_quote']),'@@SOURCE_LOCATOR@@':esc(finding['source_locator']),'@@SAVED_FINDING@@':esc(finding['finding']),'@@MIGRATION_TESTS@@':str(migration['test_count']),'@@KNOWLEDGE_TESTS@@':str(knowledge['tests']['tests_run']),'@@TRIAGE_SCRIPT@@':triage}
 s=(HERE/'homepage_template.html').read_text()
 for key,value in values.items():

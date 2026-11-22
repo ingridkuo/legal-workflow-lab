@@ -104,7 +104,8 @@ class CasePDF:
             escape(case["n"] + " / " + case["context"]), top, 8.6, 11.5, "CaseSemi", BLUE
         )
         top = self.paragraph(escape(case["title"]), top + 7, 14, 17.5, "CaseSemi")
-        top = self.paragraph(escape(case["body"]), top + 8)
+        for i, part in enumerate(case["body"].split("\n\n")):
+            top = self.paragraph(escape(part), top + (8 if i == 0 else 6))
         top = self.paragraph(
             "<b>" + escape(case["result_label"]) + ":</b> " + escape(case["outcome"]), top + 8,
             size=10.7, leading=14.4, color=INK,

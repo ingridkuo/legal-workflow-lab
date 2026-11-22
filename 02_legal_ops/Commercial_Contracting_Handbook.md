@@ -107,7 +107,7 @@ Decision: make usage, pricing and remedy mechanics explicit, and align the Order
 
 ### Battery management technology license
 
-**Patent and technology license:** I negotiated a cross-border patent and technology license, separating ownership of improvements from use rights and addressing sublicensing and staged payments. Both parties signed.
+**Patent and technology license:** In a battery management system deal, I helped my client, the licensee, move negotiations forward by addressing ownership of future improvements separately from the right to use them.
 
 **Illustration:** Sample structure: Northbank retains background technology; Aster Vale owns its new improvements, with separately defined use rights. Affiliates and approved manufacturing partners receive bounded sublicenses. A fictional USD120,000 fee is split between signature and verified technology transfer.
 
