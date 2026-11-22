@@ -13,7 +13,7 @@ My work spans law-firm practice, sole in-house counsel work and a legal-tech com
 | Skill | Evidence to inspect | Page |
 | --- | --- | --- |
 | **Commercial judgment**<br>Drafting, negotiation, risk allocation | A liability cap that undercut a Taiwan-law penalty clause, a signed technology license and a buyer-side acceptance revision with its fallback. | 02 |
-| **Workflow design**<br>Intake, approvals, contract lifecycle | Executable routing with 83 passing tests, a contract tracker and named review and signature gates. | 03 |
+| **Workflow design**<br>Intake, approvals, contract lifecycle | Executable routing with 87 passing tests, a contract tracker and named review and signature gates. | 03 |
 | **Data quality**<br>Mapping, migration QA, SQL reporting | An XML-to-JSON migration check with seeded exceptions and correction reports, plus six SQLite reports. | 04 |
 | **Legal AI evaluation**<br>Rules, prompts, source verification | Fixed synthetic NDA tests, saved outputs, quote checks, three repeated agent batches and a pilot decision. | 05 |
 | **Program and knowledge operations**<br>Handoffs, documentation, adoption | Two completed transaction plans, a source-backed escalation record and guidance checked before use. | 06 |
@@ -79,7 +79,7 @@ As sole in-house counsel to a contractor, I built the contract review and approv
 
 ### A working routing decision
 
-The same rule runs in the command-line example (Node.js) and on the portfolio’s intake page, and 83 tests cover it. Known critical risk, or a value of $250,000 or more, routes RED before missing facts are considered. Otherwise, missing required information returns NEEDS INPUT, and $100,000 starts YELLOW. Only a routine, unchanged NDA can qualify for the delegated GREEN workflow.
+The same rule runs in the command-line example (Node.js) and on the portfolio’s intake page, and 87 tests cover it. Known critical risk, or a value of $250,000 or more, routes RED before missing facts are considered. Otherwise, missing required information returns NEEDS INPUT, and $100,000 starts YELLOW. Only a routine, unchanged NDA can qualify for the delegated GREEN workflow.
 
 **Control:** Every result keeps approval to sign separate from the route. Unknown amounts stay unknown. A notice date is calculated only from a verified source clause, on a stated calendar-day basis.
 
@@ -100,7 +100,8 @@ At Lawsnote, I validated a migration of more than 10,000 contract records throug
 
 | XML source | JSON destination | Check |
 | --- | --- | --- |
-| @id / @revision | source_record_id / source_revision | Case-insensitive unique key; current revision |
+| None; assigned on import | repository_record_id | Unique key, case-insensitive |
+| @id / @revision | source_record_id / source_revision | Exact match to the source; current revision |
 | owner | business_owner | Required; blank space counts as missing |
 | signed_on / expires_on | signed_date / expiry_date | Real ISO dates; expiry not before signature |
 | amount_usd | value_usd | Exact decimal; blank stays null, not zero |
@@ -114,7 +115,7 @@ Each exception records its source, field, expected and actual values, owner and 
 
 ### Report what changes the next action
 
-Six SQLite queries in the operations sample identify near-term renewals, value thresholds, insurance evidence, overdue milestones, notice review and budget and invoice exceptions. Missing values remain visible instead of becoming zero.
+Six SQLite queries in the operations sample identify near-term renewals, value thresholds, insurance evidence, overdue milestones, notice review, and budget and invoice exceptions. Missing values remain visible instead of becoming zero.
 
 - [Mapping, fixtures, code and correction reports](./05_solution_delivery/index.html)
 - [Six SQL queries and the contract operations database](./02_legal_ops/README.md)

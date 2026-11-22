@@ -126,7 +126,7 @@ doc.table(['Stage','Required record','Next owner'],[
  ['Payment and renewal','Invoice and acceptance status, notice source and action date','Finance / record owner']
 ],[96,309,123],10.3)
 doc.section('A working routing decision')
-doc.body('The same rule runs in the Node.js example and portfolio intake page, with 83 passing routing tests. Known critical risk or value at least $250,000 routes RED before missing facts. Missing required information otherwise returns NEEDS INPUT; $100,000 starts YELLOW. Only a routine unchanged NDA can qualify for the delegated GREEN workflow.',size=10.7,lead=14.2)
+doc.body('The same rule runs in the Node.js example and portfolio intake page, with 87 passing routing tests. Known critical risk or value at least $250,000 routes RED before missing facts. Missing required information otherwise returns NEEDS INPUT; $100,000 starts YELLOW. Only a routine unchanged NDA can qualify for the delegated GREEN workflow.',size=10.7,lead=14.2)
 doc.body('<b>Control:</b> The result always keeps approval to sign separate from the route. Unknown amounts stay unknown. Notice arithmetic requires a verified source and calendar-day basis.',size=10.7,lead=14.2)
 doc.body('<b>Inspectable sample:</b> 24 fictional contracts, 48 allocated obligations and 12 calendar tasks. The tracker shows risk, value, owners, acceptance evidence and payment status together.',size=10.7,lead=14.2)
 doc.body('<b>Platform experience:</b> I introduced Ironclad to a client, built test workflows and worked with its approval logic and templates. At Lawsnote, I tracked a client\'s contract expiry dates in DocuSign CLM. The included code demonstrates the underlying decisions locally.',size=10.7,lead=14.2)
@@ -137,7 +137,8 @@ doc.end()
 doc.start('03 / Data quality and reporting','Check the records before release.','Skills: XML and JSON mapping, migration validation, exception analysis, SQL and reconciliation.')
 doc.body('At Lawsnote, I validated a migration of more than 10,000 contract records through field mapping and import checks. This demonstration applies that checking method to a small fictional dataset.')
 doc.table(['XML source','JSON destination','Check'],[
- ['@id / @revision','source_record_id / source_revision','Case-insensitive unique key; current revision'],
+ ['None; assigned on import','repository_record_id','Unique key, case-insensitive'],
+ ['@id / @revision','source_record_id / source_revision','Exact match to the source; current revision'],
  ['owner','business_owner','Required; whitespace is missing'],
  ['signed_on / expires_on','signed_date / expiry_date','Real dates; expiry not before signature'],
  ['amount_usd','value_usd','Exact decimal; blank differs from zero'],
