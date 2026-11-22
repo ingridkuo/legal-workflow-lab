@@ -16,7 +16,7 @@ function triage(r) {
   if (typeof r.value_usd === 'number' && Number.isFinite(r.value_usd) && r.value_usd >= 250000) red.push('value >= USD 250,000');
   let route, owners, reasons;
   // Known critical risk always stays visible, even when another input is missing.
-  if (red.length) { route='RED'; owners=['Senior Legal','Finance','Business owner']; if (YES(r.personal_data)) owners.push('Privacy/Security'); if (YES(r.controlled_technology) || YES(r.sanctions_export_alert)) owners.push('Trade compliance specialist'); reasons=red; }
+  if (red.length) { route='RED'; owners=['Senior Legal','Finance','Business owner']; if (YES(r.personal_data)) owners.push('Privacy/Security'); if (YES(r.shared_model_training)) { owners.push('Product'); if (!owners.includes('Privacy/Security')) owners.push('Privacy/Security'); } if (YES(r.controlled_technology) || YES(r.sanctions_export_alert)) owners.push('Trade compliance specialist'); reasons=red; }
   else if (missing.length) { route='NEEDS INPUT'; owners=['Requester','Legal intake']; reasons=missing; }
   else if (r.value_usd >= 100000 || r.type !== 'NDA' || !YES(r.template_unchanged) || !YES(r.routine_purpose) || !YES(r.legal_reference_policy_validated)) {
     route='YELLOW'; owners=['Legal','Finance']; reasons=['Legal review required: value, document type or approved-paper gate'];
