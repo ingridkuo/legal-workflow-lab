@@ -1,4 +1,4 @@
-# From Counsel Guidance to Executable Review Rules
+# From counsel guidance to executable review rules
 
 Ingrid Kao  
 Independent practitioner note  

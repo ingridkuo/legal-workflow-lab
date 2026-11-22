@@ -46,9 +46,9 @@ The Lab's landing page also runs the intake routing example, with no account or 
 
 | Article | Companion evidence |
 |---|---|
-| [Testing a Legal AI Review Workflow](08_practitioner_notes/articles/Ingrid_Kao_Testing_Legal_AI.pdf) | 16 output-gate fixtures; one saved eight-document review; eight adjudicated document–rule pairs grouped into six actionable issues |
-| [When a Legal Escalation Is Ready to Close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
-| [From Counsel Guidance to Executable Review Rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
+| [Testing a legal AI review workflow](08_practitioner_notes/articles/Ingrid_Kao_Testing_Legal_AI.pdf) | 16 output-gate fixtures; one saved eight-document review; eight adjudicated document–rule pairs grouped into six actionable issues |
+| [When a legal escalation is ready to close](08_practitioner_notes/articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | 12 workflow scenarios; Python/SQLite case and audit records; closure and preservation follow-up |
+| [From counsel guidance to executable review rules](08_practitioner_notes/articles/Ingrid_Kao_Executable_Review_Rules.pdf) | 18 scenarios under two policy versions; 36 evaluations; change-impact and review-freshness reports |
 
 These are separate datasets. The eight-document exploratory review does not replace the original 20-document NDA Lab, and the 12 workflow scenarios are separate from the 29 knowledge-gate tests. The [dataset map and run commands](08_practitioner_notes/README.md#dataset-map) identify each unit and result.
 

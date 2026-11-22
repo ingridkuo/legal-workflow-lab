@@ -6,11 +6,11 @@ Three practitioner articles connect legal judgment to inspectable implementation
 
 | Article | Best starting point | Companion implementation |
 | --- | --- | --- |
-| [Testing a Legal AI Review Workflow](articles/Ingrid_Kao_Testing_Legal_AI.pdf) | Legal AI evaluation and evidence checks | [Saved NDA review and adjudication](experimental_llm/README.md); [output gate](toolkit/README.md) |
-| [When a Legal Escalation Is Ready to Close](articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | Legal operations, escalation ownership, and closure | [Workflow, scenarios, and SQL reporting](toolkit/README.md) |
-| [From Counsel Guidance to Executable Review Rules](articles/Ingrid_Kao_Executable_Review_Rules.pdf) | Rule design, policy changes, and review freshness | [Versioned rulebook](rulebook_toolkit/README.md) |
+| [Testing a legal AI review workflow](articles/Ingrid_Kao_Testing_Legal_AI.pdf) | Legal AI evaluation and evidence checks | [Saved NDA review and adjudication](experimental_llm/README.md); [output gate](toolkit/README.md) |
+| [When a legal escalation is ready to close](articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) | Legal operations, escalation ownership, and closure | [Workflow, scenarios, and SQL reporting](toolkit/README.md) |
+| [From counsel guidance to executable review rules](articles/Ingrid_Kao_Executable_Review_Rules.pdf) | Rule design, policy changes, and review freshness | [Versioned rulebook](rulebook_toolkit/README.md) |
 
-## Testing a Legal AI Review Workflow
+## Testing a legal AI review workflow
 
 The [article](articles/Ingrid_Kao_Testing_Legal_AI.pdf) separates authored software fixtures from a recorded model-review exercise:
 
@@ -21,13 +21,13 @@ The [article](articles/Ingrid_Kao_Testing_Legal_AI.pdf) separates authored softw
 
 Inspect the [sources](experimental_llm/documents.json), [policy](experimental_llm/toy_policy.json), [original key](experimental_llm/provisional_answer_key.json), [raw response](experimental_llm/raw_model_response.json), [author adjudication](experimental_llm/adjudication_record.json), [scoring ledger](experimental_llm/adjudication_v1_1.json), [revised key](experimental_llm/adjudicated_answer_key.json), and [scorer](experimental_llm/evaluate_exploration.py).
 
-## When a Legal Escalation Is Ready to Close
+## When a legal escalation is ready to close
 
 The [article](articles/Ingrid_Kao_Legal_Escalation_Closure.pdf) defines completion evidence and continuing ownership. Its [Python/SQLite implementation](toolkit/README.md) exercises 12 workflow scenarios and records 62 audit events. The final register has two closed, seven blocked, and three assigned cases; one open case is overdue at the fixed snapshot. A closed case retains an accepted active preservation follow-up.
 
 The 12 scenarios are not the 29 gate tests in the separate `06_knowledge_operations` project. They exercise different code and records. Here, pending preservation review blocks closure; pre-execution preservation enforcement remains a deployment requirement.
 
-## From Counsel Guidance to Executable Review Rules
+## From counsel guidance to executable review rules
 
 The [article](articles/Ingrid_Kao_Executable_Review_Rules.pdf) turns a legal instruction into an explicit policy record. Its [rulebook](rulebook_toolkit/README.md) evaluates 18 authored scenarios under two policy versions, producing 36 aggregate evaluations and 108 rule rows. Four cases change outcome; six change reasons. Four review-freshness checks produce one CURRENT and three RECHECK_REQUIRED results.
 

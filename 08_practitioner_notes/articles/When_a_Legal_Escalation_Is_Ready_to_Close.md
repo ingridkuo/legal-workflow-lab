@@ -1,4 +1,4 @@
-# When a Legal Escalation Is Ready to Close
+# When a legal escalation is ready to close
 
 Ingrid Kao  
 Independent practitioner note  

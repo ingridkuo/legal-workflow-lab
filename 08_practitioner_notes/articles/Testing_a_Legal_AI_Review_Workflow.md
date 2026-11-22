@@ -1,4 +1,4 @@
-# Testing a Legal AI Review Workflow
+# Testing a legal AI review workflow
 
 Ingrid Kao  
 Independent practitioner note  
