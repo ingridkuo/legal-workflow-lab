@@ -2,7 +2,7 @@
 
 Ingrid Kao  
 Independent practitioner note  
-November 11 2026  
+November 11, 2026  
 [See what changed under policy v2 →](../rulebook_toolkit/outputs/report.md)
 
 **At a glance**
