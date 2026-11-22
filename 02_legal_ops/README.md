@@ -12,6 +12,8 @@ Read [Legal Intake Implementation](Ingrid_Kao_Legal_Intake_Implementation_Case.p
 
 Open **Contract_Operations_Tracker.xlsx** and start with the Dashboard. Blue text marks editable inputs. Dark text marks calculated results. In Controls, change the As-of date, the review thresholds or the near-term window; the status words and Dashboard labels follow the window. A milestone or task completed after the As-of date shows as still open on it, as in the SQL reports. Each contract has a Budget check that compares its allocated obligation budget with its value, so an obligation filed under the wrong contract shows on both contracts even when the totals still agree. Each obligation line is checked on its own: a line paid above its invoice reads "Overpaid by $N: review", and the Dashboard check counts such lines. Notice days must be zero or more. Maintain the Contracts, Obligations and Compliance tables as work progresses.
 
+<img src="../assets/illustrations/case-budget-400-960.webp" width="440" alt="Two contract boxes, C001 and C002. A $400 slip sits in C002, circled in red: it belongs to C001.">
+
 The sample contains 24 contracts, 48 obligations and 12 illustrative calendar tasks. Known contract value totals **$2,141,498**; one contract value remains unknown. Two obligation rows allocate each contract budget 60% / 40%, so budget totals reconcile without double counting.
 
 The proposed risk bands use inclusive thresholds: **$100,000 starts YELLOW** and **$250,000 starts RED**. Known critical risk takes priority over missing facts. Missing or invalid required inputs return NEEDS INPUT. The tracker’s GREEN risk band is separate from the stricter NDA workflow eligibility test in the intake script.
