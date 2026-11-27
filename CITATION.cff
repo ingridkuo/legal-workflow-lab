@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+title: "Legal Workflow Lab"
+type: software
+authors:
+  - family-names: "Kao"
+    given-names: "Ingrid"
+repository-code: "https://github.com/ingridkuo/legal-workflow-lab"
+# One identifier on purpose: this format reads a list of licenses as alternatives.
+# The README's License section says which files fall under which terms.
+license: MIT
+abstract: "Practitioner notes, review rules and reproducible demonstrations for contract workflows, legal operations and legal AI evaluation, built on fictional contracts and records. Code is released under the MIT License and written material under CC BY 4.0; the README lists what is reserved."
+keywords:
+  - legal operations
+  - contract management
+  - legal AI evaluation
+  - compliance
+version: "1.0.0"
+date-released: "2026-12-15"

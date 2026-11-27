@@ -146,8 +146,15 @@ python3 scripts/test_api_study.py
 
 The [current authoring tools](tools/README.md) rebuild the PDFs and case cards from their current sources. The case narratives and featured summaries share one JSON source. Authoring needs ReportLab, Pillow and pypdf; running the demonstrations above needs no extra packages.
 
-Copyright © 2026 Ingrid Kao. Provided for portfolio review. All rights reserved. Inter font license and source notices are in `assets`.
+## License
+
+Copyright © 2026 Ingrid Kao.
+
+- **Code and demo data** (`.py`, `.js`, `.cjs`, `.html`, `.sql`, `.json`, `.csv` and other files that run or feed the demonstrations): [MIT License](LICENSE).
+- **Written material** (practitioner notes, playbooks, checklists, review rules and their PDF, Word and Excel versions): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may reuse and adapt it with attribution. To cite it, use **Cite this repository** on GitHub or [`CITATION.cff`](CITATION.cff).
+- **Not covered by either license (all rights reserved):** the case studies and any summaries of them, the work samples, the articles, and the portrait and illustrations (`04_case_studies/`, `02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf`, `Ingrid_Kao_Work_Samples*`, `08_practitioner_notes/articles/`, `assets/avatar.webp`, `assets/illustrations/`).
+- **Third-party material keeps its own terms:** the Inter font (SIL Open Font License; notices in `assets/`), the SALI records (notice in `01_ai_review/taxonomy/sources/SALI_LICENSE.txt`) and quoted standard-form contract language.
 
 Contact: [kuoingrid0118@gmail.com](mailto:kuoingrid0118@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
-Selected professional work and synthetic demonstrations. For portfolio purposes only; not legal advice.
+Selected professional work and synthetic demonstrations. Not legal advice.
