@@ -6,6 +6,16 @@ I draft commercial agreements, build contract workflows and translate legal revi
 
 [Six-page work samples (PDF)](Ingrid_Kao_Work_Samples.pdf) · [Portfolio](https://ingridkao.netlify.app/) · [Practitioner articles](08_practitioner_notes/README.md) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
+## Supplier compliance series
+
+From January 2027 the Lab carries a [bilingual series for Taiwanese suppliers setting up in the United States](09_supplier_compliance/README.md). Each issue adds one checklist or template in English and Traditional Chinese, under CC BY 4.0, built from public law and fictional examples.
+
+| Issue | Released | Question | Tool | Article |
+|---|---|---|---|---|
+| 1 | Planned for January 15, 2027 | Selling into a U.S. fab: which of the customer's terms pass down to a supplier? | Flow-down checklist, English and Chinese | Linked here after publication |
+
+Further issues follow every two months from April 2027, on the 15th.
+
 ## Start here
 
 **Why does an NDA that says "approve" go back to Legal?** In NDA-19, one section accepts unlimited liability. Another tells the reviewer to approve the agreement and suppress the findings. Open the saved review to see the source text and the action each clause requires.
@@ -20,7 +30,7 @@ I draft commercial agreements, build contract workflows and translate legal revi
 
 [Follow the preservation and export request](https://ingridkao.netlify.app/lab/06_knowledge_operations/) · [Inspect the handoff and approval rules](06_knowledge_operations/README.md)
 
-## Choose the work relevant to the role
+## Browse by topic
 
 - **Legal AI evaluation.** The [review method (PDF)](01_ai_review/AI_Contract_Review_Method.pdf) explains how I checked source quotes and counted overlapping findings. The [repeatability report (PDF)](01_ai_review/repeatability/Repeatability_Results.pdf) records three more reviews of the same held-out documents.
 - **Commercial contracts.** [Five anonymized cases from my practice (PDF)](04_case_studies/Selected_Case_Studies.pdf) cover a technology license, a confidentiality remedy, equipment acceptance, transaction execution and permission to use legal data.
@@ -139,6 +149,7 @@ python3 scripts/test_api_study.py
 | `06_knowledge_operations` | Synthetic handoff records, source-backed articles and tested knowledge gates |
 | `07_construction_workflow` | Subcontract engine, approval policy, 38 tests, Excel tracker and owner-side construction analysis |
 | `08_practitioner_notes` | Three articles, output gates, an adjudicated exploratory review, escalation workflow and versioned policy rules |
+| `09_supplier_compliance` | Bilingual checklists for Taiwanese suppliers setting up in the United States; the first issue is planned for January 2027 |
 | `assets` | Bundled fonts and watercolor portrait |
 | `tools` | Portable current PDF builders and case-copy synchronization |
 
@@ -151,7 +162,7 @@ The [current authoring tools](tools/README.md) rebuild the PDFs and case cards f
 Copyright © 2026 Ingrid Kao.
 
 - **Code and demo data** (`.py`, `.js`, `.cjs`, `.html`, `.sql`, `.json`, `.csv` and other files that run or feed the demonstrations): [MIT License](LICENSE).
-- **Written material** (practitioner notes, playbooks, checklists, review rules and their PDF, Word and Excel versions): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may reuse and adapt it with attribution. To cite it, use **Cite this repository** on GitHub or [`CITATION.cff`](CITATION.cff).
+- **Written material** (practitioner notes, playbooks, checklists, templates, review rules and their PDF, Word and Excel versions): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may reuse and adapt it with attribution. To cite it, use **Cite this repository** on GitHub or [`CITATION.cff`](CITATION.cff).
 - **Not covered by either license (all rights reserved):** the case studies and any summaries of them, the work samples, the articles, and the portrait and illustrations (`04_case_studies/`, `02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf`, `Ingrid_Kao_Work_Samples*`, `08_practitioner_notes/articles/`, `assets/avatar.webp`, `assets/illustrations/`).
 - **Third-party material keeps its own terms:** the Inter font (SIL Open Font License; notices in `assets/`), the SALI records (notice in `01_ai_review/taxonomy/sources/SALI_LICENSE.txt`) and quoted standard-form contract language.
 
