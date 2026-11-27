@@ -8,11 +8,11 @@ I draft commercial agreements, build contract workflows and translate legal revi
 
 ## Supplier compliance series
 
-From January 2027 the Lab carries a [bilingual series for Taiwanese suppliers setting up in the United States](09_supplier_compliance/README.md). Each issue adds one checklist or template in English and Traditional Chinese, under CC BY 4.0, built from public law and fictional examples.
+From January 2027 the Lab carries a [bilingual series for Taiwanese suppliers setting up in the United States](09_supplier_compliance/README.md). Each issue adds one checklist or template in English and Traditional Chinese, under CC BY 4.0, built from public law, published contract forms and fictional examples.
 
 | Issue | Released | Question | Tool | Article |
 |---|---|---|---|---|
-| 1 | Planned for January 15, 2027 | Selling into a U.S. fab: which of the customer's terms pass down to a supplier? | Flow-down checklist, English and Chinese | Linked here after publication |
+| 1 | Planned for January 15, 2027 | Selling equipment into a U.S. fab: which of the customer's terms must reach the company that installs it? | Fab equipment flow-down checklist, English and Chinese | Linked here after publication |
 
 Further issues follow every two months from April 2027, on the 15th.
 
