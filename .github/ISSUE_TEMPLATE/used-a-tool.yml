@@ -1,0 +1,52 @@
+name: I used a checklist or template
+description: Say which tool you used, what you changed, and what was missing or wrong.
+title: "Used: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A few lines are enough.
+
+        Please leave out anything confidential: no customer or supplier names, no contract terms, no company documents. This form is public, and it is not a way to ask for legal advice.
+  - type: input
+    id: tool
+    attributes:
+      label: Which tool?
+      description: The file or folder name, for example 09_supplier_compliance/2027-01_flow-down.
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who used it?
+      options:
+        - A company (supplier, manufacturer or other business)
+        - A law firm or a lawyer
+        - A trade office, an association or a chamber
+        - A school or a training program
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language version?
+      options:
+        - English
+        - Traditional Chinese
+        - Both
+  - type: textarea
+    id: changed
+    attributes:
+      label: What did you change to make it fit?
+      description: For example, rows you removed, a step you added, or a term you renamed.
+  - type: textarea
+    id: missing
+    attributes:
+      label: What was missing or wrong?
+  - type: checkboxes
+    id: mention
+    attributes:
+      label: May I mention this?
+      options:
+        - label: You may count this among the uses of the tool, by the kind of organization and without its name.

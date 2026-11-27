@@ -1,0 +1,28 @@
+name: Something in a tool is wrong or out of date
+description: Point to the row or sentence, and to the source that shows the problem.
+title: "Correction: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for checking. The tools rely on public sources, and those change.
+
+        This form is public. Please leave out anything confidential, and note that it is not a way to ask for legal advice.
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: The file name and the row, heading or sentence.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or out of date?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to the statute, regulation, agency page or published form that shows it.
