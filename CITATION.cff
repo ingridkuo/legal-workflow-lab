@@ -9,10 +9,14 @@ repository-code: "https://github.com/ingridkuo/legal-workflow-lab"
 # One identifier on purpose: this format reads a list of licenses as alternatives.
 # The README's License section says which files fall under which terms.
 license: MIT
-abstract: "Practitioner notes, review rules and reproducible demonstrations for contract workflows, legal operations and legal AI evaluation, built on fictional contracts and records. Code is released under the MIT License and written material under CC BY 4.0; the README lists what is reserved."
+url: "https://ingridkao.netlify.app/lab/"
+abstract: "Open practitioner tools for contract and compliance work: checklists, playbooks, review rules and reproducible demonstrations for contract workflows, legal operations and legal AI evaluation, built on public law and on fictional contracts and records. From January 2027 the repository carries a bilingual series, in English and Traditional Chinese, of checklists for Taiwanese semiconductor and AI-hardware suppliers setting up in the United States. Code is released under the MIT License and written material under CC BY 4.0; the README lists what is reserved."
 keywords:
-  - legal operations
+  - supplier compliance
+  - semiconductor supply chain
+  - bilingual legal resources
   - contract management
+  - legal operations
   - legal AI evaluation
   - compliance
 version: "1.0.0"

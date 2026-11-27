@@ -2,9 +2,11 @@
 
 **Ingrid Kao · Taiwan-qualified attorney · UC Berkeley Master of Laws**
 
-I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. This repository brings together anonymized matters from my practice and demonstrations built on fictional contracts and records. Each demonstration shows a decision and the evidence behind it.
+Open tools for contract and compliance work: checklists, playbooks, review rules and runnable demonstrations that a legal team can copy and adapt. They are built on public law and on fictional contracts and records, and each demonstration shows a decision and the evidence behind it.
 
-[Six-page work samples (PDF)](Ingrid_Kao_Work_Samples.pdf) · [Portfolio](https://ingridkao.netlify.app/) · [Practitioner articles](08_practitioner_notes/README.md) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
+I draft commercial agreements, build contract workflows and translate legal review standards into rules engineers can use. The Lab is where that work is written down so that other people can use it. It also holds a few anonymized matters from my practice; those stay reserved, and the [License](#license) section says which files are open.
+
+[Supplier compliance series](09_supplier_compliance/README.md) · [Six-page work samples (PDF)](Ingrid_Kao_Work_Samples.pdf) · [Portfolio](https://ingridkao.netlify.app/) · [Practitioner articles](08_practitioner_notes/README.md) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
 ## Supplier compliance series
 
@@ -14,7 +16,7 @@ From January 2027 the Lab carries a [bilingual series for Taiwanese suppliers se
 |---|---|---|---|---|
 | 1 | Planned for January 15, 2027 | Selling equipment into a U.S. fab: which of the customer's terms must reach the company that installs it? | Fab equipment flow-down checklist, English and Chinese | Linked here after publication |
 
-Further issues follow every two months from April 2027, on the 15th.
+Further issues follow on April 15, June 15, August 15 and October 15, 2027. If you use a tool, [tell me what you changed](https://github.com/ingridkuo/legal-workflow-lab/issues/new/choose): that is how the next version gets better.
 
 ## Start here
 
@@ -79,6 +81,7 @@ The legal analysis and review decisions are my own, and I use an AI coding assis
 - **Implementation and adoption.** [Legal intake implementation case](02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf) · [Training and customer success](03_training/Training_and_Customer_Success.pdf)
 - **Practice and evaluation.** [Five selected case studies](04_case_studies/Selected_Case_Studies.pdf) · [NDA evaluation method](01_ai_review/AI_Contract_Review_Method.pdf)
 - **Working demonstrations.** [Migration and data quality](05_solution_delivery/README.md), with 30 behavioral tests · [Escalation and knowledge operations](06_knowledge_operations/README.md), with 29 gate tests · [Subcontract workflow](07_construction_workflow/README.md), with 38 tests
+- **Releases.** The [changelog](CHANGELOG.md) says what each release adds.
 
 ## Run the reproducible examples
 
@@ -170,4 +173,4 @@ Release archives, meaning the source ZIP from GitHub and any archived copy of a 
 
 Contact: [kuoingrid0118@gmail.com](mailto:kuoingrid0118@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
-Selected professional work and synthetic demonstrations. Not legal advice.
+Selected professional work and synthetic demonstrations. Not legal advice. Views are my own and do not represent my employer.
