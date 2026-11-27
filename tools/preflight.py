@@ -1,4 +1,4 @@
-"""Check local navigation, rendered-page structure and application PDF links.
+"""Check local navigation, rendered-page structure and work samples PDF links.
 
 Run after tools/build_portfolio.py. This performs no deployment or model call.
 """
