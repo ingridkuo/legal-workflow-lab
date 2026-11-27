@@ -1,0 +1,11 @@
+# Release archives (the source ZIP GitHub builds, and the copy an archive such as Zenodo keeps of it) leave out the
+# material the README reserves, the landing page that presents it, and the script that holds the work samples' text.
+# The files stay in the repository.
+04_case_studies export-ignore
+02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf export-ignore
+Ingrid_Kao_Work_Samples* export-ignore
+08_practitioner_notes/articles export-ignore
+assets/avatar.webp export-ignore
+assets/illustrations export-ignore
+index.html export-ignore
+tools/build_skills_portfolio.py export-ignore

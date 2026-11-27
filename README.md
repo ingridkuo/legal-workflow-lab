@@ -166,6 +166,8 @@ Copyright © 2026 Ingrid Kao.
 - **Not covered by either license (all rights reserved):** the case studies and any summaries of them, the work samples, the articles, and the portrait and illustrations (`04_case_studies/`, `02_legal_ops/Ingrid_Kao_Legal_Intake_Implementation_Case.pdf`, `Ingrid_Kao_Work_Samples*`, `08_practitioner_notes/articles/`, `assets/avatar.webp`, `assets/illustrations/`).
 - **Third-party material keeps its own terms:** the Inter font (SIL Open Font License; notices in `assets/`), the SALI records (notice in `01_ai_review/taxonomy/sources/SALI_LICENSE.txt`) and quoted standard-form contract language.
 
+Release archives, meaning the source ZIP from GitHub and any archived copy of a release, leave out the reserved files and folders named above and this repository's landing page. Links to them work in the repository itself.
+
 Contact: [kuoingrid0118@gmail.com](mailto:kuoingrid0118@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ingrid-kao-1702aa26b/)
 
 Selected professional work and synthetic demonstrations. Not legal advice.
